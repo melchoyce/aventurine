@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 /*
 Theme Name: flat-writer
 Theme URI: http://underscores.me/
@@ -14,18 +15,16 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
- flat-writer is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+flat-writer is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
-
-
 /* =Reset
 -------------------------------------------------------------- */
-
+/* line 11, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,25 +33,35 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	border: 0;
-	font-family: inherit;
-	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
-	margin: 0;
-	outline: 0;
-	padding: 0;
-	vertical-align: baseline;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
+
+/* line 22, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
-	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
-	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
-	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
+
+/* line 28, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 body {
-	background: #fff;
+  background: #fff;
 }
+
+/* line 40, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 article,
 aside,
 details,
@@ -63,194 +72,389 @@ header,
 main,
 nav,
 section {
-	display: block;
-}
-ol, ul {
-	list-style: none;
-}
-table { /* tables still need 'cellspacing="0"' in the markup */
-	border-collapse: separate;
-	border-spacing: 0;
-}
-caption, th, td {
-	font-weight: normal;
-	text-align: left;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: "";
-}
-blockquote, q {
-	quotes: "" "";
-}
-a:focus {
-	outline: thin dotted;
-}
-a:hover,
-a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
-	outline: 0;
-}
-a img {
-	border: 0;
+  display: block;
 }
 
+/* line 43, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 46, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 50, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 55, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 58, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+a:hover,
+a:active {
+  /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+  outline: 0;
+}
+
+/* line 68, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+a img {
+  border: 0;
+}
 
 /* =Global
 ----------------------------------------------- */
+/* border box all the things */
+/* line 5, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+/* Alignment */
+/* line 8, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 2em;
+}
+
+/* line 13, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 2em;
+}
+
+/* line 18, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Text meant only for screen readers */
+/* line 25, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.screen-reader-text {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+/* line 33, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
+
+/* Clearing */
+/* line 2, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+.clear:before, .clear:after,
+[class*="content"]:before,
+[class*="content"]:after,
+[class*="site"]:before,
+[class*="site"]:after {
+  content: "";
+  display: table;
+}
+/* line 6, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+.clear:after,
+[class*="content"]:after,
+[class*="site"]:after {
+  clear: both;
+}
+
+/* Read More */
+/* line 60, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.read-more {
+  display: block;
+  margin: 30px 0 80px;
+  text-align: center;
+  color: #d5dee8;
+}
+/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.read-more:before {
+  content: '• • • ';
+}
+/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+.read-more:after {
+  content: ' • • •';
+}
+
+/* line 7, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 body,
 button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
-	line-height: 1.5;
+  color: #6b8095;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 /* Headings */
+/* line 16, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
+  font-family: "Varela Round", sans-serif;
+  clear: both;
 }
+
+/* line 20, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+.site-title {
+  font-family: "Josefin Sans", serif;
+}
+
+/* line 23, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+.entry-title a {
+  color: #e74c3c;
+}
+
+/* line 26, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 2em;
 }
 
 /* Text elements */
+/* line 34, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 p {
-	margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
+
+/* line 37, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 ul, ol {
-	margin: 0 0 1.5em 3em;
+  margin: 0 0 2em 3em;
 }
+
+/* line 40, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 ul {
-	list-style: disc;
+  list-style: disc;
 }
+
+/* line 43, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 ol {
-	list-style: decimal;
+  list-style: decimal;
 }
+
+/* line 47, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+  margin-bottom: 0;
+  margin-left: 2em;
 }
+
+/* line 51, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 dt {
-	font-weight: bold;
+  font-weight: bold;
 }
+
+/* line 54, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 dd {
-	margin: 0 1.5em 1.5em;
+  margin: 0 2em 2em;
 }
+
+/* line 57, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 b, strong {
-	font-weight: bold;
+  font-weight: bold;
 }
+
+/* line 60, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 dfn, cite, em, i {
-	font-style: italic;
+  font-style: italic;
 }
+
+/* line 63, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 blockquote {
-	margin: 0 1.5em;
+  margin: 0;
+  padding: 0 2em;
+  border-left: 10px solid #e74c3c;
 }
+
+/* line 68, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 address {
-	margin: 0 0 1.5em;
+  margin: 0 0 2em;
 }
+
+/* line 71, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
 }
+
+/* line 82, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 code, kbd, tt, var {
-	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
+
+/* line 85, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 abbr, acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+  border-bottom: 1px dotted #666;
+  cursor: help;
 }
+
+/* line 89, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 mark, ins {
-	background: #fff9c0;
-	text-decoration: none;
+  background: #fff9c0;
+  text-decoration: none;
 }
+
+/* line 94, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 sup,
 sub {
-	font-size: 75%;
-	height: 0;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
+
+/* line 101, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 sup {
-	bottom: 1ex;
+  bottom: 1ex;
 }
+
+/* line 104, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 sub {
-	top: .5ex;
+  top: .5ex;
 }
+
+/* line 107, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 small {
-	font-size: 75%;
+  font-size: 75%;
 }
+
+/* line 110, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 big {
-	font-size: 125%;
+  font-size: 125%;
 }
+
+/* line 113, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 figure {
-	margin: 0;
+  margin: 0;
 }
+
+/* line 116, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 table {
-	margin: 0 0 1.5em;
-	width: 100%;
+  margin: 0 0 2em;
+  width: 100%;
 }
+
+/* line 120, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 th {
-	font-weight: bold;
+  font-weight: bold;
 }
+
+/* line 123, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
 }
+
+/* line 130, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button,
 input,
 select,
 textarea {
-	font-size: 100%; /* Corrects font size not being inherited in all browsers */
-	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
-	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
-	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */
 }
+
+/* line 137, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button,
 input {
-	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
+
+/* line 143, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid #ccc;
-	border-color: #ccc #ccc #bbb #ccc;
-	border-radius: 3px;
-	background: #e6e6e6;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-	font-size: 12px;
-	font-size: 1.2rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-color: #ccc #ccc #bbb #ccc;
+  border-radius: 3px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
+
+/* line 161, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa #bbb;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+  border-color: #ccc #bbb #aaa #bbb;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
+
+/* line 172, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -259,360 +463,509 @@ button:active,
 html input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  border-color: #aaa #bbb #bbb #bbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
+
+/* line 177, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="checkbox"],
 input[type="radio"] {
-	box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
-	padding: 0; /* Addresses excess padding in IE8/9 */
+  box-sizing: border-box;
+  /* Addresses box sizing set to content-box in IE8/9 */
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
 }
+
+/* line 181, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="search"] {
-	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
-	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
-	-moz-box-sizing:    content-box;
-	box-sizing:         content-box;
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
-input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
-	-webkit-appearance: none;
+
+/* line 187, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
 }
+
+/* line 191, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button::-moz-focus-inner,
-input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-	border: 0;
-	padding: 0;
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
 }
+
+/* line 200, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
+
+/* line 210, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	color: #111;
+  color: #111;
 }
+
+/* line 217, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+  padding: 3px;
 }
+
+/* line 220, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 textarea {
-	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
-	padding-left: 3px;
-	vertical-align: top; /* Improves readability and alignment in all browsers */
-	width: 98%;
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 98%;
 }
 
 /* Links */
+/* line 228, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 a {
-	color: royalblue;
+  color: #1abc9c;
+  text-decoration: none;
 }
-a:visited {
-	color: purple;
-}
-a:hover,
-a:focus,
-a:active {
-	color: midnightblue;
+/* line 12, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+a:hover, a:active, a:focus {
+  color: #148f77;
 }
 
-/* Alignment */
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
-}
-.alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
-}
-.aligncenter {
-	clear: both;
-	display: block;
-	margin: 0 auto;
+/* line 1, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+body {
+  background: #1abc9c;
+  /*@media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+      background-image: url('img/bg-2x.jpg');
+  }*/
 }
 
-/* Text meant only for screen readers */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+/* line 11, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+.container {
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar */
+/* line 16, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#site-navigation {
+  padding: 30px 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+  background-color: #2c3e50;
+}
+/* line 22, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#site-navigation a {
+  color: white;
+}
+/* line 26, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#site-navigation ul li {
+  margin-right: 40px;
+}
+/* line 29, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#site-navigation ul li:last-of-type {
+  margin-right: 0;
 }
 
-/* Clearing */
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-	content: '';
-	display: table;
+/* line 34, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#masthead {
+  margin: 100px 0;
+  text-align: center;
+}
+/* line 38, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#masthead h1.site-title {
+  font-size: 100px;
+  font-size: 10rem;
+}
+/* line 42, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#masthead h1.site-title a {
+  color: white;
+  text-decoration: none;
+}
+/* line 48, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#masthead h2.site-description {
+  color: white;
 }
 
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-	clear: both;
+/* line 53, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#content {
+  padding: 60px 80px;
+  background-color: white;
+}
+/* line 57, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#content .entry-title {
+  font-size: 36px;
+  font-size: 3.6rem;
+  text-align: center;
+  text-decoration: none;
 }
 
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#colophon {
+  margin: 60px 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+}
+/* line 72, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+#colophon a {
+  color: white;
+  border-bottom: 2px solid;
+}
 
 /* =Menu
 ----------------------------------------------- */
-
+/* line 4, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
+/* line 9, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
-.main-navigation li {
-	float: left;
-	position: relative;
+/* line 14, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+.main-navigation ul li {
+  float: left;
+  position: relative;
 }
-.main-navigation a {
-	display: block;
-	text-decoration: none;
+/* line 18, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+.main-navigation ul li a {
+  display: block;
+  text-decoration: none;
 }
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	display: none;
-	float: left;
-	left: 0;
-	position: absolute;
-	top: 1.5em;
-	z-index: 99999;
-}
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-}
-.main-navigation ul ul a {
-	width: 200px;
-}
-.main-navigation ul ul li {
-}
-.main-navigation li:hover > a {
-}
-.main-navigation ul ul :hover > a {
-}
-.main-navigation ul ul a:hover {
-}
+/* line 26, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul li:hover > ul {
-	display: block;
+  display: block;
 }
-.main-navigation li.current_page_item a,
-.main-navigation li.current-menu-item a {
+/* line 36, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  z-index: 99999;
+}
+/* line 50, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+.main-navigation ul ul li a {
+  width: 200px;
+}
+/* line 57, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+.main-navigation ul ul ul {
+  left: 100%;
+  top: 0;
 }
 
 /* Small menu */
+/* line 68, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .menu-toggle {
-	cursor: pointer;
-	display: none;
+  display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
+  /* line 75, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
 
-	.main-navigation ul {
-		display: none;
-	}
+  /* line 79, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+  .main-navigation ul {
+    display: none;
+  }
 }
-
-
 /* =Content
 ----------------------------------------------- */
-
-.sticky {
-}
+/* line 6, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .hentry {
-	margin: 0 0 1.5em;
+  margin: 0 0 2em;
 }
+
+/* line 10, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .byline,
 .updated {
-	display: none;
+  display: none;
 }
-.single .byline,
-.group-blog .byline {
-	display: inline;
+
+/* line 14, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+.single .byline, .group-blog .byline {
+  display: inline;
 }
+
+/* line 20, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
-}
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+  margin: 2em 0 0;
 }
 
+/* line 23, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 2em;
+}
 
 /* =Asides
 ----------------------------------------------- */
-
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
+/* line 5, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_postformats.scss */
+.blog .format-aside .entry-title, .archive .format-aside .entry-title {
+  display: none;
 }
-
 
 /* =Media
 ----------------------------------------------- */
-
+/* line 7, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
 }
+
+/* line 15, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .wp-caption {
-	border: 1px solid #ccc;
-	margin-bottom: 1.5em;
-	max-width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 2em;
+  max-width: 100%;
 }
+/* line 20, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin: 1.2% auto 0;
-	max-width: 98%;
+  display: block;
+  margin: 1.2% auto 0;
+  max-width: 98%;
 }
-.wp-caption-text {
-	text-align: center;
-}
+/* line 25, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+  text-align: center;
+  margin: 0.8075em 0;
 }
-.site-main .gallery {
-	margin-bottom: 1.5em;
+
+/* line 32, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery {
+  margin-bottom: 2em;
 }
-.gallery-caption {
+/* line 2, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+.gallery:before, .gallery:after {
+  content: "";
+  display: table;
 }
-.site-main .gallery a img {
-	border: none;
-	height: auto;
-	max-width: 90%;
+/* line 6, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+.gallery:after {
+  clear: both;
 }
-.site-main .gallery dd {
-	margin: 0;
+/* line 38, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery .gallery-item {
+  float: left;
 }
-.site-main .gallery-columns-4 .gallery-item {
+/* line 42, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery .gallery-item .gallery-icon a {
+  display: block;
 }
-.site-main .gallery-columns-4 .gallery-item img {
+/* line 44, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery .gallery-item .gallery-icon img {
+  border: none;
+  height: auto;
+  margin-bottom: 0;
+}
+/* line 51, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery .gallery-item .gallery-caption {
+  margin: 0;
+  text-align: center;
+}
+
+/* Fluid Gallery Columns
+   works well if you remove the default gallery styling
+   by adding the following to your functions.php
+   add_filter( 'use_default_gallery_style', '__return_false' );
+*/
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-2 .gallery-item {
+  width: 49%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-2 .gallery-item:nth-of-type(2n - 2) {
+  margin-right: 0;
+  clear: right;
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-3 .gallery-item {
+  width: 32%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-3 .gallery-item:nth-of-type(3n - 3) {
+  margin-right: 0;
+  clear: right;
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-4 .gallery-item {
+  width: 23.5%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-4 .gallery-item:nth-of-type(4n - 4) {
+  margin-right: 0;
+  clear: right;
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-5 .gallery-item {
+  width: 18.4%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-5 .gallery-item:nth-of-type(5n - 5) {
+  margin-right: 0;
+  clear: right;
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-6 .gallery-item {
+  width: 15%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-6 .gallery-item:nth-of-type(6n - 6) {
+  margin-right: 0;
+  clear: right;
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-7 .gallery-item {
+  width: 12.571%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-7 .gallery-item:nth-of-type(7n - 7) {
+  margin-right: 0;
+  clear: right;
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-8 .gallery-item {
+  width: 10.75%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-8 .gallery-item:nth-of-type(8n - 8) {
+  margin-right: 0;
+  clear: right;
+}
+
+/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-9 .gallery-item {
+  width: 9.333%;
+  margin-right: 2;
+}
+
+/* line 65, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+.gallery-columns-9 .gallery-item:nth-of-type(9n - 9) {
+  margin-right: 0;
+  clear: right;
 }
 
 /* Make sure embeds and iframes fit their containers */
+/* line 85, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
 embed,
 iframe,
 object {
-	max-width: 100%;
+  max-width: 100%;
 }
-
 
 /* =Navigation
 ----------------------------------------------- */
-
+/* line 4, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
 .site-main [class*="navigation"] {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+  margin: 0 0 2em;
+  overflow: hidden;
 }
-[class*="navigation"] .nav-previous {
-	float: left;
-	width: 50%;
+/* line 8, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+.site-main [class*="navigation"] .nav-previous {
+  float: left;
+  width: 50%;
 }
-[class*="navigation"] .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+/* line 13, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+.site-main [class*="navigation"] .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
 }
-
 
 /* =Comments
 ----------------------------------------------- */
-
+/* line 3, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_comments.scss */
 .comment-content a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
-.bypostauthor {
-}
-
 
 /* =Widgets
 ----------------------------------------------- */
-
+/* line 4, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
 .widget {
-	margin: 0 0 1.5em;
+  margin: 0 0 2em;
+  /* Make sure select elements fit in widgets */
+  /* Search widget */
 }
-
-/* Make sure select elements fit in widgets */
+/* line 8, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
 .widget select {
-	max-width: 100%;
+  max-width: 100%;
 }
-
-/* Search widget */
-.widget_search .search-submit {
-	display: none;
+/* line 13, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
+.widget .widget-search .search-submit {
+  display: none;
 }
-
 
 /* =Infinite Scroll
 ----------------------------------------------- */
-
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
+/* line 6, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_infinitescroll.scss */
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+/* line 11, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_infinitescroll.scss */
 .infinity-end.neverending .site-footer {
-	display: block;
+  display: block;
 }

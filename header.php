@@ -21,17 +21,20 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<nav id="site-navigation" class="main-navigation" role="navigation">
-		<h1 class="menu-toggle"><?php _e( 'Menu', 'flat-writer' ); ?></h1>
-		<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flat-writer' ); ?>"><?php _e( 'Skip to content', 'flat-writer' ); ?></a></div>
-	
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	<nav id="site-navigation" class="main-navigation clear" role="navigation">
+		<div class="container">
+			<h1 class="menu-toggle"><?php _e( 'Menu', 'flat-writer' ); ?></h1>
+			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flat-writer' ); ?>"><?php _e( 'Skip to content', 'flat-writer' ); ?></a></div>
+			
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<!--<?php get_search_form(); ?>-->
+		</div>
 	</nav><!-- #site-navigation -->
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
+		<div class="site-branding container">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container">

@@ -11,7 +11,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="site-info container">
 			<?php do_action( 'flat_writer_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'flat-writer' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'flat-writer' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

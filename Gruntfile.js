@@ -6,7 +6,8 @@ module.exports = function(grunt) {
     sass: {
       frontEnd: {
 				options: {
-					style: 'expanded'
+					style: 'expanded',
+					lineNumbers: true
 				},
         src: ['sassy_s/*.scss', '!sassy_s/_*.scss' ],
         dest: 'style.css'

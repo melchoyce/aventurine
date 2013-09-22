@@ -1,40 +1,76 @@
-// Layout: Content-Sidebar
-@if $layout == content-sidebar {
-	.content-area {
-		float: left;
-		margin: 0 -25% 0 0;
-		width: 100%;
+body {
+	background: $body-bg /*url('img/bg.jpg') repeat*/;
+	
+	/*@media 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+	    background-image: url('img/bg-2x.jpg');
+	}*/
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+#site-navigation {
+	padding: 30px 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	background-color: $navigation-bg;
+	
+	a {
+		color: white;
 	}
-	.site-main {
-		margin: 0 25% 0 0;
+	
+	ul li {
+		margin-right: 40px;
 	}
-	.site-content .widget-area { /* Sidebar 1 */
-		float: right;
-		overflow: hidden;
-		width: 25%;
+	ul li:last-of-type {
+		margin-right: 0;
 	}
 }
 
-// Layout: Sidebar-Content
-@else if $layout == sidebar-content {
-	.content-area {
-		float: right;
-		margin: 0 0 0 -25%;
-		width: 100%;
+#masthead {
+	margin: 100px 0;
+	text-align: center;
+	
+	h1.site-title {
+		font-size: 100px;
+		font-size: 10rem;
+		
+		a {
+			color: white;
+			text-decoration: none;
+		}
 	}
-	.site-main {
-		margin: 0 0 0 25%;
-	}
-	.site-content .widget-area { /* Sidebar 1 */
-		float: left;
-		overflow: hidden;
-		width: 25%;
+	
+	h2.site-description {
+		color: white;	
 	}
 }
 
-@if $layout != null {
-	.site-footer {
-		clear: both;
-		width: 100%;
+#content {
+	padding: 60px 80px;
+	background-color: $content-bg;	
+	
+	.entry-title {
+		font-size: 36px;
+		font-size: 3.6rem;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+#colophon {
+	margin: 60px 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-align: center;
+	color: white;
+	
+	a {
+		color: white;
+		border-bottom: 2px solid;
 	}
 }

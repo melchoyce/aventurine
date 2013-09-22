@@ -1,12 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
 body,
 button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: $body-color;
 	font-family: $base-font;
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 20px;
+	font-size: 2rem;
 	line-height: 1.5;
 }
 
@@ -14,6 +16,12 @@ textarea {
 h1,h2,h3,h4,h5,h6 {
 	font-family: $header-font;
 	clear: both;
+}
+.site-title {
+	font-family: $site-title;
+}
+.entry-title a {
+	color: $header-color;
 }
 hr {
 	background-color: #ccc;
@@ -53,7 +61,9 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 blockquote {
-	margin: 0 $vspacing;
+	margin: 0;
+	padding: 0 $vspacing;
+	border-left: 10px solid $accent-color;
 }
 address {
 	margin: 0 0 $vspacing;
@@ -216,9 +226,7 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
-	@include hoverActiveFocus(color, midnightblue);
-}
-a:visited {
-	color: purple;
+	color: $link-color;
+	@include hoverActiveFocus(color, darken(#1abc9c, 10%));
+	text-decoration: none;
 }
