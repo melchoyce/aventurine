@@ -1,0 +1,45 @@
+/*
+Theme Name: flat-writer
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: flat-writer
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+flat-writer is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+// reset styles should stay at the top
+@import 'reset';
+
+// configure the style from settings
+@import 'settings';
+
+// move mixins to their own partial
+@import 'mixins';
+
+// feel free to add any new files you want; if you add them this list they'll be included
+@import 'global';
+@import 'typography';
+@import 'layout';
+@import 'menu';
+@import 'content';
+@import 'postformats';
+@import 'media';
+@import 'navigation';
+@import 'comments';
+@import 'widgets';
+@import 'infinitescroll';
