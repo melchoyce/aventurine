@@ -238,8 +238,7 @@ input[type="password"],
 input[type="search"],
 textarea {
 	padding: 5px 10px;
-	font-size: 16px;
-	font-size: 1.6rem;
+	@include smaller-text;
 	color: #666;
 	border: 1px solid $border-color;
 	border-radius: 3px;

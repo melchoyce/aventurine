@@ -24,3 +24,8 @@
 	clear: both;
 	margin: 0 0 $vspacing;
 }
+
+.entry-meta {
+	@include smaller-text;
+	color: $secondary-text;
+}

@@ -13,3 +13,8 @@
         #{$property}: $value;
     }
 }
+
+@mixin smaller-text() {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
