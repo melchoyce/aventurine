@@ -16,7 +16,7 @@
 		li {
 			float: left;
 			position: relative;
-			margin-right: 40px;
+			margin-right: 20px;
 			
 			&:last-of-type {
 				margin-right: 0;
@@ -24,6 +24,7 @@
 
 			a {
 				display: block;
+				padding: 30px 20px 30px 0;
 				color: white;
 				text-decoration: none;
 			}
@@ -45,21 +46,21 @@
 			display: none;
 			float: left;
 			position: absolute;
-			top: 20px;
+			top: 84px;
 			left: 0;
 			z-index: 99999;
-			padding: 20px 20px 5px 20px;
-			background-color: darken($navigation-bg, 10%);
+			background-color: darken($navigation-bg, 5%);
+			@include divet( top, darken($navigation-bg, 5%) );
 
 			&:hover {
 				> a {};
 			}
 
 			li {
-			
-				margin-bottom: 15px;
-				
+				padding: 10px;
+				margin: 0;
 				a {
+					padding: 0;
 					width: 200px;
 					&:hover {};
 				}
@@ -69,6 +70,9 @@
 			ul {
 				left: 100%;
 				top: 0;
+				
+				background-color: darken($navigation-bg, 10%);
+				@include divet( left, darken($navigation-bg, 10%) );
 			}
 
 		}

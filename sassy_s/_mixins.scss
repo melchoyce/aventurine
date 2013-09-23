@@ -18,3 +18,39 @@
 	font-size: 16px;
 	font-size: 1.6rem;
 }
+
+@mixin divet( $direction, $color ) {
+	background-color: $color;
+	&:after {
+		content:"";
+		display: block; /* reduce the damage in FF3.0 */
+		position: absolute;
+		width: 0;
+		border-style: solid;
+		border-color: transparent $color;
+	}
+	
+	@if $direction == left {
+		&:after {
+			top: 12px;
+			left: -10px;
+			right: auto;
+			border-width: 10px 10px 10px 0;
+		}
+	} @else if $direction == right {
+		&:after {
+			top: 12px;
+			left: auto;
+			right: -10px;
+			border-width: 10px 0px 10px 10px;
+		}
+	} @else if $direction == top {
+		&:after {
+			top: -10px;
+			right: auto;
+			left: 20px;
+			border-color: $color transparent;
+			border-width: 0px 10px 10px 10px;
+		}
+	}
+}
