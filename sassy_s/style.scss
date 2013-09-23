@@ -25,6 +25,9 @@ and Blueprint http://www.blueprintcss.org/
 // reset styles should stay at the top
 @import 'reset';
 
+// call the bourbon library
+@import 'bourbon/bourbon';
+
 // configure the style from settings
 @import 'settings';
 
@@ -37,7 +40,6 @@ and Blueprint http://www.blueprintcss.org/
 @import 'layout';
 @import 'menu';
 @import 'content';
-@import 'postformats';
 @import 'media';
 @import 'navigation';
 @import 'comments';

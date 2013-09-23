@@ -14,6 +14,6 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">read more</a>
+		<a class="read-more" href="<?php echo get_permalink(); ?>">read more</a>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

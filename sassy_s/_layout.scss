@@ -29,10 +29,15 @@ body {
 	ul li:last-of-type {
 		margin-right: 0;
 	}
+	
+	.search-form {
+		float: right;
+		display: inline-block;
+	}
 }
 
 #masthead {
-	margin: 100px 0;
+	margin: 80px 0;
 	text-align: center;
 	
 	h1.site-title {
@@ -46,12 +51,19 @@ body {
 	}
 	
 	h2.site-description {
-		color: white;	
+		color: white;
+		font-size: 20px;
+		font-size: 2rem;	
 	}
 }
 
-#content {
+#content,
+#secondary,
+#comments {
 	padding: 60px 80px;
+}
+
+#content {
 	background-color: $content-bg;	
 	
 	.entry-title {
@@ -62,12 +74,64 @@ body {
 	}
 }
 
+#secondary {
+
+	.widget {
+		width: 45%;
+		font-size: 16px;
+		font-size: 1.6rem;
+		line-height: 1.6;
+		
+		ul {
+			margin: 0;
+		}
+		
+		ul li {
+			margin-bottom: 5px;
+		}
+		
+		&:nth-of-type(odd) {
+			float: left;
+			clear: left;
+		}
+		
+		&:nth-of-type(even) {
+			float: right;
+			clear: right;
+		}
+	}
+
+	.widget-title {
+		margin-bottom: 20px;
+		font-size: 20px;
+		font-size: 2rem;
+	}
+}
+
+#secondary,
+#comments {
+	background-color: $secondary-bg;
+}
+
+#comments {
+	p {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+}
+
 #colophon {
 	margin: 60px 0;
 	font-size: 16px;
 	font-size: 1.6rem;
 	text-align: center;
 	color: white;
+	opacity: .5;
+	@include transition(opacity 0.15s ease-in-out);
+	
+	&:hover {
+		opacity: 1;
+	}
 	
 	a {
 		color: white;

@@ -3,16 +3,31 @@
 // yourself. This means that changes that should be small, such as tweaking the
 // coloring or the sizing, can be done in one place, not all over the stylesheet.
 
+// Spacing
+$vspacing: 			2em;
+$vspacing-down1:	1.5em;
+$vspacing-down2:	1em;
+$vspacing-down3:	.5em;
+
+// Typography
 $base-font: 		'Varela Round', sans-serif;
 $header-font:		$base-font; 
 $site-title: 		'Josefin Sans', serif;
-
-$vspacing: 			2em;
+// Modular Scale : 16 and 23 @ 1.618 - http://modularscale.com/ ================================== /
+$modular-scale-up5:   	3.75;   	// 60px
+$modular-scale-up4:   	2.625;  	// 42px
+$modular-scale-up3:   	2.3125; 	// 37px
+$modular-scale-up2:   	1.625;  	// 26px
+$modular-scale-up1:  	1.4375; 	// 22px
+$modular-scale-base:  	1;      	// 16px
+$modular-scale-down1: 	0.875;  	// 14px
+$modular-scale-down2: 	0.625;  	// 10px
 
 // Text colors
 $body-color:		#6b8095;
 $link-color:		#1abc9c;
 $header-color:		#e74c3c;
+$subheader-color:	#1d2936;
 $accent-color:		#e74c3c;
 $readmore-color:	#d5dee8;
 
@@ -20,3 +35,4 @@ $readmore-color:	#d5dee8;
 $body-bg:			#1abc9c;
 $navigation-bg:		#2c3e50;
 $content-bg:		#fff;
+$secondary-bg:		#f5f5f5;

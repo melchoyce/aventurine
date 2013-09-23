@@ -1,16 +1,30 @@
 /* =Navigation
 ----------------------------------------------- */
 
-.site-main [class*="navigation"] {
+[class*="navigation"] {
 	margin: 0 0 $vspacing;
 	overflow: hidden;
 
-	.nav-previous {
+	.nav-previous a,
+	.nav-next a {
+		display: inline-block;
+		margin-top: 30px;
+		padding: 15px 30px;
+		background-color: $navigation-bg;
+		border-radius: 3px;
+		color: white;
+
+		&:hover {
+			color: #7d98b3;	
+		}
+	}
+
+	.nav-next {
 		float: left;
 		width: 50%;
 	}
 
-	.nav-next {
+	.nav-previous {
 		float: right;
 		text-align: right;
 		width: 50%;

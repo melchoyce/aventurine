@@ -31,8 +31,6 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php flat_writer_content_nav( 'nav-below' ); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'no-results', 'index' ); ?>
@@ -42,5 +40,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+</div><!-- #content -->
+
+<div class="container">
+	<?php flat_writer_content_nav( 'nav-below' ); ?>
+</div>
+
 <?php get_footer(); ?>

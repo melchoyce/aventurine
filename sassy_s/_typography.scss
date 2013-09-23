@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 body,
 button,
@@ -17,10 +19,40 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $header-font;
 	clear: both;
 }
+h1,h2,h3 {
+	color: $header-color;	
+}
+h4,h5,h6 {
+	color: $subheader-color;
+}
+h1 { 
+	font-size: #{$modular-scale-up2}em;
+}
+h2 { 
+	font-size: #{$modular-scale-up1}em;
+	text-transform: none !important;
+}
+h3 { 
+	margin-bottom: $vspacing-down3;
+	font-size: #{$modular-scale-base}em;
+}
+h4 {	
+	font-size: #{$modular-scale-down1}em;
+	text-transform: uppercase;
+}
+h5 { 
+	font-size: #{$modular-scale-down1}em;
+	text-transform: lowercase;
+}	
+h6 { 
+	font-size: #{$modular-scale-down2}em;
+}	
 .site-title {
 	font-family: $site-title;
 }
-.entry-title a {
+.entry-title,
+.entry-title a,
+.widget-title {
 	color: $header-color;
 }
 hr {
@@ -32,7 +64,7 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: $vspacing;
+	margin-bottom: $vspacing-down1;
 }
 ul, ol {
 	margin: 0 0 $vspacing 3em;
@@ -46,23 +78,24 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: $vspacing;
+	margin-left: $vspacing-down1;
 }
 dt {
 	font-weight: bold;
 }
 dd {
-	margin: 0 $vspacing $vspacing;
+	margin: 0 $vspacing-down1 $vspacing-down1;
 }
 b, strong {
 	font-weight: bold;
+	color: #1d2936;
 }
 dfn, cite, em, i {
 	font-style: italic;
 }
 blockquote {
 	margin: 0;
-	padding: 0 $vspacing;
+	padding: 0 $vspacing-down1;
 	border-left: 10px solid $accent-color;
 }
 address {
@@ -70,9 +103,9 @@ address {
 }
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 1.5rem;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 20px;
+	font-size: 2rem;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
 	padding: 1.6em;
@@ -80,7 +113,8 @@ pre {
 	max-width: 100%;
 }
 code, kbd, tt, var {
-	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font: 20px 'Ubuntu Mono', monospace;
+	font-size: 2rem;
 }
 abbr, acronym {
 	border-bottom: 1px dotted #666;
@@ -223,10 +257,15 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
+label {
+	font-weight: bold;
+	color: $subheader-color;
+}
 
 /* Links */
 a {
 	color: $link-color;
-	@include hoverActiveFocus(color, darken(#1abc9c, 10%));
 	text-decoration: none;
+	@include hoverActiveFocus(color, darken(#1abc9c, 10%));
+	@include transition(color 0.15s ease-in-out);
 }

@@ -63,6 +63,10 @@
 	text-align: center;
 	color: $readmore-color;
 	
+	&:hover {
+		color: darken($readmore-color, 20%);
+	}
+	
 	&:before {
 		content: '• • • ';
 	}

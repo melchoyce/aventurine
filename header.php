@@ -27,7 +27,7 @@
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flat-writer' ); ?>"><?php _e( 'Skip to content', 'flat-writer' ); ?></a></div>
 			
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			<!--<?php get_search_form(); ?>-->
+			<?php get_search_form(); ?>
 		</div>
 	</nav><!-- #site-navigation -->
 	<header id="masthead" class="site-header" role="banner">
