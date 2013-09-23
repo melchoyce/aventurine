@@ -20,17 +20,6 @@ body {
 	font-size: 1.6rem;
 	background-color: $navigation-bg;
 	
-	a {
-		color: white;
-	}
-	
-	ul li {
-		margin-right: 40px;
-	}
-	ul li:last-of-type {
-		margin-right: 0;
-	}
-	
 	.search-form {
 		float: right;
 		display: inline-block;

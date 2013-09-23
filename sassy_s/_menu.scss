@@ -3,6 +3,8 @@
 
 .main-navigation {
 	display: block;
+	margin: 0;
+	overflow: visible;
 	width: 100%;
 
 	// first level
@@ -14,39 +16,49 @@
 		li {
 			float: left;
 			position: relative;
+			margin-right: 40px;
+			
+			&:last-of-type {
+				margin-right: 0;
+			}
 
 			a {
 				display: block;
+				color: white;
 				text-decoration: none;
 			}
 
 			// link hover
 			&:hover {
-				> a { }
+				> a { color: lighten($navigation-bg, 50%); }
 				> ul { display: block; }
 			}
 
 		}
 
 		li.current_page_item, li.current-menu-item {
-			a {}
+			a { color: lighten($navigation-bg, 50%); }
 		}
 
 		// second level
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			display: none;
 			float: left;
 			position: absolute;
-				top: $vspacing;
-				left: 0;
+			top: 20px;
+			left: 0;
 			z-index: 99999;
+			padding: 20px 20px 5px 20px;
+			background-color: darken($navigation-bg, 10%);
 
 			&:hover {
 				> a {};
 			}
 
 			li {
+			
+				margin-bottom: 15px;
+				
 				a {
 					width: 200px;
 					&:hover {};

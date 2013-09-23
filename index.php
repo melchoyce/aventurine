@@ -42,7 +42,7 @@ get_header(); ?>
 
 </div><!-- #content -->
 
-<div class="container">
+<div class="content-nav container">
 	<?php flat_writer_content_nav( 'nav-below' ); ?>
 </div>
 

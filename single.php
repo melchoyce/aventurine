@@ -23,7 +23,7 @@ get_header(); ?>
 	if ( comments_open() || '0' != get_comments_number() )
 		comments_template();
 ?>
-<div class="container">
+<div class="content-nav container">
 	<?php flat_writer_content_nav( 'nav-below' ); ?>
 </div>
 

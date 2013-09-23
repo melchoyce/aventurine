@@ -1,7 +1,7 @@
 /* =Navigation
 ----------------------------------------------- */
 
-[class*="navigation"] {
+.content-nav [class*="navigation"] {
 	margin: 0 0 $vspacing;
 	overflow: hidden;
 
@@ -30,19 +30,4 @@
 		width: 50%;
 	}
 
-}
-
-#site-navigation {
-	margin: 0;
-	overflow: visible;
-	
-	ul li ul {
-		margin-top: 20px;
-		padding: 20px 20px 5px 20px;
-		background-color: darken($navigation-bg, 10%);
-		
-		li {
-			margin-bottom: 15px;
-		}
-	}
 }
