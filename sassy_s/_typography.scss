@@ -97,7 +97,7 @@ dd {
 }
 b, strong {
 	font-weight: bold;
-	color: #1d2936;
+	color: darken($body-text, 30%);
 }
 dfn, cite, em, i {
 	font-style: italic;
@@ -106,6 +106,9 @@ blockquote {
 	margin: 0;
 	padding: 0 $vspacing-down1;
 	border-left: 10px solid $accent-color;
+}
+cite {
+	color: darken($body-text, 30%);
 }
 address {
 	margin: 0 0 $vspacing;
