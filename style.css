@@ -634,36 +634,37 @@ a:hover, a:active, a:focus {
 
 /* line 1, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 body {
-  background: #1abc9c url("img/bg.jpg") repeat;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 1, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
-  body {
-    background-image: url("img/bg-2x.jpg");
-    background-size: 500px 500px;
-  }
+  background: #1abc9c repeat;
+  	/*
+  @media 
+  	(-webkit-min-device-pixel-ratio: 2), 
+  	(min-resolution: 192dpi) { 
+  	    background-image: url('img/bg-2x.jpg');
+  	    background-size: 500px 500px;
+  	}
+  */
 }
 
-/* line 12, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 14, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 .container {
   margin: 0 auto;
   max-width: 900px;
 }
 
-/* line 17, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 19, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation {
   padding: 0;
   font-size: 16px;
   font-size: 1.6rem;
   background-color: #2c3e50;
 }
-/* line 22, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 24, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation .search-form {
   float: right;
   display: inline-block;
   margin-top: 30px;
 }
-/* line 28, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 30, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation .search-field {
   padding: 5px 5px 5px 10px;
   font-size: 14px;
@@ -672,51 +673,51 @@ body {
   background-color: #1f2c39;
   border: none;
 }
-/* line 37, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 39, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation input::-webkit-input-placeholder, #site-navigation textarea::-webkit-input-placeholder {
   color: #476481;
   text-transform: lowercase;
 }
-/* line 41, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 43, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation input:-moz-placeholder, #site-navigation textarea:-moz-placeholder {
   color: #476481;
   text-transform: lowercase;
 }
 
-/* line 47, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 49, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead {
   margin: 80px 0;
   text-align: center;
 }
-/* line 51, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 53, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead h1.site-title {
   font-size: 100px;
   font-size: 10rem;
 }
-/* line 55, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 57, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead h1.site-title a {
   color: white;
   text-decoration: none;
 }
-/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 63, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead h2.site-description {
   color: white;
   font-size: 20px;
   font-size: 2rem;
 }
 
-/* line 68, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #content,
 #secondary,
 #comments {
   padding: 60px 80px;
 }
 
-/* line 74, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 76, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #content {
   background-color: white;
 }
-/* line 77, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 79, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #content .entry-title {
   font-size: 36px;
   font-size: 3.6rem;
@@ -724,51 +725,51 @@ body {
   text-decoration: none;
 }
 
-/* line 87, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 89, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget {
   width: 45%;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-/* line 92, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 94, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget ul {
   margin: 0;
 }
-/* line 96, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 98, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget ul li {
   margin-bottom: 5px;
 }
-/* line 100, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 102, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget:nth-of-type(odd) {
   float: left;
   clear: left;
 }
-/* line 105, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 107, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget:nth-of-type(even) {
   float: right;
   clear: right;
 }
-/* line 111, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 113, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget-title {
   margin-bottom: 20px;
   font-size: 20px;
   font-size: 2rem;
 }
 
-/* line 118, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 120, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary,
 #comments {
   background-color: whitesmoke;
 }
 
-/* line 124, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 126, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #comments p {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 129, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 131, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon {
   margin: 60px 0;
   font-size: 16px;
@@ -780,11 +781,11 @@ body {
   -moz-transition: opacity 0.15s ease-in-out;
   transition: opacity 0.15s ease-in-out;
 }
-/* line 137, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 139, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon:hover {
   opacity: 1;
 }
-/* line 141, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 143, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon a {
   color: white;
   border-bottom: 2px solid;
