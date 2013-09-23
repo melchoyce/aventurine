@@ -24,15 +24,20 @@ $modular-scale-down1: 	0.875;  	// 14px
 $modular-scale-down2: 	0.625;  	// 10px
 
 // Text colors
-$body-color:		#6b8095;
-$link-color:		#1abc9c;
-$header-color:		#e74c3c;
-$subheader-color:	#1d2936;
-$accent-color:		#e74c3c;
-$readmore-color:	#d5dee8;
+$body-text:			#6b8095;
+$link-text:			#1abc9c;
+$header-text:		#e74c3c;
+$subheader-text:	#1d2936;
+$accent-text:		#e74c3c;
+$secondary-text:	#d5dee8;
 
 // Container colors
 $body-bg:			#1abc9c;
 $navigation-bg:		#2c3e50;
 $content-bg:		#fff;
 $secondary-bg:		#f5f5f5;
+
+// Element colors
+$search-bg:			$content-bg;
+$border-color:		#ddd;
+$accent-color:	$accent-text;

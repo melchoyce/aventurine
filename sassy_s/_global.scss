@@ -61,10 +61,10 @@
 	display: block;
 	margin: 30px 0 80px;
 	text-align: center;
-	color: $readmore-color;
+	color: $secondary-text;
 	
 	&:hover {
-		color: darken($readmore-color, 20%);
+		color: darken($secondary-text, 20%);
 	}
 	
 	&:before {

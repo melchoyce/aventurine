@@ -1,11 +1,12 @@
 body {
-	background: $body-bg /*url('img/bg.jpg') repeat*/;
+	background: $body-bg url('img/bg.jpg') repeat;
 	
-	/*@media 
+	@media 
 	(-webkit-min-device-pixel-ratio: 2), 
 	(min-resolution: 192dpi) { 
 	    background-image: url('img/bg-2x.jpg');
-	}*/
+	    background-size: 500px 500px;
+	}
 }
 
 .container {
@@ -33,6 +34,24 @@ body {
 	.search-form {
 		float: right;
 		display: inline-block;
+	}
+	
+	.search-field {
+		padding: 5px 5px 5px 10px;
+		font-size: 14px;
+		font-size: 1.4rem;
+		color: white;
+		background-color: darken($navigation-bg, 7%);
+		border: none;
+	}
+	
+	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+		color: lighten($navigation-bg, 15%);
+		text-transform: lowercase;
+	}
+	input:-moz-placeholder, textarea:-moz-placeholder {
+		color: lighten($navigation-bg, 15%);
+		text-transform: lowercase;
 	}
 }
 

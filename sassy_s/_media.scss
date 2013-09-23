@@ -13,10 +13,15 @@
 }
 // Image Captions
 .wp-caption {
-	border: 1px solid #ccc;
 	margin-bottom: $vspacing;
+	padding: 5px;
 	max-width: 100%;
-
+	font-size: 16px;
+	font-size: 1.6rem;
+	background-color: $secondary-bg;
+	border: none;
+	border-radius: 3px;
+	
 	img[class*="wp-image-"] {
 		display: block;
 		margin: 1.2% auto 0;
