@@ -27,5 +27,6 @@
 
 .entry-meta {
 	@include smaller-text;
+	text-transform: lowercase;
 	color: $secondary-text;
 }

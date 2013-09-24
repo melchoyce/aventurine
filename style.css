@@ -26,7 +26,7 @@ and Blueprint http://www.blueprintcss.org/
 */
 /* =Reset
 -------------------------------------------------------------- */
-/* line 4, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 11, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,7 +46,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 22, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 22, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 html {
   font-size: 62.5%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -58,12 +58,12 @@ html {
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 
-/* line 28, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 28, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 body {
   background: #fff;
 }
 
-/* line 31, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 40, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 article,
 aside,
 details,
@@ -77,48 +77,48 @@ section {
   display: block;
 }
 
-/* line 43, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 43, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 46, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 46, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
   border-spacing: 0;
 }
 
-/* line 50, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 50, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 caption, th, td {
   font-weight: normal;
   text-align: left;
 }
 
-/* line 54, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 55, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
 }
 
-/* line 58, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 58, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 61, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 64, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 65, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 a:hover,
 a:active {
   /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
   outline: 0;
 }
 
-/* line 68, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_reset.scss */
+/* line 68, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_reset.scss */
 a img {
   border: 0;
 }
@@ -126,7 +126,7 @@ a img {
 /* =Global
 ----------------------------------------------- */
 /* border box all the things */
-/* line 5, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 5, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -134,21 +134,21 @@ a img {
 }
 
 /* Alignment */
-/* line 8, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 8, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 2em;
 }
 
-/* line 13, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 13, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 2em;
 }
 
-/* line 18, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 18, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -156,7 +156,7 @@ a img {
 }
 
 /* Text meant only for screen readers */
-/* line 25, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 25, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .screen-reader-text {
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -164,7 +164,7 @@ a img {
   position: absolute !important;
 }
 
-/* line 31, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 33, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
@@ -188,7 +188,7 @@ a img {
 }
 
 /* Clearing */
-/* line 2, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 2, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .clear:before, .clear:after,
 [class*="content"]:before,
 [class*="content"]:after,
@@ -197,7 +197,7 @@ a img {
   content: "";
   display: table;
 }
-/* line 6, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 6, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .clear:after,
 [class*="content"]:after,
 [class*="site"]:after {
@@ -205,27 +205,27 @@ a img {
 }
 
 /* Read More */
-/* line 60, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 60, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .read-more {
   display: block;
   margin: 30px 0 80px;
   text-align: center;
   color: #d5dee8;
 }
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .read-more:hover {
   color: #93aac4;
 }
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .read-more:before {
   content: '• • • ';
 }
-/* line 74, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_global.scss */
+/* line 74, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_global.scss */
 .read-more:after {
   content: ' • • •';
 }
 
-/* line 5, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 9, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 body,
 button,
 input,
@@ -239,81 +239,81 @@ textarea {
 }
 
 /* Headings */
-/* line 18, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 18, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Varela Round", sans-serif;
   clear: both;
 }
 
-/* line 22, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 22, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h1, h2, h3 {
   color: #e74c3c;
 }
 
-/* line 25, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 25, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h4, h5, h6 {
   color: #1d2936;
 }
 
-/* line 28, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 28, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h1 {
   font-size: 1.625em;
 }
 
-/* line 31, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 31, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h2 {
   font-size: 1.4375em;
   text-transform: none !important;
 }
 
-/* line 35, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 35, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h3 {
   margin-bottom: 0.5em;
   font-size: 1em;
 }
 
-/* line 39, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 39, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h4 {
   font-size: 0.875em;
   text-transform: uppercase;
 }
 
-/* line 43, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 43, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h5 {
   font-size: 0.875em;
   text-transform: lowercase;
 }
 
-/* line 47, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 47, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 h6 {
   font-size: 0.625em;
 }
 
-/* line 50, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 50, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 .site-title {
   font-family: "Josefin Sans", serif;
 }
 
-/* line 53, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 55, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 .entry-title,
 .entry-title a,
 .widget-title {
   color: #e74c3c;
 }
 
-/* line 58, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 58, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 .entry-title a:hover {
   color: #d62c1a;
 }
 
-/* line 61, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 61, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 .page-title {
   margin-bottom: 1.5em;
   color: #6b8095;
   text-align: center;
 }
 
-/* line 67, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 67, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 hr {
   background-text: #ccc;
   border: 0;
@@ -322,72 +322,72 @@ hr {
 }
 
 /* Text elements */
-/* line 75, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 75, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-/* line 78, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 78, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 ul, ol {
   margin: 0 0 2em 3em;
 }
 
-/* line 81, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 81, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 ul {
   list-style: disc;
 }
 
-/* line 84, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 84, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 87, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 88, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 92, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 92, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 95, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 95, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 98, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 98, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 b, strong {
   font-weight: bold;
   color: #2b333c;
 }
 
-/* line 102, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 102, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 105, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 105, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 blockquote {
   margin: 0;
   padding: 0 1.5em;
   border-left: 10px solid #e74c3c;
 }
 
-/* line 110, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 110, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 cite {
   color: #2b333c;
 }
 
-/* line 113, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 113, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 address {
   margin: 0 0 2em;
 }
 
-/* line 116, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 116, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 pre {
   background: #eee;
   font-family: 'Ubuntu Mono', monospace;
@@ -400,25 +400,25 @@ pre {
   max-width: 100%;
 }
 
-/* line 127, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 127, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 code, kbd, tt, var {
   font: 20px 'Ubuntu Mono', monospace;
   font-size: 2rem;
 }
 
-/* line 131, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 131, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 abbr, acronym {
   border-bottom: 1px dotted #dddddd;
   cursor: help;
 }
 
-/* line 135, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 135, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 139, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 140, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 sup,
 sub {
   font-size: 75%;
@@ -428,43 +428,43 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 147, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 147, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 sup {
   bottom: 1ex;
 }
 
-/* line 150, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 150, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 sub {
   top: .5ex;
 }
 
-/* line 153, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 153, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 small {
   font-size: 75%;
 }
 
-/* line 156, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 156, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 big {
   font-size: 125%;
 }
 
-/* line 159, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 159, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 figure {
   margin: 0;
 }
 
-/* line 162, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 162, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 table {
   margin: 0 0 2em;
   width: 100%;
 }
 
-/* line 166, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 166, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 th {
   font-weight: bold;
 }
 
-/* line 169, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 169, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -472,7 +472,7 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 173, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 176, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button,
 input,
 select,
@@ -487,14 +487,14 @@ textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
-/* line 182, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 183, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button,
 input {
   line-height: normal;
   /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
 
-/* line 186, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 189, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -514,7 +514,7 @@ input[type="submit"] {
   padding: 15px 30px;
 }
 
-/* line 202, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 205, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -522,7 +522,7 @@ input[type="submit"]:hover {
   background-text: #e43725;
 }
 
-/* line 208, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 215, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -534,7 +534,7 @@ input[type="submit"]:active {
   background-text: #d62c1a;
 }
 
-/* line 218, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 219, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -543,7 +543,7 @@ input[type="radio"] {
   /* Addresses excess padding in IE8/9 */
 }
 
-/* line 223, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 223, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
@@ -553,13 +553,13 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 229, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 229, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
   -webkit-appearance: none;
 }
 
-/* line 232, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 233, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -567,7 +567,7 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* line 237, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 242, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -583,7 +583,7 @@ textarea {
   outline-text: #6b8095;
 }
 
-/* line 250, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 255, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -593,7 +593,7 @@ textarea:focus {
   color: #111;
 }
 
-/* line 258, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 262, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -602,7 +602,7 @@ input[type="search"] {
   padding: 3px;
 }
 
-/* line 265, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 265, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -612,14 +612,14 @@ textarea {
   width: 98%;
 }
 
-/* line 271, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 271, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 label {
   font-weight: bold;
   color: #1d2936;
 }
 
 /* Links */
-/* line 277, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_typography.scss */
+/* line 277, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_typography.scss */
 a {
   color: #1abc9c;
   text-decoration: none;
@@ -627,44 +627,36 @@ a {
   -moz-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
-/* line 12, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 12, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 a:hover, a:active, a:focus {
   color: #148f77;
 }
 
-/* line 1, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 1, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 body {
-  background: #1abc9c repeat;
-  	/*
-  @media 
-  	(-webkit-min-device-pixel-ratio: 2), 
-  	(min-resolution: 192dpi) { 
-  	    background-image: url('img/bg-2x.jpg');
-  	    background-size: 500px 500px;
-  	}
-  */
+  background-color: #1abc9c;
 }
 
-/* line 14, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 5, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 .container {
   margin: 0 auto;
   max-width: 900px;
 }
 
-/* line 19, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 10, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation {
   padding: 0;
   font-size: 16px;
   font-size: 1.6rem;
   background-color: #2c3e50;
 }
-/* line 24, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 15, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation .search-form {
   float: right;
   display: inline-block;
   margin-top: 30px;
 }
-/* line 30, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 21, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation .search-field {
   padding: 5px 5px 5px 10px;
   font-size: 14px;
@@ -673,51 +665,51 @@ body {
   background-color: #1f2c39;
   border: none;
 }
-/* line 39, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 30, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation input::-webkit-input-placeholder, #site-navigation textarea::-webkit-input-placeholder {
   color: #476481;
   text-transform: lowercase;
 }
-/* line 43, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 34, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #site-navigation input:-moz-placeholder, #site-navigation textarea:-moz-placeholder {
   color: #476481;
   text-transform: lowercase;
 }
 
-/* line 49, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 40, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead {
   margin: 80px 0;
   text-align: center;
 }
-/* line 53, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 44, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead h1.site-title {
   font-size: 100px;
   font-size: 10rem;
 }
-/* line 57, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 48, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead h1.site-title a {
   color: white;
   text-decoration: none;
 }
-/* line 63, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 54, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #masthead h2.site-description {
   color: white;
   font-size: 20px;
   font-size: 2rem;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 63, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #content,
 #secondary,
 #comments {
   padding: 60px 80px;
 }
 
-/* line 76, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 67, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #content {
   background-color: white;
 }
-/* line 79, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #content .entry-title {
   font-size: 36px;
   font-size: 3.6rem;
@@ -725,51 +717,51 @@ body {
   text-decoration: none;
 }
 
-/* line 89, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 80, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget {
   width: 45%;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-/* line 94, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 85, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget ul {
   margin: 0;
 }
-/* line 98, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 89, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget ul li {
   margin-bottom: 5px;
 }
-/* line 102, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 93, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget:nth-of-type(odd) {
   float: left;
   clear: left;
 }
-/* line 107, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 98, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget:nth-of-type(even) {
   float: right;
   clear: right;
 }
-/* line 113, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 104, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary .widget-title {
   margin-bottom: 20px;
   font-size: 20px;
   font-size: 2rem;
 }
 
-/* line 120, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 112, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #secondary,
 #comments {
   background-color: whitesmoke;
 }
 
-/* line 126, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 117, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #comments p {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 131, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 122, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon {
   margin: 60px 0;
   font-size: 16px;
@@ -781,11 +773,11 @@ body {
   -moz-transition: opacity 0.15s ease-in-out;
   transition: opacity 0.15s ease-in-out;
 }
-/* line 139, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 130, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon:hover {
   opacity: 1;
 }
-/* line 143, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 134, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon a {
   color: white;
   border-bottom: 2px solid;
@@ -793,49 +785,49 @@ body {
 
 /* =Menu
 ----------------------------------------------- */
-/* line 4, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 4, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation {
   display: block;
   margin: 0;
   overflow: visible;
   width: 100%;
 }
-/* line 11, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 11, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 16, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 16, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul li {
   float: left;
   position: relative;
   margin-right: 20px;
 }
-/* line 21, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 21, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul li:last-of-type {
   margin-right: 0;
 }
-/* line 25, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 25, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul li a {
   display: block;
   padding: 30px 20px 30px 0;
   color: white;
   text-decoration: none;
 }
-/* line 34, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 34, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul li:hover > a {
   color: #aabdd1;
 }
-/* line 35, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 35, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul li:hover > ul {
   display: block;
 }
-/* line 41, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 41, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul li.current_page_item a, .main-navigation ul li.current-menu-item a {
   color: #aabdd1;
 }
-/* line 45, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 45, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul ul {
   display: none;
   float: left;
@@ -846,7 +838,7 @@ body {
   background-color: #233140;
   background-color: #233140;
 }
-/* line 24, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 24, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .main-navigation ul ul:after {
   content: "";
   display: block;
@@ -856,7 +848,7 @@ body {
   border-style: solid;
   border-color: transparent #233140;
 }
-/* line 48, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 48, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .main-navigation ul ul:after {
   top: -10px;
   right: auto;
@@ -864,24 +856,24 @@ body {
   border-color: #233140 transparent;
   border-width: 0px 10px 10px 10px;
 }
-/* line 59, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 59, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul ul li {
   padding: 10px;
   margin: 0;
 }
-/* line 62, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 62, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul ul li a {
   padding: 0;
   width: 200px;
 }
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .main-navigation ul ul ul {
   left: 100%;
   top: 0;
   background-color: #1a242f;
   background-color: #1a242f;
 }
-/* line 24, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 24, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .main-navigation ul ul ul:after {
   content: "";
   display: block;
@@ -891,7 +883,7 @@ body {
   border-style: solid;
   border-color: transparent #1a242f;
 }
-/* line 34, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 34, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .main-navigation ul ul ul:after {
   top: 12px;
   left: -10px;
@@ -900,65 +892,66 @@ body {
 }
 
 /* Small menu */
-/* line 84, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+/* line 84, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
 .menu-toggle {
   display: none;
   cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 90, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+  /* line 91, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
   }
 
-  /* line 95, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_menu.scss */
+  /* line 95, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_menu.scss */
   .main-navigation ul {
     display: none;
   }
 }
 /* =Content
 ----------------------------------------------- */
-/* line 6, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+/* line 6, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .hentry {
   margin: 0 0 2em;
 }
 
-/* line 9, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+/* line 10, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .byline,
 .updated {
   display: none;
 }
 
-/* line 14, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+/* line 14, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .single .byline, .group-blog .byline {
   display: inline;
 }
 
-/* line 18, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+/* line 20, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 2em 0 0;
 }
 
-/* line 23, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+/* line 23, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .page-links {
   clear: both;
   margin: 0 0 2em;
 }
 
-/* line 28, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_content.scss */
+/* line 28, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .entry-meta {
   font-size: 16px;
   font-size: 1.6rem;
+  text-transform: lowercase;
   color: #d5dee8;
 }
 
 /* =Media
 ----------------------------------------------- */
-/* line 7, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 7, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -968,7 +961,7 @@ body {
   padding: 0;
 }
 
-/* line 15, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 15, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .wp-caption {
   margin-bottom: 2em;
   padding: 5px;
@@ -979,46 +972,46 @@ body {
   border: none;
   border-radius: 3px;
 }
-/* line 25, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 25, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 1.2% auto 0;
   max-width: 98%;
 }
-/* line 30, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 30, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .wp-caption .wp-caption-text {
   text-align: center;
   margin: 0.8075em 0;
 }
 
-/* line 37, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 37, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery {
   margin-bottom: 2em;
 }
-/* line 2, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 2, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .gallery:before, .gallery:after {
   content: "";
   display: table;
 }
-/* line 6, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+/* line 6, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
 .gallery:after {
   clear: both;
 }
-/* line 43, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 43, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery .gallery-item {
   float: left;
 }
-/* line 47, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 47, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery .gallery-item .gallery-icon a {
   display: block;
 }
-/* line 49, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 49, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery .gallery-item .gallery-icon img {
   border: none;
   height: auto;
   margin-bottom: 0;
 }
-/* line 56, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 56, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery .gallery-item .gallery-caption {
   margin: 0;
   text-align: center;
@@ -1029,104 +1022,104 @@ body {
    by adding the following to your functions.php
    add_filter( 'use_default_gallery_style', '__return_false' );
 */
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-2 .gallery-item {
   width: 49%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-2 .gallery-item:nth-of-type(2n - 2) {
   margin-right: 0;
   clear: right;
 }
 
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-3 .gallery-item {
   width: 32%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-3 .gallery-item:nth-of-type(3n - 3) {
   margin-right: 0;
   clear: right;
 }
 
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-4 .gallery-item {
   width: 23.5%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-4 .gallery-item:nth-of-type(4n - 4) {
   margin-right: 0;
   clear: right;
 }
 
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-5 .gallery-item {
   width: 18.4%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-5 .gallery-item:nth-of-type(5n - 5) {
   margin-right: 0;
   clear: right;
 }
 
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-6 .gallery-item {
   width: 15%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-6 .gallery-item:nth-of-type(6n - 6) {
   margin-right: 0;
   clear: right;
 }
 
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-7 .gallery-item {
   width: 12.57143%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-7 .gallery-item:nth-of-type(7n - 7) {
   margin-right: 0;
   clear: right;
 }
 
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-8 .gallery-item {
   width: 10.75%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-8 .gallery-item:nth-of-type(8n - 8) {
   margin-right: 0;
   clear: right;
 }
 
-/* line 66, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 66, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-9 .gallery-item {
   width: 9.33333%;
   margin-right: 2;
 }
 
-/* line 70, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 .gallery-columns-9 .gallery-item:nth-of-type(9n - 9) {
   margin-right: 0;
   clear: right;
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 88, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_media.scss */
+/* line 90, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_media.scss */
 embed,
 iframe,
 object {
@@ -1135,12 +1128,12 @@ object {
 
 /* =Navigation
 ----------------------------------------------- */
-/* line 4, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+/* line 4, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
 .content-nav [class*="navigation"] {
   margin: 0 0 2em;
   overflow: hidden;
 }
-/* line 8, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+/* line 9, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
 .content-nav [class*="navigation"] .nav-previous a,
 .content-nav [class*="navigation"] .nav-next a {
   display: inline-block;
@@ -1150,17 +1143,17 @@ object {
   border-radius: 3px;
   color: white;
 }
-/* line 17, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+/* line 17, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
 .content-nav [class*="navigation"] .nav-previous a:hover,
 .content-nav [class*="navigation"] .nav-next a:hover {
   color: #7d98b3;
 }
-/* line 22, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+/* line 22, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
 .content-nav [class*="navigation"] .nav-next {
   float: left;
   width: 50%;
 }
-/* line 27, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+/* line 27, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
 .content-nav [class*="navigation"] .nav-previous {
   float: right;
   text-align: right;
@@ -1169,24 +1162,24 @@ object {
 
 /* =Comments
 ----------------------------------------------- */
-/* line 3, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+/* line 3, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
 /* =Widgets
 ----------------------------------------------- */
-/* line 4, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
+/* line 4, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
 .widget {
   margin: 0 0 2em;
   /* Make sure select elements fit in widgets */
   /* Search widget */
 }
-/* line 8, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
+/* line 8, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
-/* line 13, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
+/* line 13, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_widgets.scss */
 .widget .widget-search .search-submit {
   display: none;
 }
@@ -1194,7 +1187,7 @@ object {
 /* =Infinite Scroll
 ----------------------------------------------- */
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-/* line 5, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_infinitescroll.scss */
+/* line 6, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_infinitescroll.scss */
 .infinite-scroll .paging-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -1202,7 +1195,7 @@ object {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-/* line 11, /srv/www/wordpress-default/wp-content/themes/flat-writer/sassy_s/_infinitescroll.scss */
+/* line 11, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_infinitescroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
