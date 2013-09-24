@@ -941,7 +941,26 @@ body {
   margin: 0 0 2em;
 }
 
-/* line 28, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
+/* line 30, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
+.entry-title,
+.entry-summary,
+.entry-content {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* line 35, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
+.entry-image {
+  margin: -60px -80px 0;
+  text-align: center;
+}
+/* line 39, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
+.entry-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 45, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_content.scss */
 .entry-meta {
   font-size: 16px;
   font-size: 1.6rem;

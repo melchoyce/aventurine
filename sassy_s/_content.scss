@@ -25,6 +25,23 @@
 	margin: 0 0 $vspacing;
 }
 
+.entry-title,
+.entry-summary,
+.entry-content {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.entry-image {
+	margin: -60px -80px 0;
+	text-align: center;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
 .entry-meta {
 	@include smaller-text;
 	text-transform: lowercase;
