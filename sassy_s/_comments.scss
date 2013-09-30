@@ -1,5 +1,92 @@
 /* =Comments
 ----------------------------------------------- */
+.comments-area {
+}
+
+.comments-title,
+.comment-reply-title {
+	color: $comments-text;
+}
+
+.comments-title {
+	font-size: #{$modular-scale-up1}em;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.comment-form {
+	input, textarea {
+		box-sizing: border-box;
+		border: none;
+	}
+
+	textarea {
+		width: 100%;
+		padding: 30px;
+		resize: vertical;
+	}
+
+	.form-submit {
+		@include clearfix;
+	
+		input[type="submit"] {
+			float: right;
+		}
+	}
+
+}
+
+.comment-list {
+	list-style: none;
+	margin-left: 0;
+	
+	ul.children {
+		list-style: none;
+		margin-left: 100px;
+	}
+}
+
+.comment-body {
+	margin: 0 0 60px 100px;
+}
+
+.comment-meta {
+	margin-bottom: $vspacing-down3;
+}
+
+li.comment {
+	@include clearfix;
+
+	.comment-image {
+		float: left;
+		margin-left: -100px;
+		
+		img {
+			border-radius: 3px;
+		}
+	}
+
+	.comment-author a {
+		font-style: normal;
+		color: $comments-text;
+	}
+
+	.comment-content {
+		font-size: #{$modular-scale-base}em;
+	}
+
+	.comment-metadata {
+		@include smaller-text;
+	}
+
+	.reply {
+		@include smaller-text;
+		float: right;
+		text-transform: lowercase;
+	}
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }

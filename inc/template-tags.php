@@ -75,10 +75,15 @@ function flat_writer_comment( $comment, $args, $depth ) {
 
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
 		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+			<?php if ( 0 != $args['avatar_size'] ) : ?>
+			<div class="comment-image">
+				<?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
+			</div>
+			<?php endif; ?>
+
 			<footer class="comment-meta">
 				<div class="comment-author vcard">
-					<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-					<?php printf( __( '%s <span class="says">says:</span>', 'flat-writer' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+					<?php printf( '<cite class="fn">%s</cite>', get_comment_author_link() ); ?>
 				</div><!-- .comment-author -->
 
 				<div class="comment-metadata">
@@ -87,11 +92,10 @@ function flat_writer_comment( $comment, $args, $depth ) {
 							<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'flat-writer' ), get_comment_date(), get_comment_time() ); ?>
 						</time>
 					</a>
-					<?php edit_comment_link( __( 'Edit', 'flat-writer' ), '<span class="edit-link">', '</span>' ); ?>
 				</div><!-- .comment-metadata -->
 
 				<?php if ( '0' == $comment->comment_approved ) : ?>
-				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'flat-writer' ); ?></p>
+					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'flat-writer' ); ?></p>
 				<?php endif; ?>
 			</footer><!-- .comment-meta -->
 

@@ -113,12 +113,6 @@ body {
 	background-color: $secondary-bg;
 }
 
-#comments {
-	p {
-		@include smaller-text;
-	}
-}
-
 #colophon {
 	margin: 60px 0;
 	@include smaller-text;

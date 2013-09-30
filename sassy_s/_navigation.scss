@@ -31,3 +31,24 @@
 	}
 
 }
+
+.comment-navigation {
+	margin: 0 0 $vspacing;
+	overflow: hidden;
+
+	.nav-previous a,
+	.nav-next a {
+		display: inline-block;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+}

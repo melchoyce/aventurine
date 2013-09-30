@@ -19,7 +19,14 @@ if ( post_password_required() )
 	return;
 ?>
 
-	<div id="comments" class="comments-area container">
+<div id="comments" class="comments-area container">
+	<h2 class="comments-title">Comments</h2>
+
+	<?php comment_form(array(
+		'title_reply' => __('Join the conversation'),
+		'comment_notes_after' => '',
+		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . _x( 'Comment', 'noun' )  . '"></textarea></p>',
+	)); ?>
 
 	<?php // You can start editing here -- including this comment! ?>
 
@@ -47,7 +54,7 @@ if ( post_password_required() )
 				 * define flat_writer_comment() and that will be used instead.
 				 * See flat_writer_comment() in inc/template-tags.php for more.
 				 */
-				wp_list_comments( array( 'callback' => 'flat_writer_comment' ) );
+				wp_list_comments( array( 'callback' => 'flat_writer_comment', 'avatar_size' => 75 ) );
 			?>
 		</ol><!-- .comment-list -->
 
@@ -67,7 +74,5 @@ if ( post_password_required() )
 	?>
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'flat-writer' ); ?></p>
 	<?php endif; ?>
-
-	<?php comment_form(); ?>
 
 </div><!-- #comments -->

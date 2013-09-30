@@ -755,13 +755,7 @@ body {
   background-color: whitesmoke;
 }
 
-/* line 117, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
-#comments p {
-  font-size: 16px;
-  font-size: 1.6rem;
-}
-
-/* line 122, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 116, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon {
   margin: 60px 0;
   font-size: 16px;
@@ -773,11 +767,11 @@ body {
   -moz-transition: opacity 0.15s ease-in-out;
   transition: opacity 0.15s ease-in-out;
 }
-/* line 130, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 124, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon:hover {
   opacity: 1;
 }
-/* line 134, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
+/* line 128, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_layout.scss */
 #colophon a {
   color: white;
   border-bottom: 2px solid;
@@ -1179,9 +1173,131 @@ object {
   width: 50%;
 }
 
+/* line 35, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+.comment-navigation {
+  margin: 0 0 2em;
+  overflow: hidden;
+}
+/* line 40, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+.comment-navigation .nav-previous a,
+.comment-navigation .nav-next a {
+  display: inline-block;
+}
+/* line 44, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+.comment-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+/* line 50, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_navigation.scss */
+.comment-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+
 /* =Comments
 ----------------------------------------------- */
-/* line 3, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+/* line 7, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comments-title,
+.comment-reply-title {
+  color: #2c3e50;
+}
+
+/* line 11, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comments-title {
+  font-size: 1.4375em;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 19, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comment-form input, .comment-form textarea {
+  box-sizing: border-box;
+  border: none;
+}
+/* line 24, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comment-form textarea {
+  width: 100%;
+  padding: 30px;
+  resize: vertical;
+}
+/* line 2, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+.comment-form .form-submit:before, .comment-form .form-submit:after {
+  content: "";
+  display: table;
+}
+/* line 6, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+.comment-form .form-submit:after {
+  clear: both;
+}
+/* line 33, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comment-form .form-submit input[type="submit"] {
+  float: right;
+}
+
+/* line 40, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comment-list {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 44, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comment-list ul.children {
+  list-style: none;
+  margin-left: 100px;
+}
+
+/* line 50, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comment-body {
+  margin: 0 0 60px 100px;
+}
+
+/* line 54, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+.comment-meta {
+  margin-bottom: 0.5em;
+}
+
+/* line 2, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+li.comment:before, li.comment:after {
+  content: "";
+  display: table;
+}
+/* line 6, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_mixins.scss */
+li.comment:after {
+  clear: both;
+}
+/* line 61, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+li.comment .comment-image {
+  float: left;
+  margin-left: -100px;
+}
+/* line 65, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+li.comment .comment-image img {
+  border-radius: 3px;
+}
+/* line 70, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+li.comment .comment-author a {
+  font-style: normal;
+  color: #2c3e50;
+}
+/* line 75, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+li.comment .comment-content {
+  font-size: 1em;
+}
+/* line 79, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+li.comment .comment-metadata {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 83, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
+li.comment .reply {
+  font-size: 16px;
+  font-size: 1.6rem;
+  float: right;
+  text-transform: lowercase;
+}
+
+/* line 90, /Users/kelly/Vagrants/vagrant-local/www/wordpress-trunk/wp-content/themes/flat-writer/sassy_s/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
