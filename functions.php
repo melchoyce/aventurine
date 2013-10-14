@@ -52,7 +52,7 @@ function flat_writer_setup() {
 	 * Setup the WordPress core custom background feature.
 	 */
 	add_theme_support( 'custom-background', apply_filters( 'flat_writer_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '1abc9c',
 		'default-image' => '',
 	) ) );
 }
