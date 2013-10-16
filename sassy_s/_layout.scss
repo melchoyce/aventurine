@@ -40,22 +40,6 @@ body {
 #masthead {
 	margin: 80px 0;
 	text-align: center;
-	
-	h1.site-title {
-		font-size: 100px;
-		font-size: 10rem;
-		
-		a {
-			color: white;
-			text-decoration: none;
-		}
-	}
-	
-	h2.site-description {
-		color: white;
-		font-size: 20px;
-		font-size: 2rem;	
-	}
 }
 
 #content,
@@ -65,14 +49,7 @@ body {
 }
 
 #content {
-	background-color: $content-bg;	
-	
-	.entry-title {
-		font-size: 36px;
-		font-size: 3.6rem;
-		text-align: center;
-		text-decoration: none;
-	}
+	background-color: $content-bg;
 }
 
 #secondary {

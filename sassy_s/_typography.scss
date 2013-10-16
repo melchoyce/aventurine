@@ -49,14 +49,41 @@ h6 {
 }	
 .site-title {
 	font-family: $site-title;
+	font-size: 100px;
+	font-size: 10rem;
+	line-height: 1.2;
+
+	a {
+		color: white;
+		text-decoration: none;
+		@include transition(opacity, 0.15s ease-in-out);
+		
+		&:hover {
+			color: white;
+			opacity: .5;
+		}
+	}
+}	
+.site-description {
+	margin-top: 1em;
+	color: white;
+	font-size: 20px;
+	font-size: 2rem;	
 }
 .entry-title,
 .entry-title a,
 .widget-title {
 	color: $header-text;
 }
-.entry-title a:hover {
-	color: darken($header-text, 10%);
+.entry-title {
+	font-size: 36px;
+	font-size: 3.6rem;
+	text-align: center;
+	text-decoration: none;
+
+	a:hover {
+		color: darken($header-text, 10%);
+	}
 }
 .page-title {
 	margin-bottom: $vspacing-down1;
@@ -65,7 +92,7 @@ h6 {
 }
 
 hr {
-	background-text: #ccc;
+	background-color: #ccc;
 	border: 0;
 	height: 1px;
 	margin-bottom: $vspacing;

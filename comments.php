@@ -20,7 +20,7 @@ if ( post_password_required() )
 ?>
 
 <div id="comments" class="comments-area container">
-	<h2 class="comments-title">Comments</h2>
+	<h1 class="comments-title">Comments</h1>
 
 	<?php comment_form(array(
 		'title_reply' => __('Join the conversation'),
