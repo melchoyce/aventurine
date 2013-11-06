@@ -14,9 +14,20 @@
 }
 
 .comment-form {
+	label {
+		@include screen-reader-text;
+	}
+	
 	input, textarea {
 		box-sizing: border-box;
 		border: none;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		padding: 3px 30px;
+		line-height: 40px;
+		width: 100%;
 	}
 
 	textarea {
@@ -32,7 +43,24 @@
 			float: right;
 		}
 	}
+}
 
+.comment-form-author,
+.comment-form-email {
+	float: left;
+	width: 50%;
+}
+
+.comment-form-author {
+	padding-right: 15px;
+}
+
+.comment-form-email {
+	padding-left: 15px;
+}
+
+.comment-awaiting-moderation {
+	font-style: italic;
 }
 
 .comment-list {

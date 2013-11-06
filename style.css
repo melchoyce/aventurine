@@ -111,6 +111,7 @@ a img {
   border: 0;
 }
 
+/* Text meant only for screen readers */
 /* =Global
 ----------------------------------------------- */
 /* border box all the things */
@@ -146,10 +147,7 @@ a img {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
 }
-
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -1056,9 +1054,40 @@ object {
   margin-bottom: 50px;
 }
 
+.comment-form label {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+.comment-form label:hover, .comment-form label:active, .comment-form label:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
 .comment-form input, .comment-form textarea {
   box-sizing: border-box;
   border: none;
+}
+.comment-form input[type="text"],
+.comment-form input[type="email"] {
+  padding: 3px 30px;
+  line-height: 40px;
+  width: 100%;
 }
 .comment-form textarea {
   width: 100%;
@@ -1074,6 +1103,24 @@ object {
 }
 .comment-form .form-submit input[type="submit"] {
   float: right;
+}
+
+.comment-form-author,
+.comment-form-email {
+  float: left;
+  width: 50%;
+}
+
+.comment-form-author {
+  padding-right: 15px;
+}
+
+.comment-form-email {
+  padding-left: 15px;
+}
+
+.comment-awaiting-moderation {
+  font-style: italic;
 }
 
 .comment-list {

@@ -40,6 +40,9 @@ function flat_writer_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	
+	
+	add_theme_support( 'html5', array( 'comment-form', ) );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -79,6 +82,8 @@ add_action( 'widgets_init', 'flat_writer_widgets_init' );
  */
 function flat_writer_scripts() {
 	wp_enqueue_style( 'flat-writer-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'flat-writer', get_template_directory_uri() . '/js/flat-writer.js', array('jquery'), '20131105', true );
 
 	wp_enqueue_script( 'flat-writer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

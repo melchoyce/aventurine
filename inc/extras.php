@@ -55,3 +55,24 @@ function flat_writer_wp_title( $title, $sep ) {
 	return $title;
 }
 add_filter( 'wp_title', 'flat_writer_wp_title', 10, 2 );
+
+/**
+ * Unset the website field, Remove the required *
+ */
+function flat_writer_comment_fields( $fields ){
+	unset( $fields['url'] );
+	$fields['author'] = sprintf( 
+		'<p class="comment-form-author"><label for="author">%1$s</label> <input id="author" name="author" type="text" value="%2$s" size="30" aria-required="true" placeholder="%1$s" /></p>', 
+		__( 'Name' ), 
+		esc_attr( $commenter['comment_author'] )
+	);
+
+	$fields['email'] = sprintf(
+		'<p class="comment-form-email"><label for="email">%1$s</label><input id="email" name="email" type="email" value="%2$s" size="30" aria-required="true" placeholder="%1$s" /></p>',
+		 __( 'Email' ),
+		 esc_attr(  $commenter['comment_author_email'] )
+	);
+
+	return $fields;
+}
+add_filter( 'comment_form_default_fields', 'flat_writer_comment_fields' );
