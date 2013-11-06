@@ -355,6 +355,16 @@ blockquote {
   border-left: 10px solid #e74c3c;
 }
 
+q {
+  quotes: '"' '"';
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
 cite {
   color: #2b333c;
 }
