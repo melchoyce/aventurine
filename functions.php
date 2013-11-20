@@ -68,8 +68,6 @@ add_action( 'after_setup_theme', 'flat_writer_setup' );
 function flat_writer_scripts() {
 	wp_enqueue_style( 'flat-writer-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'flat-writer', get_template_directory_uri() . '/js/flat-writer.js', array('jquery'), '20131105', true );
-
 	wp_enqueue_script( 'flat-writer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'flat-writer-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
