@@ -32,7 +32,8 @@ function flat_writer_customize_css() {
          <style type="text/css">
              .site-title a,
              .site-description,
-             #colophon { color:<?php echo get_theme_mod('header_color'); ?>; }
+             #colophon,
+             #colophon a { color:<?php echo get_theme_mod('header_color'); ?>; }
          </style>
     <?php
 }
