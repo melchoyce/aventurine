@@ -60,6 +60,7 @@ add_filter( 'wp_title', 'flat_writer_wp_title', 10, 2 );
  * Unset the website field, Remove the required *
  */
 function flat_writer_comment_fields( $fields ){
+	$commenter = wp_get_current_commenter();
 	unset( $fields['url'] );
 	$fields['author'] = sprintf( 
 		'<p class="comment-form-author"><label for="author">%1$s</label> <input id="author" name="author" type="text" value="%2$s" size="30" aria-required="true" placeholder="%1$s" /></p>', 
