@@ -312,3 +312,14 @@ a {
 	@include hoverActiveFocus(color, darken(#1abc9c, 10%));
 	@include transition(color 0.15s ease-in-out);
 }
+
+@media screen and (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+	
+	.site-title {
+		font-size: 80px;
+		font-size: 8rem;
+	}
+}

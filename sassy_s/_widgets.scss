@@ -8,12 +8,17 @@
 	select {
 		max-width: 100%;
 	}
-
-	/* Search widget */
-	.widget-search .search-submit {
-		display: none;
-	}
-
 }
 
+/* Search widget */
+.widget_search {
+	.search-field {
+		padding: 3px 30px;
+		line-height: 40px;
+		width: 100%;
+	}
 
+	.search-submit {
+		display: none;
+	}
+}

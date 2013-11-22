@@ -123,3 +123,9 @@ li.comment {
 }
 
 .bypostauthor {}
+
+@media screen and (max-width: 450px) {
+	.comments-title {
+		margin-bottom: 20px;
+	}
+}

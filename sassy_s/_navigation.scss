@@ -30,6 +30,19 @@
 		width: 50%;
 	}
 
+	@media screen and (max-width: 450px) {
+		.nav-next,
+		.nav-previous {
+			float: none;
+			width: 100%;
+			text-align: center;
+			
+			a {
+				display: block;
+				margin: 30px 10px 0;
+			}
+		}
+	}
 }
 
 .comment-navigation {
