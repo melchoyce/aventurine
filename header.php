@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<?php do_action( 'before' ); ?>
+
 	<nav id="site-navigation" class="main-navigation clear" role="navigation">
 		<div class="container">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'flat-writer' ); ?></h1>
