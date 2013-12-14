@@ -40,6 +40,10 @@
 		width: 100%;
 		height: auto;
 	}
+	
+	&+ .entry-header .entry-title {
+		margin-top: 50px;
+	}
 
 	@media screen and (max-width: 600px) {
 		margin: -30px -40px 0
