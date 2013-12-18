@@ -14,6 +14,6 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<a class="read-more" href="<?php echo get_permalink(); ?>">read more</a>
+		<a class="read-more" href="<?php echo get_permalink(); ?>">read more<span class="screen-reader-text"> about <?php the_title(); ?></span></a>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->
