@@ -59,3 +59,12 @@
 	text-transform: lowercase;
 	color: $secondary-text;
 }
+
+.error-404 {
+	.search-form {
+		input[type="search"] {
+			width: 100%;
+			padding: 10px;
+		}
+	}
+}
