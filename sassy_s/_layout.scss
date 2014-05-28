@@ -11,22 +11,21 @@ body {
 	padding: 0;
 	@include smaller-text;
 	background-color: $navigation-bg;
-	
+
 	.search-form {
 		float: right;
 		display: inline-block;
 		margin: 30px 0;
 	}
-	
+
 	.search-field {
 		padding: 5px 5px 5px 10px;
-		font-size: 14px;
-		font-size: 1.4rem;
+		@include font-size( 14 );
 		color: white;
 		background-color: darken($navigation-bg, 7%);
 		border: none;
 	}
-	
+
 	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 		color: lighten($navigation-bg, 15%);
 		text-transform: lowercase;
@@ -72,11 +71,11 @@ body {
 	.widget {
 		@include smaller-text;
 		line-height: 1.6;
-		
+
 		ul {
 			margin: 0 0 0 20px;
 		}
-		
+
 		ul li {
 			margin-bottom: 5px;
 		}
@@ -84,8 +83,7 @@ body {
 
 	.widget-title {
 		margin-bottom: 20px;
-		font-size: 20px;
-		font-size: 2rem;
+		@include font-size( 20 );
 	}
 }
 
@@ -101,11 +99,11 @@ body {
 	color: white;
 	opacity: .5;
 	@include transition( opacity 0.15s ease-in-out );
-	
+
 	&:hover {
 		opacity: 1;
 	}
-	
+
 	a {
 		color: white;
 		border-bottom: 2px solid;

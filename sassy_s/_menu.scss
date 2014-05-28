@@ -17,7 +17,7 @@
 			float: left;
 			position: relative;
 			margin-right: 20px;
-			
+
 			&:last-of-type {
 				margin-right: 0;
 			}
@@ -70,7 +70,7 @@
 			ul {
 				left: 100%;
 				top: 0;
-				
+
 				background-color: darken($navigation-bg, 10%);
 				@include divet( left, darken($navigation-bg, 10%) );
 			}
@@ -95,7 +95,7 @@
 	.main-navigation.toggled .nav-menu {
 		display: block;
 	}
-	
+
 	.main-navigation ul {
 		display: none;
 
@@ -113,7 +113,7 @@
 				left: 0;
 				z-index: 0;
 				margin-top: 8px;
-				
+
 				ul {
 					margin-top: 15px;
 					@include divet( top, darken($navigation-bg, 10%) );

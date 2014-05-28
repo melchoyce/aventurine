@@ -1,22 +1,28 @@
 @mixin clearfix() {
-    &:before, &:after {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
 @mixin hoverActiveFocus($property, $value) {
-    &:hover, &:active, &:focus {
-        #{$property}: $value;
-    }
+	&:hover, &:active, &:focus {
+		#{$property}: $value;
+	}
+}
+
+@mixin font-size( $size-value ) {
+	$rem-value: ( $size-value / 16 );
+	$px-value: $size-value;
+	font-size: #{$px-value}px;
+	font-size: #{$rem-value}rem;
 }
 
 @mixin smaller-text() {
-	font-size: 16px;
-	font-size: 1.6rem;
+	@include font-size( 16 );
 }
 
 @mixin divet( $direction, $color ) {
@@ -29,7 +35,7 @@
 		border-style: solid;
 		border-color: transparent $color;
 	}
-	
+
 	@if $direction == left {
 		&:after {
 			top: 12px;

@@ -14,14 +14,14 @@ $base-font: 			'Varela Round', sans-serif;
 $header-font:			$base-font; 	// Varela Round for everything but the site title
 $site-title: 			'Josefin Sans', serif;
 // Modular Scale : 16 and 23 @ 1.618 - http://modularscale.com/ ================================== /
-$modular-scale-up5:   	3.75;   		// 60px
-$modular-scale-up4:   	2.625;  		// 42px
-$modular-scale-up3:   	2.3125; 		// 37px
-$modular-scale-up2:   	1.625;  		// 26px
-$modular-scale-up1:  	1.4375; 		// 22px
-$modular-scale-base:  	1;      		// 16px
-$modular-scale-down1: 	0.875;  		// 14px
-$modular-scale-down2: 	0.625;  		// 10px
+$modular-scale-up5:   	60;
+$modular-scale-up4:   	42;
+$modular-scale-up3:   	37;
+$modular-scale-up2:   	26;
+$modular-scale-up1:  	22;
+$modular-scale-base:  	16;
+$modular-scale-down1: 	14;
+$modular-scale-down2: 	10;
 
 // Text colors
 $body-text:				#6b8095; 		// Blue-grey

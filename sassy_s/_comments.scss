@@ -17,7 +17,7 @@
 	label {
 		@include screen-reader-text;
 	}
-	
+
 	input, textarea {
 		box-sizing: border-box;
 		border: none;
@@ -38,7 +38,7 @@
 
 	.form-submit {
 		@include clearfix;
-	
+
 		input[type="submit"] {
 			float: right;
 		}
@@ -67,7 +67,7 @@
 	list-style: none;
 	margin-bottom: 0;
 	margin-left: 0;
-	
+
 	ul.children {
 		list-style: none;
 		margin-left: 100px;
@@ -92,7 +92,7 @@ li.comment {
 	.comment-image {
 		float: left;
 		margin-left: -100px;
-		
+
 		img {
 			border-radius: 3px;
 		}
@@ -104,7 +104,7 @@ li.comment {
 	}
 
 	.comment-content {
-		font-size: #{$modular-scale-base}em;
+		@include font-size( $modular-scale-base );
 	}
 
 	.comment-metadata {

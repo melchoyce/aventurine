@@ -16,12 +16,11 @@
 	margin-bottom: $vspacing;
 	padding: 5px;
 	max-width: 100%;
-	font-size: 16px;
-	font-size: 1.6rem;
+	@include font-size( 16 );
 	background-color: $secondary-bg;
 	border: none;
 	border-radius: 3px;
-	
+
 	img[class*="wp-image-"] {
 		display: block;
 		margin: 1.2% auto 0;
@@ -64,14 +63,13 @@
 
 @mixin gallery_column ( $margin: 2, $num: 4 ){
 	.gallery-columns-#{$num} .gallery-item {
-     width: ( 100% - $margin * ( $num - 1 ) ) / $num;
-     margin-right: $margin;
-  }
-  	.gallery-columns-#{$num} .gallery-item:nth-of-type(#{$num}n - #{$num}) {
-     margin-right: 0;
-     clear: right;
-  }
-
+		width: ( 100% - $margin * ( $num - 1 ) ) / $num;
+		margin-right: $margin;
+	}
+	.gallery-columns-#{$num} .gallery-item:nth-of-type(#{$num}n - #{$num}) {
+		margin-right: 0;
+		clear: right;
+	}
 }
 
 /* Fluid Gallery Columns
