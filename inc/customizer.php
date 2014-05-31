@@ -15,8 +15,8 @@ function flat_writer_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 
 	$wp_customize->add_setting( 'header_color' , array(
-	    'default'     => '#ffffff',
-	    'transport'   => 'postMessage',
+		'default'     => '#ffffff',
+		'transport'   => 'postMessage',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_color', array(
 		'label'        => __( 'Header Color', 'mytheme' ),
@@ -28,15 +28,15 @@ function flat_writer_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'flat_writer_customize_register' );
 
 function flat_writer_customize_css() {
-    ?>
-         <style type="text/css">
-             .site-title a,
-             .site-title a:hover,
-             .site-description,
-             #colophon,
-             #colophon a { color:<?php echo get_theme_mod('header_color'); ?>; }
-         </style>
-    <?php
+	?>
+		 <style type="text/css">
+			 .site-title a,
+			 .site-title a:hover,
+			 .site-description,
+			 #colophon,
+			 #colophon a { color:<?php echo get_theme_mod('header_color'); ?>; }
+		 </style>
+	<?php
 }
 add_action( 'wp_head', 'flat_writer_customize_css');
 
