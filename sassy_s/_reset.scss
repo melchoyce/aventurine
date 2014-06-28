@@ -43,6 +43,9 @@ section {
 ol, ul {
 	list-style: none;
 }
+img {
+	vertical-align: middle;
+}
 table { /* tables still need 'cellspacing="0"' in the markup */
 	border-collapse: separate;
 	border-spacing: 0;
