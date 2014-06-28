@@ -40,9 +40,10 @@ function flat_writer_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	
-	
+
 	add_theme_support( 'html5', array( 'comment-form', ) );
+
+	add_filter( 'use_default_gallery_style', '__return_false' );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
