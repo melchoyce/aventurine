@@ -88,3 +88,16 @@
 		z-index: 100000; /* Above WP toolbar */
 	}
 }
+
+
+@mixin hidden-dropdown() {
+	text-indent: -9999em;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+}
+
+@mixin show-dropdown() {
+	text-indent: 0;
+	clip: auto;
+	width: auto;
+}

@@ -14,8 +14,8 @@
 		padding-left: 0;
 
 		li {
-			float: left;
 			position: relative;
+			display: inline-block;
 			margin-right: 20px;
 
 			&:last-of-type {
@@ -32,7 +32,12 @@
 			// link hover
 			&:hover {
 				> a { color: lighten($navigation-bg, 50%); }
-				> ul { display: block; }
+			}
+
+			&:hover > ul,
+			&.focus > ul,
+			a:focus + ul {
+				@include show-dropdown;
 			}
 
 		}
@@ -40,41 +45,46 @@
 		li.current_page_item, li.current-menu-item {
 			a { color: lighten($navigation-bg, 50%); }
 		}
+	}
 
-		// second level
+	// second level
+	ul ul {
+		float: left;
+		position: absolute;
+		top: 84px;
+		left: 0;
+		z-index: 10;
+		@include hidden-dropdown;
+		background-color: darken($navigation-bg, 5%);
+		@include divet( top, darken($navigation-bg, 5%) );
+
+		li {
+			padding: 10px;
+			margin: 0;
+
+			a {
+				padding: 0;
+				width: 200px;
+			}
+		}
+	}
+
+	// third level
+	ul ul ul {
+		left: 100%;
+		top: 0;
+
+		background-color: darken($navigation-bg, 10%);
+		@include divet( left, darken($navigation-bg, 10%) );
+
+		// And beyond...
 		ul {
-			display: none;
-			float: left;
-			position: absolute;
-			top: 84px;
+			position: relative;
 			left: 0;
-			z-index: 10;
-			background-color: darken($navigation-bg, 5%);
-			@include divet( top, darken($navigation-bg, 5%) );
-
-			&:hover {
-				> a {};
-			}
-
-			li {
-				padding: 10px;
-				margin: 0;
-				a {
-					padding: 0;
-					width: 200px;
-					&:hover {};
-				}
-			}
-
-			// third level
-			ul {
-				left: 100%;
-				top: 0;
-
-				background-color: darken($navigation-bg, 10%);
-				@include divet( left, darken($navigation-bg, 10%) );
-			}
-
+			top: 0;
+			margin-top: 10px;
+			margin-bottom: -10px;
+			@include show-dropdown;
 		}
 	}
 
