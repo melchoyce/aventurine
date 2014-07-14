@@ -208,7 +208,7 @@ img {
 a {
 	color: $link-text;
 	text-decoration: none;
-	@include hoverActiveFocus(color, darken(#1abc9c, 10%));
+	@include hoverActiveFocus(color, darken($link-text, 10%));
 	@include transition(color 0.15s ease-in-out);
 }
 
