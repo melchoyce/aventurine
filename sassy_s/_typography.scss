@@ -199,6 +199,28 @@ table {
 th {
 	font-weight: bold;
 }
+.site-content {
+	$table-color: $link-text;
+
+	th, td {
+		padding: 5px 10px;
+	}
+
+	th {
+		font-weight: normal;
+		color: white;
+		background: desaturate( lighten( $table-color, 20% ), 10%);
+	}
+
+	td {
+		background: lighten( $table-color, 50% );
+	}
+
+	tr:nth-of-type(odd) td {
+		background: lighten( $table-color, 45% );
+	}
+}
+
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
