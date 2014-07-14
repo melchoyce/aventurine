@@ -1,6 +1,11 @@
 /* =Widgets
 ----------------------------------------------- */
 
+#comments + #secondary,
+#content + #secondary {
+	margin-top: $vspacing;
+}
+
 .widget {
 	margin: 0 0 $vspacing;
 
