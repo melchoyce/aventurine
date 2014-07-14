@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/**
+ * Flat Writer editor stylesheet
+ */
+/* Text meant only for screen readers */
+/* =Reset
+-------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+html {
+  font-size: 100%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
+
+body {
+  background: #fff; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover,
+a:active {
+  /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+  outline: 0; }
+
+a img {
+  border: 0; }
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */ }
+
+button,
+input {
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */ }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: none;
+  border-radius: 3px;
+  background: #e74c3c;
+  color: white;
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1;
+  text-transform: lowercase;
+  padding: 15px 30px; }
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-text: #e43725; }
+
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  background-text: #d62c1a; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* Addresses box sizing set to content-box in IE8/9 */
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */ }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #6b8095;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  outline-text: #6b8095; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px; }
+
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 98%; }
+
+label {
+  font-weight: bold;
+  color: #1d2936; }
+
+/* =Global
+----------------------------------------------- */
+/* border box all the things */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 2em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 2em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */ }
+
+/* Clearing */
+.clear:before, .clear:after,
+[class*="content"]:before,
+[class*="content"]:after,
+[class*="site"]:before,
+[class*="site"]:after {
+  content: "";
+  display: table; }
+.clear:after,
+[class*="content"]:after,
+[class*="site"]:after {
+  clear: both; }
+
+/* Read More */
+.read-more {
+  display: block;
+  margin: 30px 0 80px;
+  text-align: center;
+  color: #d5dee8; }
+  .read-more:hover {
+    color: #93aac4; }
+  .read-more:before {
+    content: '• • • '; }
+  .read-more:after {
+    content: ' • • •'; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    color: #6b8095;
+    border-color: #6b8095;
+    outline: none; }
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #6b8095;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.6; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", sans-serif;
+  clear: both; }
+
+h1, h2, h3 {
+  color: #e74c3c; }
+
+h4, h5, h6 {
+  color: #1d2936; }
+
+h1 {
+  font-size: 26px;
+  font-size: 1.625rem; }
+
+h2 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  text-transform: none !important; }
+
+h3 {
+  margin-bottom: 0.5em;
+  font-size: 16px;
+  font-size: 1rem; }
+
+h4 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase; }
+
+h5 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: lowercase; }
+
+h6 {
+  font-size: 10px;
+  font-size: 0.625rem; }
+
+.site-title {
+  font-family: "Josefin Sans", serif;
+  font-size: 100px;
+  font-size: 6.25rem;
+  line-height: 1.2; }
+  .site-title a {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: opacity, 0.15s ease-in-out;
+    -moz-transition: opacity, 0.15s ease-in-out;
+    transition: opacity, 0.15s ease-in-out; }
+    .site-title a:hover {
+      color: white;
+      opacity: .5; }
+
+.site-description {
+  margin-top: 1em;
+  color: white;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.entry-title,
+.entry-title a,
+.widget-title {
+  color: #e74c3c; }
+
+.entry-title {
+  font-size: 36px;
+  font-size: 2.25rem;
+  text-align: center;
+  text-decoration: none; }
+  .entry-title a:hover {
+    color: #d62c1a; }
+
+.page-title {
+  margin-bottom: 1.5em;
+  color: #6b8095;
+  text-align: center; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 2em; }
+
+/* Text elements */
+p {
+  margin-bottom: 1.5em; }
+
+ul, ol {
+  margin: 0 0 2em 3em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+b, strong {
+  font-weight: bold;
+  color: #2b333c; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0;
+  padding: 0 1.5em;
+  border-left: 10px solid #e74c3c; }
+
+q {
+  quotes: '"' '"'; }
+  q:before {
+    content: open-quote; }
+  q:after {
+    content: close-quote; }
+
+cite {
+  color: #2b333c; }
+
+address {
+  margin: 0 0 2em; }
+
+pre {
+  background: #eee;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%; }
+
+code, kbd, tt, var {
+  font: 20px 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #dddddd;
+  cursor: help; }
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+small {
+  font-size: 75%; }
+
+big {
+  font-size: 125%; }
+
+figure {
+  margin: 0; }
+
+table {
+  margin: 0 0 2em;
+  width: 100%; }
+
+th {
+  font-weight: bold; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+/* Links */
+a {
+  color: #1abc9c;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out; }
+  a:hover, a:active, a:focus {
+    color: #148f77; }
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%; }
+
+  .site-title {
+    font-size: 80px;
+    font-size: 5rem; } }
+body {
+  margin: 40px;
+  max-width: 740px !important; }

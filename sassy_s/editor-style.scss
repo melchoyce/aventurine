@@ -1,0 +1,24 @@
+/**
+ * Flat Writer editor stylesheet
+ */
+
+// configure the style from settings
+@import 'settings';
+
+// call the bourbon library
+@import 'bourbon/bourbon';
+
+// move mixins to their own partial
+@import 'mixins';
+
+// reset styles should stay at the top
+@import 'reset';
+
+// feel free to add any new files you want; if you add them this list they'll be included
+@import 'global';
+@import 'typography';
+
+body {
+	margin: 40px;
+	max-width: 740px !important;
+}

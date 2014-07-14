@@ -43,6 +43,8 @@ function flat_writer_setup() {
 
 	add_theme_support( 'html5', array( 'comment-form', ) );
 
+	add_editor_style();
+
 	add_filter( 'use_default_gallery_style', '__return_false' );
 
 	/**
