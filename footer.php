@@ -13,7 +13,7 @@
 			<?php do_action( 'flat_writer_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'flat-writer' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'flat-writer' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'flat-writer' ), 'flat writer', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'flat-writer' ), 'Flat Writer', '<a href="http://themes.redradar.net/" rel="designer">Kelly Dwan &amp; Mel Choyce</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
