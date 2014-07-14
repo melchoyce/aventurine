@@ -41,7 +41,7 @@ function flat_writer_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_theme_support( 'html5', array( 'comment-form', ) );
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
 	add_editor_style();
 
