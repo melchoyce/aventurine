@@ -1,0 +1,32 @@
+
+//-- General forms
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	@include box-sizing( border-box );
+
+	&:focus {
+		color: $body-text;
+		border-color: $body-text;
+		outline: none;
+	}
+}
+
+//-- Post Password form
+.post-password-form {
+	label {
+		line-height: 40px;
+		color: $body-text;
+		font-weight: normal;
+	}
+
+	input[type="password"] {
+		padding: 0 3px 3px;
+		line-height: 40px;
+	}
+}
+
+//-- Search form
