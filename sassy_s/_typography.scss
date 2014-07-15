@@ -236,10 +236,15 @@ a {
 
 @media screen and (max-width: 450px) {
 	html {
-		font-size: 50%;
+		font-size: 80%;
 	}
 
 	.site-title {
+		min-height: 0;
 		@include font-size( 80 );
+	}
+
+	.site-description {
+		@include font-size( 25 );
 	}
 }
