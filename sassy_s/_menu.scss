@@ -111,6 +111,7 @@
 
 		li {
 			float: none;
+			display: block;
 			margin: 0;
 
 			a { padding: 10px 0; }
@@ -118,6 +119,7 @@
 			ul {
 				float: none;
 				display: block;
+				@include show-dropdown;
 				position: relative;
 				top: 0;
 				left: 0;
