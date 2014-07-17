@@ -72,10 +72,18 @@
 		list-style: none;
 		margin-left: 100px;
 	}
+
+	.depth-5 ul.children {
+		margin-left: 0;
+	}
 }
 
 .comment-body {
 	margin: 0 0 60px 100px;
+
+	:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .comment-meta {
@@ -87,6 +95,7 @@
 }
 
 li.comment {
+	position: relative;
 	@include clearfix;
 
 	.comment-image {
@@ -112,9 +121,13 @@ li.comment {
 	}
 
 	.reply {
+		position: absolute;
+		top: 85px;
+		left: 0;
+		width: 75px;
 		@include smaller-text;
-		float: right;
 		text-transform: lowercase;
+		text-align: center;
 	}
 }
 
