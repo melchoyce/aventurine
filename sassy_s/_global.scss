@@ -3,7 +3,7 @@
 
 /* border box all the things */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+* { -ms-word-wrap: break-word; word-wrap: break-word; }
 /* Alignment */
 .alignleft {
 	display: inline;
