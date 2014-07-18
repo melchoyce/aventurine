@@ -8,6 +8,10 @@
 	color: $comments-text;
 }
 
+.comment-reply-title {
+	@include font-size( $modular-scale-up1 );
+}
+
 .comments-title {
 	text-align: center;
 	margin-bottom: 50px;
@@ -34,6 +38,10 @@
 		width: 100%;
 		padding: 30px;
 		resize: vertical;
+	}
+
+	.logged-in-as {
+		@include font-size( $modular-scale-base );
 	}
 
 	.form-submit {
@@ -133,8 +141,71 @@ li.comment {
 
 .bypostauthor {}
 
+@media screen and (max-width: 768px) {
+	.comment-list ul.children {
+		list-style: none;
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.comment-list .depth-3 ul.children {
+		margin-left: 0;
+	}
+
+	.comment-form-author,
+	.comment-form-email {
+		float: none;
+		padding: 0 !important;
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 450px) {
 	.comments-title {
 		margin-bottom: 20px;
+	}
+
+	.comment-form {
+		input[type="text"],
+		input[type="email"] {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		textarea {
+			padding: 15px;
+		}
+	}
+
+	li.comment {
+		.comment-image {
+			display: none;
+		}
+
+		.reply {
+			position: relative;
+			top:0;
+			left:0;
+			width: auto;
+			text-align: left;
+
+			a {
+				font-size: 1.2em;
+				display: inline-block;
+				padding: 10px 0;
+			}
+		}
+	}
+
+	.comment-body {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.comment-list .depth-2 ul.children {
+		margin-left: 0;
 	}
 }

@@ -94,6 +94,7 @@ body {
 
 #colophon {
 	margin: 60px 0;
+	padding: 0 20px;
 	@include smaller-text;
 	text-align: center;
 	color: white;
@@ -114,7 +115,9 @@ body {
 	.main-navigation .container,
 	#masthead,
 	.site-content,
-	#comments {
+	#comments,
+	.content-nav.container,
+	#secondary {
 		margin-left: 25px;
 		margin-right: 25px;
 	}
@@ -137,6 +140,13 @@ body {
 	#content, #secondary, #comments {
 		padding: 30px 40px;
 	}
+
+	#secondary .one-column {
+		float: none;
+		padding: 0 !important;
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 450px) {
@@ -144,8 +154,11 @@ body {
 		margin: 10px 10px 30px;
 	}
 
+	#masthead,
 	.site-content,
-	#comments {
+	#comments,
+	.content-nav.container,
+	#secondary {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
