@@ -11,3 +11,9 @@
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+#infinite-handle span {
+	text-align: center;
+	border: none;
+	background: $navigation-bg;
+}
