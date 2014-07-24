@@ -2,7 +2,7 @@ Aventurine
 ===
 by [Kelly Dwan](redradar.net) and [Mel Choyce](choycedesign.com)
 
-Flat Writer is a free WordPress theme...
+Aventurine is a free WordPress theme...
 
 ###Feature
 
