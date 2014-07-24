@@ -1,4 +1,4 @@
-Flat Writer
+Aventurine
 ===
 by [Kelly Dwan](redradar.net) and [Mel Choyce](choycedesign.com)
 
