@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package flat-writer
+ * @package aventurine
  */
 
 get_header(); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	
+
 </div><!-- #content -->
 
 <?php

@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package flat-writer
+ * @package aventurine
  */
 
 get_header(); ?>
@@ -43,7 +43,7 @@ get_header(); ?>
 </div><!-- #content -->
 
 <div class="content-nav container">
-	<?php flat_writer_content_nav( 'nav-below' ); ?>
+	<?php aventurine_content_nav( 'nav-below' ); ?>
 </div>
 
 <?php get_footer(); ?>

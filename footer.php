@@ -4,16 +4,16 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package flat-writer
+ * @package aventurine
  */
 ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<?php do_action( 'flat_writer_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'flat-writer' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'flat-writer' ), 'WordPress' ); ?></a>
+			<?php do_action( 'aventurine_credits' ); ?>
+			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'aventurine' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'aventurine' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'flat-writer' ), 'Flat Writer', '<a href="http://themes.redradar.net/" rel="designer">Kelly Dwan &amp; Mel Choyce</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'aventurine' ), 'Flat Writer', '<a href="http://themes.redradar.net/" rel="designer">Kelly Dwan &amp; Mel Choyce</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

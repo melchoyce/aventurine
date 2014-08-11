@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package flat-writer
+ * @package aventurine
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -27,10 +27,10 @@
 
 	<nav id="site-navigation" class="main-navigation clear" role="navigation">
 		<div class="container">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'flat-writer' ); ?></h1>
-			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flat-writer' ); ?>"><?php _e( 'Skip to content', 'flat-writer' ); ?></a></div>
+			<h1 class="menu-toggle"><?php _e( 'Menu', 'aventurine' ); ?></h1>
+			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'aventurine' ); ?>"><?php _e( 'Skip to content', 'aventurine' ); ?></a></div>
 
-			<?php get_search_form(); ?>			
+			<?php get_search_form(); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</div>
 	</nav><!-- #site-navigation -->

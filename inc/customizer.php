@@ -1,8 +1,8 @@
 <?php
 /**
- * flat-writer Theme Customizer
+ * Aventurine Theme Customizer
  *
- * @package flat-writer
+ * @package aventurine
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function flat_writer_customize_register( $wp_customize ) {
+function aventurine_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 
@@ -25,9 +25,9 @@ function flat_writer_customize_register( $wp_customize ) {
 	) ) );
 
 }
-add_action( 'customize_register', 'flat_writer_customize_register' );
+add_action( 'customize_register', 'aventurine_customize_register' );
 
-function flat_writer_customize_css() {
+function aventurine_customize_css() {
 	?>
 		 <style type="text/css">
 			 .site-title a,
@@ -38,12 +38,12 @@ function flat_writer_customize_css() {
 		 </style>
 	<?php
 }
-add_action( 'wp_head', 'flat_writer_customize_css');
+add_action( 'wp_head', 'aventurine_customize_css');
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function flat_writer_customize_preview_js() {
-	wp_enqueue_script( 'flat_writer_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+function aventurine_customize_preview_js() {
+	wp_enqueue_script( 'aventurine_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
-add_action( 'customize_preview_init', 'flat_writer_customize_preview_js' );
+add_action( 'customize_preview_init', 'aventurine_customize_preview_js' );

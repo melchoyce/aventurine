@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (Not Found).
  *
- * @package flat-writer
+ * @package aventurine
  */
 
 get_header(); ?>
@@ -12,11 +12,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'flat-writer' ); ?></h1>
+					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'aventurine' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try searching below?', 'flat-writer' ); ?></p>
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe try searching below?', 'aventurine' ); ?></p>
 
 					<?php get_search_form(); ?>
 

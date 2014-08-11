@@ -1,6 +1,6 @@
 <?php
 /**
- * @package flat-writer
+ * @package aventurine
  */
 ?>
 

@@ -4,22 +4,22 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package flat-writer
+ * @package aventurine
  */
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
-function flat_writer_page_menu_args( $args ) {
+function aventurine_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
-add_filter( 'wp_page_menu_args', 'flat_writer_page_menu_args' );
+add_filter( 'wp_page_menu_args', 'aventurine_page_menu_args' );
 
 /**
  * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
  */
-function flat_writer_enhanced_image_navigation( $url, $id ) {
+function aventurine_enhanced_image_navigation( $url, $id ) {
 	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
 		return $url;
 
@@ -29,12 +29,12 @@ function flat_writer_enhanced_image_navigation( $url, $id ) {
 
 	return $url;
 }
-add_filter( 'attachment_link', 'flat_writer_enhanced_image_navigation', 10, 2 );
+add_filter( 'attachment_link', 'aventurine_enhanced_image_navigation', 10, 2 );
 
 /**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  */
-function flat_writer_wp_title( $title, $sep ) {
+function aventurine_wp_title( $title, $sep ) {
 	global $page, $paged;
 
 	if ( is_feed() )
@@ -50,21 +50,21 @@ function flat_writer_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		$title .= " $sep " . sprintf( __( 'Page %s', 'flat-writer' ), max( $paged, $page ) );
+		$title .= " $sep " . sprintf( __( 'Page %s', 'aventurine' ), max( $paged, $page ) );
 
 	return $title;
 }
-add_filter( 'wp_title', 'flat_writer_wp_title', 10, 2 );
+add_filter( 'wp_title', 'aventurine_wp_title', 10, 2 );
 
 /**
  * Unset the website field, Remove the required *
  */
-function flat_writer_comment_fields( $fields ){
+function aventurine_comment_fields( $fields ){
 	$commenter = wp_get_current_commenter();
 	unset( $fields['url'] );
-	$fields['author'] = sprintf( 
-		'<p class="comment-form-author"><label for="author">%1$s</label> <input id="author" name="author" type="text" value="%2$s" size="30" aria-required="true" placeholder="%1$s" /></p>', 
-		__( 'Name' ), 
+	$fields['author'] = sprintf(
+		'<p class="comment-form-author"><label for="author">%1$s</label> <input id="author" name="author" type="text" value="%2$s" size="30" aria-required="true" placeholder="%1$s" /></p>',
+		__( 'Name' ),
 		esc_attr( $commenter['comment_author'] )
 	);
 
@@ -76,4 +76,4 @@ function flat_writer_comment_fields( $fields ){
 
 	return $fields;
 }
-add_filter( 'comment_form_default_fields', 'flat_writer_comment_fields' );
+add_filter( 'comment_form_default_fields', 'aventurine_comment_fields' );

@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package flat-writer
+ * @package aventurine
  */
 
 get_header(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 		comments_template();
 ?>
 <div class="content-nav container">
-	<?php flat_writer_content_nav( 'nav-below' ); ?>
+	<?php aventurine_content_nav( 'nav-below' ); ?>
 </div>
 
 <?php endwhile; // end of the loop. ?>

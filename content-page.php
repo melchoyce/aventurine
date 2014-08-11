@@ -2,7 +2,7 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package flat-writer
+ * @package aventurine
  */
 ?>
 
@@ -21,10 +21,10 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'flat-writer' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'aventurine' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'flat-writer' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	<?php edit_post_link( __( 'Edit', 'aventurine' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
