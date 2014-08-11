@@ -51,12 +51,6 @@ h6 {
 	@include font-size( 70 );
 	line-height: 120px;
 
-	@include transition (font-size 0.4s ease-in-out);
-
-	.animate & {
-		@include font-size( 100 );
-	}
-
 	a {
 		color: white;
 		text-decoration: none;
