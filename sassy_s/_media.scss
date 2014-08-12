@@ -80,6 +80,23 @@ $gallery-spacing: $vspacing / 2;
 	}
 }
 
+.gallery-columns-1 {
+	.gallery-item { display: block; }
+
+	.gallery-caption {
+		position: relative;
+		color: $body-text;
+		background-color: transparent;
+		opacity: 1;
+		text-align: center;
+
+		&:before {
+			content: "";
+			min-height: 0;
+		}
+	}
+}
+
 .gallery-columns-7 .gallery-caption,
 .gallery-columns-8 .gallery-caption,
 .gallery-columns-9 .gallery-caption {
@@ -88,20 +105,14 @@ $gallery-spacing: $vspacing / 2;
 
 @mixin gallery_column ( $margin: 2, $num: 4 ){
 	.gallery-columns-#{$num} .gallery-item {
-		max-width: ( 100% / $num ) - 2;
-		max-width: -webkit-calc( #{100%/$num} - #{$margin} );
-		max-width:         calc( #{100%/$num} - #{$margin} );
+		width: ( 100% / $num ) - 2;
+		width: -webkit-calc( #{100%/$num} - #{$margin} );
+		width:         calc( #{100%/$num} - #{$margin} );
 	}
 	.gallery-columns-#{$num} .gallery-item:nth-of-type(#{$num}n) {
 		margin-right: 0;
 	}
 }
-
-/* Fluid Gallery Columns
-   works well if you remove the default gallery styling
-   by adding the following to your functions.php
-   add_filter( 'use_default_gallery_style', '__return_false' );
-*/
 
 @for $i from 2 through 9 {
 	@include gallery_column( $gallery-spacing, $i );
