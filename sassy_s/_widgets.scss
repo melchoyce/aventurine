@@ -27,3 +27,38 @@
 		display: none;
 	}
 }
+
+.widget_calendar {
+	$calendar-color: $link-text;
+
+	#wp-calendar {
+		max-width: 300px;
+	}
+
+	caption, th, td {
+		padding: 5px;
+		text-align: center;
+	}
+
+	caption {
+		padding: 0 5px 5px;
+		font-family: $header-font;
+		font-weight: bold;
+		@include font-size( 20 );
+	}
+
+	th {
+		color: white;
+		background: desaturate( lighten( $calendar-color, 20% ), 10%);
+	}
+
+	td {
+		@include font-size( 16 );
+	}
+
+	tfoot td {
+		text-transform: uppercase;
+		@include font-size( 14 );
+		background: desaturate( lighten( $calendar-color, 45% ), 15% );
+	}
+}
