@@ -13,7 +13,7 @@
 			<?php do_action( 'aventurine_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'aventurine' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'aventurine' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'aventurine' ), 'Flat Writer', '<a href="http://themes.redradar.net/" rel="designer">Kelly Dwan &amp; Mel Choyce</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'aventurine' ), 'Aventurine', '<a href="http://themes.redradar.net/" rel="designer">Kelly Dwan &amp; Mel Choyce</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
