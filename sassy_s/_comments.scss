@@ -136,6 +136,13 @@ li.comment {
 		@include smaller-text;
 		text-transform: lowercase;
 		text-align: center;
+		border-radius: 3px;
+		background-color: $navigation-bg;
+
+		a {
+			color: white;
+			@include hoverActiveFocus(color, white);
+		}
 	}
 }
 
@@ -189,11 +196,14 @@ li.comment {
 			left:0;
 			width: auto;
 			text-align: left;
+			background-color: transparent;
 
 			a {
-				font-size: 1.2em;
 				display: inline-block;
 				padding: 10px 0;
+				font-size: 1.2em;
+				color: $link-text;
+				@include hoverActiveFocus(color, darken($link-text, 10%));
 			}
 		}
 	}

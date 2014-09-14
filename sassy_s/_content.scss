@@ -1,10 +1,7 @@
 /* =Content
 ----------------------------------------------- */
-
-.sticky { /*! Not used in this theme */}
-
-.hentry {
-	margin: 0 0 $vspacing;
+#content {
+	background-color: $content-bg;
 }
 
 .byline,
@@ -58,6 +55,21 @@
 		input[type="search"] {
 			width: 100%;
 			padding: 10px;
+		}
+	}
+}
+
+/* =Sticky Posts
+----------------------------------------------- */
+
+.sticky {
+	background: mix( $secondary-text, $content-bg, 25% );
+
+	.read-more {
+		color: darken($secondary-text, 10%);
+
+		&:hover, &:active, &:focus {
+			color: darken($secondary-text, 30%);
 		}
 	}
 }

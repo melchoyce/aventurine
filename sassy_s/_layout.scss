@@ -47,8 +47,12 @@ body {
 	padding: 60px 80px;
 }
 
-#content {
-	background-color: $content-bg;
+.hentry {
+	margin: 0 0 80px;
+	&.sticky {
+		margin: -60px -80px 60px;
+		padding: 60px 80px 40px;
+	}
 }
 
 #secondary {
@@ -139,6 +143,14 @@ body {
 
 	#content, #secondary, #comments {
 		padding: 30px 40px;
+	}
+
+	.hentry {
+		margin-bottom: 60px;
+		&.sticky {
+			margin: -30px -40px 30px;
+			padding: 30px 40px;
+		}
 	}
 
 	#secondary .one-column {
