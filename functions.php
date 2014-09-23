@@ -107,6 +107,113 @@ function aventurine_scripts() {
 add_action( 'wp_enqueue_scripts', 'aventurine_scripts' );
 
 /**
+ * Returns the Google font stylesheet URL, if available.
+ *
+ * The use of Varela Round, Josefin Sans and Ubuntu Mono by default is
+ * localized. For languages that use characters not supported by either
+ * font, the font can be disabled.
+ *
+ * @return string Font stylesheet or empty string if disabled.
+ */
+function aventurine_fonts_url() {
+	$fonts_url = '';
+
+	/* Translators: If there are characters in your language that are not
+	 * supported by Varela Round, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$varela = _x( 'on', 'Varela Round font: on or off', 'aventurine' );
+
+	/* Translators: If there are characters in your language that are not
+	 * supported by Josefin Sans, translate this to 'off'. Do not translate into
+	 * your own language.
+	 */
+	$josefin = _x( 'on', 'Josefin Sans font: on or off', 'aventurine' );
+
+	/* Translators: If there are characters in your language that are not
+	 * supported by Ubuntu Mono, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$ubuntu = _x( 'on', 'Ubuntu Mono font: on or off', 'aventurine' );
+
+	if ( 'off' !== $varela || 'off' !== $josefin || 'off' !== $ubuntu ) {
+		$font_families = array();
+
+		if ( 'off' !== $varela )
+			$font_families[] = 'Varela+Round:400'; //Only comes in 400
+
+		if ( 'off' !== $josefin )
+			$font_families[] = 'Josefin+Sans:400';
+
+		if ( 'off' !== $ubuntu )
+			$font_families[] = 'Ubuntu+Mono:400';
+
+		$protocol = is_ssl() ? 'https' : 'http';
+		$query_args = array(
+			'family' => implode( '|', $font_families ),
+			'subset' => 'latin,latin-ext',
+		);
+		$fonts_url = add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" );
+	}
+
+	return $fonts_url;
+}
+
+/**
+ * Loads our special font CSS file.
+ *
+ * To disable in a child theme, use wp_dequeue_style()
+ * function mytheme_dequeue_fonts() {
+ *     wp_dequeue_style( 'aventurine-fonts' );
+ * }
+ * add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
+ *
+ * @return void
+ */
+function aventurine_fonts() {
+	$fonts_url = aventurine_fonts_url();
+	if ( ! empty( $fonts_url ) )
+		wp_enqueue_style( 'aventurine-fonts', esc_url_raw( $fonts_url ), array(), null );
+}
+add_action( 'wp_enqueue_scripts', 'aventurine_fonts' );
+
+/**
+ * Enqueue Google fonts style to admin screens for TinyMCE typography dropdown.
+ */
+function aventurine_admin_fonts( $hook_suffix ) {
+	if ( ! in_array( $hook_suffix, array( 'post-new.php', 'post.php' ) ) ) {
+		return;
+	}
+
+	aventurine_fonts();
+
+}
+add_action( 'admin_enqueue_scripts', 'aventurine_admin_fonts' );
+
+/**
+ * Adds additional stylesheets to the TinyMCE editor if needed.
+ *
+ * @uses aventurine_fonts_url() to get the Google Font stylesheet URL.
+ *
+ * @param string $mce_css CSS path to load in TinyMCE.
+ * @return string
+ */
+function aventurine_mce_css( $mce_css ) {
+	$fonts_url = aventurine_fonts_url();
+
+	if ( empty( $fonts_url ) )
+		return $mce_css;
+
+	if ( ! empty( $mce_css ) )
+		$mce_css .= ',';
+
+	$mce_css .= esc_url_raw( str_replace( ',', '%2C', $fonts_url ) );
+
+	return $mce_css;
+}
+add_filter( 'mce_css', 'aventurine_mce_css' );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
