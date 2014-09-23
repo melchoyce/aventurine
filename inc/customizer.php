@@ -15,8 +15,10 @@ function aventurine_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 
 	$wp_customize->add_setting( 'header_color' , array(
-		'default'     => '#ffffff',
+		'default'     => 'ffffff',
 		'transport'   => 'postMessage',
+		'sanitize_callback'    => 'sanitize_hex_color_no_hash',
+		'sanitize_js_callback' => 'maybe_hash_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_color', array(
 		'label'        => __( 'Header Color', 'mytheme' ),

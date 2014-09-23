@@ -20,12 +20,12 @@ if ( post_password_required() )
 ?>
 
 <div id="comments" class="comments-area container">
-	<h1 class="comments-title">Comments</h1>
+	<h1 class="comments-title"><?php _ex( 'Comments', 'section title', 'aventurine' ); ?></h1>
 
 	<?php comment_form(array(
 		'title_reply' => __( 'Join the conversation', 'aventurine' ),
 		'comment_notes_after' => '',
-		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . _x( 'Comment', 'noun' )  . '"></textarea></p>',
+		'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . _x( 'Comment', 'noun', 'aventurine' )  . '"></textarea></p>',
 	)); ?>
 
 	<?php // You can start editing here -- including this comment! ?>
