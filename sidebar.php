@@ -6,6 +6,7 @@
  */
 ?>
 
+<?php if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) ) : ?>
 <div id="secondary" class="widget-area container clear" role="complementary">
 
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
@@ -21,4 +22,4 @@
 	<?php endif; // end sidebar widget area ?>
 
 </div><!-- #secondary -->
-
+<?php endif; ?>
