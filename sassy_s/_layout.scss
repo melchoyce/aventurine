@@ -147,6 +147,12 @@ body {
 
 	.hentry {
 		margin-bottom: 60px;
+
+		.single &,
+		.page & {
+			margin-bottom: 0;
+		}
+
 		&.sticky {
 			margin: -30px -40px 30px;
 			padding: 30px 40px;
@@ -158,12 +164,20 @@ body {
 		padding: 0 !important;
 		width: 100%;
 	}
-
 }
 
 @media screen and (max-width: 450px) {
 	#masthead {
 		margin: 10px 10px 30px;
+	}
+
+	#content, #secondary, #comments {
+		padding: 30px 20px;
+	}
+
+	.hentry.sticky {
+		margin: -30px -20px 30px;
+		padding: 30px 20px;
 	}
 
 	#masthead,

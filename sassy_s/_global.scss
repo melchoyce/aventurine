@@ -52,3 +52,12 @@
 		content: ' • • •';
 	}
 }
+
+@media screen and (max-width: 450px) {
+	.alignleft,
+	.alignright {
+		float: none;
+		display: block;
+		margin: $vspacing 0;
+	}
+}

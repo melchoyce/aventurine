@@ -230,8 +230,10 @@ a {
 	}
 
 	.site-title {
+		margin: 30px 0;
 		min-height: 0;
 		@include font-size( 80 );
+		line-height: 1;
 	}
 
 	.site-description {
