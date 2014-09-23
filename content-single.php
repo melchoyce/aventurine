@@ -7,7 +7,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="entry-image">
-		<?php the_post_thumbnail('full'); ?>
+		<?php the_post_thumbnail( 'full' ); ?>
 		</div>
 	<?php endif; ?>
 
@@ -41,7 +41,6 @@
 				} else {
 					$meta_text = '';
 				}
-
 			} else {
 				// But this blog has loads of categories so we should probably display them here
 				if ( '' != $tag_list ) {
@@ -49,7 +48,6 @@
 				} else {
 					$meta_text = __( ' in %1$s.', 'aventurine' );
 				}
-
 			} // end check for categories on this blog
 
 			printf(

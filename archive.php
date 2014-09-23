@@ -48,7 +48,7 @@ get_header(); ?>
 							_e( 'Asides', 'aventurine' );
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'aventurine');
+							_e( 'Images', 'aventurine' );
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
 							_e( 'Videos', 'aventurine' );

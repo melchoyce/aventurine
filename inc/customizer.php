@@ -34,11 +34,11 @@ function aventurine_customize_css() {
 			 .site-title a:hover,
 			 .site-description,
 			 #colophon,
-			 #colophon a { color:<?php echo get_theme_mod('header_color'); ?>; }
+			 #colophon a { color:<?php echo get_theme_mod( 'header_color' ); ?>; }
 		 </style>
 	<?php
 }
-add_action( 'wp_head', 'aventurine_customize_css');
+add_action( 'wp_head', 'aventurine_customize_css' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
