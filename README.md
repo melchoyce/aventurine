@@ -1,6 +1,6 @@
 Aventurine
 ===
-by [Kelly Dwan](redradar.net) and [Mel Choyce](choycedesign.com)
+by [Kelly Dwan](http://redradar.net) and [Mel Choyce](http://choycedesign.com)
 
 Aventurine is a free WordPress theme...
 
@@ -18,15 +18,13 @@ Blurb about feature
 
 ###Jetpack enabled
 
-Supercharge Flat Writer with Jetpack galleries, carousels, infinite scroll, and Photon.
+Supercharge Aventurine with Jetpack galleries, carousels, infinite scroll, and Photon.
 
 
 ###Licenses
 License: GNU General Public License v2.0
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-Genericons: GNU General Public License v2.0
 
 ### Changelog
 
