@@ -1,0 +1,320 @@
+# Copyright (C) 2014 Mel Choyce & Kelly Dwan
+# This file is distributed under the GNU General Public License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Aventurine 0.1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2014-09-23 18:35:27+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.4.8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try searching below?"
+msgstr ""
+
+#: archive.php:31
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:39
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:42
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:45
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:48
+msgid "Asides"
+msgstr ""
+
+#: archive.php:51
+msgid "Images"
+msgstr ""
+
+#: archive.php:54
+msgid "Videos"
+msgstr ""
+
+#: archive.php:57
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:60
+msgid "Links"
+msgstr ""
+
+#: archive.php:63
+msgid "Archives"
+msgstr ""
+
+#: comments.php:26
+msgid "Join the conversation"
+msgstr ""
+
+#: comments.php:55
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:56
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr ""
+
+#: content-page.php:24 content-single.php:22 image.php:35
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:29 content-single.php:60 image.php:55
+#: inc/template-tags.php:71
+msgid "Edit"
+msgstr ""
+
+#: content-single.php:32 content-single.php:35
+#. translators: used between list items, there is a space after the comma
+msgid ", "
+msgstr ""
+
+#: content-single.php:40
+msgid " with tags %2$s."
+msgstr ""
+
+#: content-single.php:47
+msgid " in %1$s with tags %2$s."
+msgstr ""
+
+#: content-single.php:49
+msgid " in %1$s."
+msgstr ""
+
+#: footer.php:14
+msgid "A Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:14
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:16
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:73
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions.php:81
+msgid "Right Sidebar"
+msgstr ""
+
+#: header.php:30
+msgid "Menu"
+msgstr ""
+
+#: header.php:31
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:44
+msgid ""
+"Published on <span class=\"entry-date\"><time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to "
+"full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return "
+"to %7$s\" rel=\"gallery\">%8$s</a>."
+msgstr ""
+
+#: image.php:71
+msgid "Previous <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: image.php:72
+msgid "<span class=\"meta-nav\">&larr;</span> Next"
+msgstr ""
+
+#: inc/customizer.php:24
+msgid "Header Color"
+msgstr ""
+
+#: inc/extras.php:53
+msgid "Page %s"
+msgstr ""
+
+#: inc/extras.php:67
+msgid "Name"
+msgstr ""
+
+#: inc/extras.php:73
+msgid "Email"
+msgstr ""
+
+#: inc/template-tags.php:34
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:44
+msgid "Older posts <span class=\"meta-nav\">&rarr;</span> "
+msgstr ""
+
+#: inc/template-tags.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:71
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:98
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:138
+msgid ""
+"<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""
+
+#: inc/template-tags.php:146
+msgid "View all posts by %s"
+msgstr ""
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Aventurine"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Description"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mel Choyce & Kelly Dwan"
+msgstr ""
+
+#: comments.php:23
+msgctxt "section title"
+msgid "Comments"
+msgstr ""
+
+#: comments.php:28
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: comments.php:36
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:125
+#. Translators: If there are characters in your language that are not
+#. * supported by Varela Round, translate this to 'off'. Do not translate
+#. * into your own language.
+msgctxt "Varela Round font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:131
+#. Translators: If there are characters in your language that are not
+#. * supported by Josefin Sans, translate this to 'off'. Do not translate
+#. into
+#. * your own language.
+msgctxt "Josefin Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:137
+#. Translators: If there are characters in your language that are not
+#. * supported by Ubuntu Mono, translate this to 'off'. Do not translate
+#. * into your own language.
+msgctxt "Ubuntu Mono font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:38
+msgctxt "Previous post link"
+msgid "&rarr;"
+msgstr ""
+
+#: inc/template-tags.php:39
+msgctxt "Next post link"
+msgid "&larr;"
+msgstr ""
+
+#: inc/template-tags.php:92
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: searchform.php:10 searchform.php:11
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
