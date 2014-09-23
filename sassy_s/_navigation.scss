@@ -1,7 +1,8 @@
 /* =Navigation
 ----------------------------------------------- */
 
-.content-nav [class*="navigation"] {
+.content-nav [class*="navigation"],
+.image-navigation {
 	margin: 0 0 $vspacing;
 	overflow: hidden;
 

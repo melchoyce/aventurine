@@ -119,18 +119,6 @@ function aventurine_comment( $comment, $args, $depth ) {
 }
 endif; // ends check for aventurine_comment()
 
-if ( ! function_exists( 'aventurine_the_attached_image' ) ) :
-/**
- * Prints the attached image with a link to the next attached image.
- */
-function aventurine_the_attached_image() {
-	$post                = get_post();
-	$attachment_size     = apply_filters( 'aventurine_attachment_size', array( 1200, 1200 ) );
-
-	echo wp_get_attachment_image( $post->ID, $attachment_size );
-}
-endif;
-
 if ( ! function_exists( 'aventurine_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
