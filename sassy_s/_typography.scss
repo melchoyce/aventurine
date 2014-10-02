@@ -70,6 +70,7 @@ h6 {
 }
 .entry-title {
 	@include font-size( 36 );
+	line-height: 1.25;
 	text-align: center;
 	text-decoration: none;
 
