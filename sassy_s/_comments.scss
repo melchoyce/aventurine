@@ -196,6 +196,14 @@ li.comment {
 		textarea {
 			padding: 15px;
 		}
+		.form-submit {
+			float: none;
+
+			input[type="submit"] {
+				float: none;
+				width: 100%;
+			}
+		}
 	}
 
 	li.comment {
