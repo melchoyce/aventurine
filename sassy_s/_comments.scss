@@ -102,7 +102,7 @@
 .comment-body {
 	margin: 0 0 60px 100px;
 
-	:last-child {
+	& > :last-child {
 		margin-bottom: 0;
 	}
 }
