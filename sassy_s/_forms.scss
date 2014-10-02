@@ -24,8 +24,7 @@ textarea {
 	}
 
 	input[type="password"] {
-		padding: 0 3px 3px;
-		line-height: 40px;
+		padding: 7px 3px 10px;
 	}
 }
 
@@ -44,4 +43,7 @@ textarea {
 	}
 }
 
-//-- Search form
+//-- Jetpack Subscription form
+#subscribe-email input {
+	padding: 10px;
+}
