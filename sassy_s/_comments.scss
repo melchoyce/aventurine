@@ -18,7 +18,10 @@
 }
 
 .comment-form {
-	label {
+	margin-bottom: $vspacing-down1;
+
+	.comment-form-author label,
+	.comment-form-email label {
 		@include screen-reader-text;
 	}
 
@@ -46,9 +49,19 @@
 
 	.form-submit {
 		@include clearfix;
+		float: right;
 
 		input[type="submit"] {
 			float: right;
+		}
+	}
+
+	.comment-subscription-form {
+		margin-bottom: 0;
+
+		label {
+			@include font-size( $modular-scale-down1 );
+			font-weight: normal;
 		}
 	}
 }
