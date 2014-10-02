@@ -4,6 +4,10 @@
 	background-color: $content-bg;
 }
 
+.page-header {
+	background: mix( $secondary-text, $content-bg, 25% );
+}
+
 .byline,
 .updated {
 	display: none;
