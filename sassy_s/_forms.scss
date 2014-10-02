@@ -29,4 +29,19 @@ textarea {
 	}
 }
 
+@media screen and (max-width: 550px) {
+	.post-password-form {
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="password"],
+		input[type="submit"] {
+			width: 100%;
+			@include font-size( 16 );
+		}
+	}
+}
+
 //-- Search form
