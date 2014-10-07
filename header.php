@@ -28,7 +28,7 @@
 	<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'aventurine' ); ?></a>
 	<nav id="site-navigation" class="main-navigation clear" role="navigation">
 		<div class="container">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'aventurine' ); ?></h1>
+			<button class="menu-toggle"><?php _e( 'Menu', 'aventurine' ); ?></button>
 
 			<?php get_search_form(); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

@@ -93,8 +93,11 @@
 /* Small menu */
 .menu-toggle {
 	display: none;
+	padding: 0;
+	width: 100%;
 	cursor: pointer;
 	text-align: center;
+	background-color: transparent;
 }
 
 @media screen and (max-width: 600px) {
