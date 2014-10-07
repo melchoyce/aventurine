@@ -25,10 +25,10 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
+	<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'aventurine' ); ?></a>
 	<nav id="site-navigation" class="main-navigation clear" role="navigation">
 		<div class="container">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'aventurine' ); ?></h1>
-			<div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'aventurine' ); ?></a></div>
 
 			<?php get_search_form(); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
