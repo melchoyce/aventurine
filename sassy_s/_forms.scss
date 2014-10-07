@@ -17,6 +17,31 @@ textarea {
 
 //-- Search form
 .search-form {
+	float: right;
+	display: inline-block;
+	margin: 30px 0;
+
+	.search-field {
+		padding: 5px 5px 5px 10px;
+		@include font-size( 14 );
+		color: white;
+		background-color: darken($navigation-bg, 7%);
+		border: none;
+
+		&:focus {
+			color: white;
+		}
+	}
+
+	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+		color: $placeholder-text;
+		text-transform: lowercase;
+	}
+	input:-moz-placeholder, textarea:-moz-placeholder {
+		color: $placeholder-text;
+		text-transform: lowercase;
+	}
+
 	.search-submit {
 		display: none;
 	}

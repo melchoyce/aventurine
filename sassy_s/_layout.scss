@@ -11,29 +11,6 @@ body {
 	padding: 0;
 	@include smaller-text;
 	background-color: $navigation-bg;
-
-	.search-form {
-		float: right;
-		display: inline-block;
-		margin: 30px 0;
-	}
-
-	.search-field {
-		padding: 5px 5px 5px 10px;
-		@include font-size( 14 );
-		color: white;
-		background-color: darken($navigation-bg, 7%);
-		border: none;
-	}
-
-	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-		color: lighten($navigation-bg, 15%);
-		text-transform: lowercase;
-	}
-	input:-moz-placeholder, textarea:-moz-placeholder {
-		color: lighten($navigation-bg, 15%);
-		text-transform: lowercase;
-	}
 }
 
 #masthead {

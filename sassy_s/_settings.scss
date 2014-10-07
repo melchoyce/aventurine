@@ -4,41 +4,42 @@
 // coloring or the sizing, can be done in one place, not all over the stylesheet.
 
 // Spacing
-$vspacing: 				2em;
-$vspacing-down1:		1.5em;
-$vspacing-down2:		1em;
-$vspacing-down3:		.5em;
+$vspacing:              2.0em;
+$vspacing-down1:        1.5em;
+$vspacing-down2:        1.0em;
+$vspacing-down3:        0.5em;
 
 // Typography
-$base-font: 			'Varela Round', sans-serif;
-$header-font:			$base-font; 	// Varela Round for everything but the site title
-$site-title: 			'Josefin Sans', serif;
+$base-font:             'Varela Round', sans-serif;
+$header-font:           $base-font;  // Varela Round for everything but the site title
+$site-title:            'Josefin Sans', serif;
 // Modular Scale : 16 and 23 @ 1.618 - http://modularscale.com/ ================================== /
-$modular-scale-up5:   	60;
-$modular-scale-up4:   	42;
-$modular-scale-up3:   	37;
-$modular-scale-up2:   	26;
-$modular-scale-up1:  	22;
-$modular-scale-base:  	16;
-$modular-scale-down1: 	14;
-$modular-scale-down2: 	10;
+$modular-scale-up5:     60;
+$modular-scale-up4:     42;
+$modular-scale-up3:     37;
+$modular-scale-up2:     26;
+$modular-scale-up1:     22;
+$modular-scale-base:    16;
+$modular-scale-down1:   14;
+$modular-scale-down2:   10;
 
 // Text colors
-$body-text:				#6b8095; 		// Blue-grey
-$link-text:				#1abc9c;		// Green
-$header-text:			#e74c3c;		// Red
-$subheader-text:		#1d2936;		// Dark blue
-$accent-text:			#e74c3c;		// Red
-$secondary-text:		#d5dee8;		// Light blue
-$comments-text:         #2c3e50;		// Dark blue
+$body-text:             #6b8095;    // Blue-grey
+$link-text:             #16a387;    // Green
+$header-text:           #e74c3c;    // Red
+$subheader-text:        #1d2936;    // Dark blue
+$secondary-text:        #7c94ac;    // Light blue
+$comments-text:         #2c3e50;    // Dark blue
+$placeholder-text:      #9AA7B5;    // Blue-grey
 
 // Container colors
-$body-bg:				#1abc9c;		// Green
-$navigation-bg:			#2c3e50;		// Dark blue
-$content-bg:			#fff;			// White
-$secondary-bg:			#f5f5f5;		// Light grey
+$body-bg:               #16a387;    // Green
+$navigation-bg:         #2c3e50;    // Dark blue
+$content-bg:            white;      // White
+$secondary-bg:          #f5f5f5;    // Light grey
+$sticky-bg:             #f4f6f9;    // Light slate-grey
 
 // Element colors
-$search-bg:				$content-bg;	// White
-$border-color:			#ddd;			// Light grey
-$accent-color:			$accent-text;	// Red
+$search-bg:             $content-bg;    // White
+$border-color:          #ddd;           // Light grey
+$accent-color:          #ce4435;        // Red

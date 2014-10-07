@@ -5,7 +5,7 @@
 }
 
 .page-header {
-	background: mix( $secondary-text, $content-bg, 25% );
+	background: $sticky-bg;
 }
 
 .byline,
@@ -71,7 +71,7 @@
 ----------------------------------------------- */
 
 .sticky {
-	background: mix( $secondary-text, $content-bg, 25% );
+	background: $sticky-bg;
 
 	.read-more {
 		color: darken($secondary-text, 10%);
