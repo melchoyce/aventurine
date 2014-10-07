@@ -30,8 +30,9 @@
 			}
 
 			// link hover
-			&:hover {
-				> a { color: lighten($navigation-bg, 50%); }
+			&:hover > a,
+			a:focus {
+				color: lighten($navigation-bg, 50%);
 			}
 
 			&:hover > ul,

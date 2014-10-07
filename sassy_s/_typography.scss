@@ -224,6 +224,10 @@ a {
 	@include hoverActiveFocus(color, darken($link-text, 10%));
 	@include transition(color 0.15s ease-in-out);
 }
+a:focus {
+	outline: none;
+	text-decoration: underline !important;
+}
 
 @media screen and (max-width: 450px) {
 	html {
