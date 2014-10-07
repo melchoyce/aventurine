@@ -36,7 +36,7 @@ function aventurine_customize_css() {
 			 .site-title a:hover,
 			 .site-description,
 			 #colophon,
-			 #colophon a { color:<?php echo get_theme_mod( 'header_color' ); ?>; }
+			 #colophon a { color: #<?php echo get_theme_mod( 'header_color' ); ?>; }
 		 </style>
 	<?php
 }
