@@ -99,6 +99,11 @@
 	cursor: pointer;
 	text-align: center;
 	background-color: transparent;
+
+	&:focus {
+		background-color: transparent;
+		text-decoration: underline;
+	}
 }
 
 @media screen and (max-width: 600px) {
