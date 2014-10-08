@@ -22,7 +22,8 @@
 	margin-bottom: $vspacing-down1;
 
 	.comment-form-author label,
-	.comment-form-email label {
+	.comment-form-email label,
+	.comment-form-comment label {
 		@include screen-reader-text;
 	}
 
