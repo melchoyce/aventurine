@@ -36,7 +36,7 @@ body {
 #secondary {
 	overflow: hidden;
 
-	.one-column {
+	.column {
 		float: left;
 		width: 50%;
 		@include box-sizing( border-box );
@@ -47,6 +47,10 @@ body {
 
 		&:last-child {
 			padding-left: 20px;
+		}
+
+		&:first-child:last-child {
+			width: 100%;
 		}
 	}
 
