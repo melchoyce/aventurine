@@ -142,12 +142,12 @@ msgstr ""
 msgid "Right Sidebar"
 msgstr ""
 
-#: header.php:30
-msgid "Menu"
+#: header.php:28
+msgid "Skip to content"
 msgstr ""
 
 #: header.php:31
-msgid "Skip to content"
+msgid "Menu"
 msgstr ""
 
 #: image.php:44
@@ -307,14 +307,4 @@ msgstr ""
 #: inc/template-tags.php:92
 msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
-msgstr ""
-
-#: searchform.php:10 searchform.php:11
-msgctxt "label"
-msgid "Search for:"
-msgstr ""
-
-#: searchform.php:11
-msgctxt "placeholder"
-msgid "Search &hellip;"
 msgstr ""
