@@ -32,15 +32,15 @@ h3 {
 	@include font-size( $modular-scale-base );
 }
 h4 {
-	@include font-size( $modular-scale-down1 );
+	@include font-size( $modular-scale-base );
 	text-transform: uppercase;
 }
 h5 {
-	@include font-size( $modular-scale-down1 );
-	text-transform: lowercase;
+	@include font-size( $modular-scale-base );
 }
 h6 {
-	@include font-size( $modular-scale-down2 );
+	@include font-size( $modular-scale-base );
+	text-transform: lowercase;
 }
 .site-title {
 	font-family: $site-title;
