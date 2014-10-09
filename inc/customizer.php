@@ -21,7 +21,7 @@ function aventurine_customize_register( $wp_customize ) {
 		'sanitize_js_callback' => 'maybe_hash_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_color', array(
-		'label'        => __( 'Header Color', 'aventurine' ),
+		'label'      => __( 'Header Color', 'aventurine' ),
 		'section'    => 'colors',
 		'settings'   => 'header_color',
 	) ) );
@@ -30,14 +30,18 @@ function aventurine_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'aventurine_customize_register' );
 
 function aventurine_customize_css() {
+	$header_color = get_theme_mod( 'header_color', 'ffffff' );
 	?>
-		 <style type="text/css">
-			 .site-title a,
-			 .site-title a:hover,
-			 .site-description,
-			 #colophon,
-			 #colophon a { color: #<?php echo get_theme_mod( 'header_color' ); ?>; }
-		 </style>
+	<style type="text/css">
+		.site-title a,
+		.site-title a:hover,
+		.site-title a:focus,
+		.site-description,
+		#colophon,
+		#colophon a {
+			color: #<?php echo esc_attr( $header_color ); ?>;
+		}
+	</style>
 	<?php
 }
 add_action( 'wp_head', 'aventurine_customize_css' );
