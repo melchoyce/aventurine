@@ -21,7 +21,7 @@ function aventurine_customize_register( $wp_customize ) {
 		'sanitize_js_callback' => 'maybe_hash_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_color', array(
-		'label'        => __( 'Header Color', 'mytheme' ),
+		'label'        => __( 'Header Color', 'aventurine' ),
 		'section'    => 'colors',
 		'settings'   => 'header_color',
 	) ) );
