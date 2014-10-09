@@ -58,7 +58,7 @@ function aventurine_setup() {
 	 * Setup the WordPress core custom background feature.
 	 */
 	add_theme_support( 'custom-background', apply_filters( 'aventurine_custom_background_args', array(
-		'default-color' => '1abc9c',
+		'default-color' => '16a387',
 		'default-image' => '',
 	) ) );
 }
