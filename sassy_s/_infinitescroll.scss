@@ -29,3 +29,24 @@
 		color: #7d98b3;
 	}
 }
+
+#infinite-footer .container {
+	padding: 5px 0;
+	background-color: $body-bg;
+	border: none;
+
+	.blog-credits,
+	.blog-info {
+		color: white;
+	}
+
+	a {
+		color: white;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: white;
+		}
+	}
+}
