@@ -108,7 +108,14 @@ body {
 		margin-left: 25px;
 		margin-right: 25px;
 	}
+}
 
+@media screen and (max-width: 760px) {
+	#secondary .column {
+		float: none;
+		width: 100%;
+		padding: 0 !important;
+	}
 }
 
 @media screen and (max-width: 600px) {
