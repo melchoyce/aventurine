@@ -15,8 +15,8 @@ textarea {
 	}
 }
 
-//-- Search form
-.search-form {
+//-- Search form (header)
+.main-navigation .search-form {
 	float: right;
 	display: inline-block;
 	margin: 30px 0;
@@ -46,6 +46,24 @@ textarea {
 		display: none;
 	}
 }
+
+//-- Search form (no results page)
+.page-content .search-form {
+	.search-field {
+		width: 70%;
+		padding: 10px;
+	}
+
+	@media screen and (max-width: 550px) {
+		text-align: center;
+
+		.search-field {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
 
 //-- Post Password form
 .post-password-form {
