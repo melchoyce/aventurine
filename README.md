@@ -4,23 +4,24 @@ by [Kelly Dwan](http://redradar.net) and [Mel Choyce](http://choycedesign.com)
 
 Aventurine is a free WordPress theme...
 
-###Feature
+###Back to Basics
 
-Blurb about feature
+With large type and bright colors, Aventurine really puts the focus back on your content.
 
-###Feature
+###Accessibility
 
-Blurb about feature
+The code for this theme was written with accessibility in mind, so your content can be easily available to your entire audience.
 
-###Feature
+###Fully responsive
 
-Blurb about feature
+Aventurine is crafted to look great at any screen size.
 
 ###Jetpack enabled
 
 Supercharge Aventurine with Jetpack galleries, carousels, infinite scroll, and Photon.
 
 ###Licenses
+
 License: GNU General Public License v2.0
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
