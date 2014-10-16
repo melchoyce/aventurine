@@ -33,6 +33,7 @@ function aventurine_setup() {
 	 * Add default posts and comments RSS feed links to head
 	 */
 	add_theme_support( 'automatic-feed-links' );
+	set_post_thumbnail_size( 900, 9999 ); // 900 pixels wide by unlimited tall
 
 	/**
 	 * Enable support for Post Thumbnails on posts and pages

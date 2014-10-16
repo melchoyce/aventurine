@@ -33,9 +33,10 @@
 .entry-image {
 	margin: -60px -80px 0;
 	text-align: center;
+	background-color: $secondary-bg;
 
 	img {
-		width: 100%;
+		max-width: 100%;
 		height: auto;
 	}
 
