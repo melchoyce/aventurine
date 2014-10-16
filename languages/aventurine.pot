@@ -150,15 +150,15 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:54
+#: functions.php:55
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:73
+#: functions.php:74
 msgid "Left Sidebar"
 msgstr ""
 
-#: functions.php:81
+#: functions.php:82
 msgid "Right Sidebar"
 msgstr ""
 
@@ -244,16 +244,23 @@ msgstr ""
 msgid "Aventurine"
 msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "http://underscores.me/"
+#. Theme URI of the plugin/theme
+msgid "http://themes.redradar.net/introducing-aventruine"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Description"
+msgid ""
+"Aventurine puts the focus back on your content, with large type and bright "
+"colors. Responsive and accessibility-ready, your content can be easily "
+"available to your entire audience."
 msgstr ""
 
 #. Author of the plugin/theme
 msgid "Mel Choyce & Kelly Dwan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themes.redradar.net/"
 msgstr ""
 
 #: comments.php:23
@@ -273,7 +280,7 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:125
+#: functions.php:126
 #. Translators: If there are characters in your language that are not
 #. * supported by Varela Round, translate this to 'off'. Do not translate
 #. * into your own language.
@@ -281,7 +288,7 @@ msgctxt "Varela Round font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:132
 #. Translators: If there are characters in your language that are not
 #. * supported by Josefin Sans, translate this to 'off'. Do not translate
 #. into
@@ -290,7 +297,7 @@ msgctxt "Josefin Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:138
 #. Translators: If there are characters in your language that are not
 #. * supported by Ubuntu Mono, translate this to 'off'. Do not translate
 #. * into your own language.
