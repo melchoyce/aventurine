@@ -29,3 +29,17 @@ function aventurine_infinite_scroll_credit( $credits ) {
 	return $credits;
 }
 add_filter( 'infinite_scroll_credit', 'aventurine_infinite_scroll_credit' );
+
+/**
+ * Add background color to infinite scroll element
+ */
+function aventurine_background_style() {
+	$color = get_background_color();
+
+	if ( ! $color ){
+		return;
+	}
+
+	printf( '<style type="text/css">#infinite-footer .container { background-color: #%s; }</style>', esc_attr( $color ) );
+}
+add_action( 'wp_head', 'aventurine_background_style' );

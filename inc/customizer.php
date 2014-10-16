@@ -38,7 +38,13 @@ function aventurine_customize_css() {
 		.site-title a:focus,
 		.site-description,
 		#colophon,
-		#colophon a {
+		#colophon a,
+		#infinite-footer .container .blog-credits,
+		#infinite-footer .container .blog-info,
+		#infinite-footer .container a,
+		#infinite-footer .container a:hover,
+		#infinite-footer .container a:active,
+		#infinite-footer .container a:focus {
 			color: #<?php echo esc_attr( $header_color ); ?>;
 		}
 	</style>

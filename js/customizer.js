@@ -19,9 +19,16 @@
 	// Header text color.
 	wp.customize( 'header_color', function( value ) {
 		value.bind( function( to ) {
-			console.log(to);
-			$( '.site-title a, .site-description, #colophon, #colophon a' ).css( {
+			$( '.site-title a, .site-description, #colophon, #colophon a, #infinite-footer .container .blog-credits, #infinite-footer .container .blog-info, #infinite-footer .container a' ).css( {
 				'color': to
+			} );
+		} );
+	} );
+	// Background color.
+	wp.customize( 'background_color', function( value ) {
+		value.bind( function( to ) {
+			$( '#infinite-footer .container' ).css( {
+				'background-color': to
 			} );
 		} );
 	} );
