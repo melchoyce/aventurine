@@ -41,11 +41,11 @@ textarea {
 	left: auto;
 }
 
-.search-form {
+.main-navigation .search-form {
 	float: left;
 }
 
-.search-form .search-field {
+.main-navigation .search-form .search-field {
 	padding: 5px 10px 5px 5px;
 }
 
