@@ -51,6 +51,12 @@
 	&:after {
 		content: '\20\2022\20\2022\20\2022';
 	}
+
+	.screen-reader-text {
+		overflow: hidden;
+		height: 1px;
+		width: 1px;
+	}
 }
 
 @media screen and (max-width: 450px) {
