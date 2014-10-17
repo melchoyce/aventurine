@@ -13,7 +13,7 @@
 function aventurine_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'footer'    => 'page',
+		'footer'    => 'content',
 	) );
 }
 add_action( 'after_setup_theme', 'aventurine_jetpack_setup' );
