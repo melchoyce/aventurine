@@ -44,7 +44,7 @@ function aventurine_setup() {
 
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
-	add_editor_style();
+	add_editor_style( array( 'editor-style.css', aventurine_fonts_url() ) );
 
 	add_filter( 'use_default_gallery_style', '__return_false' );
 
@@ -152,7 +152,7 @@ function aventurine_fonts_url() {
 		$protocol = is_ssl() ? 'https' : 'http';
 		$query_args = array(
 			'family' => implode( '|', $font_families ),
-			'subset' => 'latin,latin-ext',
+			'subset' => urlencode( 'latin,latin-ext' ),
 		);
 		$fonts_url = add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" );
 	}
@@ -190,29 +190,6 @@ function aventurine_admin_fonts( $hook_suffix ) {
 
 }
 add_action( 'admin_enqueue_scripts', 'aventurine_admin_fonts' );
-
-/**
- * Adds additional stylesheets to the TinyMCE editor if needed.
- *
- * @uses aventurine_fonts_url() to get the Google Font stylesheet URL.
- *
- * @param string $mce_css CSS path to load in TinyMCE.
- * @return string
- */
-function aventurine_mce_css( $mce_css ) {
-	$fonts_url = aventurine_fonts_url();
-
-	if ( empty( $fonts_url ) )
-		return $mce_css;
-
-	if ( ! empty( $mce_css ) )
-		$mce_css .= ',';
-
-	$mce_css .= esc_url_raw( str_replace( ',', '%2C', $fonts_url ) );
-
-	return $mce_css;
-}
-add_filter( 'mce_css', 'aventurine_mce_css' );
 
 /**
  * Custom template tags for this theme.
