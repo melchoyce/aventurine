@@ -2,7 +2,7 @@ Aventurine
 ===
 by [Kelly Dwan](http://redradar.net) and [Mel Choyce](http://choycedesign.com)
 
-Aventurine is a free WordPress theme...
+Aventurine puts the focus back on your content, with large type and bright colors. Responsive and accessibility-ready, your content can be easily available to your entire audience.
 
 ###Back to Basics
 
