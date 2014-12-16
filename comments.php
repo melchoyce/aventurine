@@ -24,6 +24,7 @@ if ( post_password_required() )
 
 	<?php comment_form(array(
 		'title_reply' => __( 'Join the conversation', 'aventurine' ),
+		'comment_notes_before' => '<p class="comment-notes">' . __( 'Your email address will not be published.', 'aventurine' ) . '</p>',
 		'comment_notes_after' => '',
 		'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'aventurine' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . _x( 'Comment', 'noun', 'aventurine' ) . '"></textarea></p>',
 	)); ?>
