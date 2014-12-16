@@ -87,8 +87,6 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php aventurine_content_nav( 'nav-below' ); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>
@@ -99,5 +97,9 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 </div><!-- #content -->
+
+<div class="content-nav container">
+	<?php aventurine_content_nav( 'nav-below' ); ?>
+</div>
 
 <?php get_footer(); ?>
