@@ -28,6 +28,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ####External resources:
 
+Fonts Josefin Sans by Santiago Orozco and Varela Round by Joe Prince from Google Fonts, SIL Open Font License, 1.1
+
 DoubleTapToGo by Osvaldas Valutis (MIT), http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly
 
 ### Changelog
