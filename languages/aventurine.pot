@@ -76,19 +76,23 @@ msgstr ""
 msgid "Join the conversation"
 msgstr ""
 
-#: comments.php:55
-msgid "Comment navigation"
+#: comments.php:27
+msgid "Your email address will not be published."
 msgstr ""
 
 #: comments.php:56
-msgid "&larr; Older Comments"
+msgid "Comment navigation"
 msgstr ""
 
 #: comments.php:57
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:58
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: comments.php:67
+#: comments.php:68
 msgid "Comments are closed."
 msgstr ""
 
@@ -138,6 +142,10 @@ msgstr ""
 msgid " in %1$s."
 msgstr ""
 
+#: content.php:17
+msgid "continue reading %s"
+msgstr ""
+
 #: footer.php:14
 msgid "A Semantic Personal Publishing Platform"
 msgstr ""
@@ -155,11 +163,15 @@ msgid "Primary Menu"
 msgstr ""
 
 #: functions.php:74
-msgid "Left Sidebar"
+msgid "Left Footer Widgets"
 msgstr ""
 
-#: functions.php:82
-msgid "Right Sidebar"
+#: functions.php:76 functions.php:85
+msgid "Only appear on single posts &amp; pages"
+msgstr ""
+
+#: functions.php:83
+msgid "Right Footer Widgets"
 msgstr ""
 
 #: header.php:28
@@ -245,7 +257,7 @@ msgid "Aventurine"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://themes.redradar.net/introducing-aventruine"
+msgid "http://themes.redradar.net/introducing-aventurine"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -268,19 +280,19 @@ msgctxt "section title"
 msgid "Comments"
 msgstr ""
 
-#: comments.php:28
+#: comments.php:29
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: comments.php:36
+#: comments.php:37
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:126
+#: functions.php:128
 #. Translators: If there are characters in your language that are not
 #. * supported by Varela Round, translate this to 'off'. Do not translate
 #. * into your own language.
@@ -288,7 +300,7 @@ msgctxt "Varela Round font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:132
+#: functions.php:134
 #. Translators: If there are characters in your language that are not
 #. * supported by Josefin Sans, translate this to 'off'. Do not translate
 #. into
@@ -297,7 +309,7 @@ msgctxt "Josefin Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:138
+#: functions.php:140
 #. Translators: If there are characters in your language that are not
 #. * supported by Ubuntu Mono, translate this to 'off'. Do not translate
 #. * into your own language.
