@@ -26,10 +26,11 @@ textarea {
 		@include font-size( 14 );
 		color: white;
 		background-color: darken($navigation-bg, 7%);
-		border: none;
+		border-color: transparent;
 
 		&:focus {
 			color: white;
+			border-color: $body-text;
 		}
 	}
 

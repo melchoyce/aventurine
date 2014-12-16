@@ -29,7 +29,11 @@
 
 	input, textarea {
 		box-sizing: border-box;
-		border: none;
+		border-color: transparent;
+
+		&:focus {
+			border-color: darken( $border-color, 15% );
+		}
 	}
 
 	input[type="text"],
