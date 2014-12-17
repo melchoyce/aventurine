@@ -34,5 +34,13 @@ DoubleTapToGo by Osvaldas Valutis (MIT), http://osvaldas.info/drop-down-navigati
 
 ### Changelog
 
+Version 0.1.1
+* Update Licenses
+* i18n-ify the "Read More" text
+* Rename sidebars with clearer names, and add descriptions
+* Update heading tags for better heirarchy
+* Add borders on text inputs for keyboard nav
+* Update POT file with new strings
+
 Version 0.1.0
 * First public release
