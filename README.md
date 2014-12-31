@@ -10,7 +10,7 @@ With large type and bright colors, Aventurine really puts the focus back on your
 
 ###Accessibility
 
-The code for this theme was written with accessibility in mind, so your content can be easily available to your entire audience.
+The code for this theme was written with keyboard and screen reader accessibility in mind, so your content can be easily available to your entire audience.
 
 ###Fully responsive
 
