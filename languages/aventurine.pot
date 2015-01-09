@@ -263,8 +263,8 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "Aventurine puts the focus back on your content, with large type and bright "
-"colors. Responsive and accessibility-ready, your content can be easily "
-"available to your entire audience."
+"colors. Responsive and built with accessibility in mind, your content can "
+"be easily available to your entire audience."
 msgstr ""
 
 #. Author of the plugin/theme

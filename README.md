@@ -2,7 +2,7 @@ Aventurine
 ===
 by [Kelly Dwan](http://redradar.net) and [Mel Choyce](http://choycedesign.com)
 
-Aventurine puts the focus back on your content, with large type and bright colors. Responsive and accessibility-ready, your content can be easily available to your entire audience.
+Aventurine puts the focus back on your content, with large type and bright colors. Responsive and built with accessibility in mind, your content can be easily available to your entire audience.
 
 ###Back to Basics
 
