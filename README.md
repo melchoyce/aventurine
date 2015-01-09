@@ -34,6 +34,9 @@ DoubleTapToGo by Osvaldas Valutis (MIT), http://osvaldas.info/drop-down-navigati
 
 ### Changelog
 
+Version 0.1.2
+* Update & brighten up colors
+
 Version 0.1.1
 * Update Licenses
 * i18n-ify the "Read More" text
