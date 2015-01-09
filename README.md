@@ -34,6 +34,9 @@ DoubleTapToGo by Osvaldas Valutis (MIT), http://osvaldas.info/drop-down-navigati
 
 ### Changelog
 
+Version 0.1.4
+* Update screenshot
+
 Version 0.1.3
 * Remove accessibility-ready tag
 
