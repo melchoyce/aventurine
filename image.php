@@ -47,15 +47,24 @@ get_header(); ?>
 					<?php
 						$metadata = wp_get_attachment_metadata();
 						printf(
-							__( 'Published on <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%8$s</a>.', 'aventurine' ),
-							esc_attr( get_the_date( 'c' ) ),
-							esc_html( get_the_date() ),
-							esc_url( wp_get_attachment_url() ),
-							$metadata['width'],
-							$metadata['height'],
-							esc_url( get_permalink( $post->post_parent ) ),
-							esc_attr( strip_tags( get_the_title( $post->post_parent ) ) ),
-							get_the_title( $post->post_parent )
+							/* Translators: 1: publish date, 2: image size, 3: parent post */
+							__( 'Published on %1$s at %2$s in %3$s.', 'aventurine' ),
+							sprintf(
+								'<span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span>',
+								esc_attr( get_the_date( 'c' ) ),
+								esc_html( get_the_date() )
+							),
+							sprintf(
+								'<a href="%1$s">%2$s &times; %3$s</a>',
+								esc_url( wp_get_attachment_url() ),
+								$metadata['width'],
+								$metadata['height']
+							),
+							sprintf(
+								'<a href="%1$s" rel="gallery">%2$s</a>',
+								esc_url( get_permalink( $post->post_parent ) ),
+								get_the_title( $post->post_parent )
+							)
 						);
 
 						edit_post_link( __( 'Edit', 'aventurine' ), ' <span class="edit-link">', '</span>' );
