@@ -8,15 +8,6 @@
  */
 
 /**
- * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
- */
-function aventurine_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
-}
-add_filter( 'wp_page_menu_args', 'aventurine_page_menu_args' );
-
-/**
  * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
  */
 function aventurine_enhanced_image_navigation( $url, $id ) {

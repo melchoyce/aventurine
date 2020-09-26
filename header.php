@@ -25,8 +25,15 @@
 		<div class="container">
 			<button class="menu-toggle"><?php _e( 'Menu', 'aventurine' ); ?></button>
 
-			<?php get_search_form(); ?>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php
+				get_search_form();
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'show_home' => true,
+					)
+				);
+				?>
 		</div>
 	</nav><!-- #site-navigation -->
 	<header id="masthead" class="site-header" role="banner">
