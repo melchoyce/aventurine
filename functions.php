@@ -70,8 +70,10 @@ if ( ! function_exists( 'aventurine_setup' ) ) :
 				) 
 			) 
 		);
+
+		add_theme_support( 'title-tag' );
 	}
-endif; // aventurine_setup
+endif;
 add_action( 'after_setup_theme', 'aventurine_setup' );
 
 /**
@@ -134,21 +136,21 @@ function aventurine_fonts_url() {
 	$fonts_url = '';
 
 	/*
-	 Translators: If there are characters in your language that are not
+	 * Translators: If there are characters in your language that are not
 	 * supported by Varela Round, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
 	$varela = _x( 'on', 'Varela Round font: on or off', 'aventurine' );
 
 	/*
-	 Translators: If there are characters in your language that are not
+	 * Translators: If there are characters in your language that are not
 	 * supported by Josefin Sans, translate this to 'off'. Do not translate into
 	 * your own language.
 	 */
 	$josefin = _x( 'on', 'Josefin Sans font: on or off', 'aventurine' );
 
 	/*
-	 Translators: If there are characters in your language that are not
+	 * Translators: If there are characters in your language that are not
 	 * supported by Ubuntu Mono, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
@@ -158,7 +160,7 @@ function aventurine_fonts_url() {
 		$font_families = array();
 
 		if ( 'off' !== $varela ) {
-			$font_families[] = 'Varela+Round:400'; // Only comes in 400
+			$font_families[] = 'Varela+Round:400'; // Only comes in 400.
 		}
 
 		if ( 'off' !== $josefin ) {
@@ -172,7 +174,7 @@ function aventurine_fonts_url() {
 		$protocol   = is_ssl() ? 'https' : 'http';
 		$query_args = array(
 			'family' => implode( '|', $font_families ),
-			'subset' => urlencode( 'latin,latin-ext' ),
+			'subset' => rawurlencode( 'latin,latin-ext' ),
 		);
 		$fonts_url  = add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" );
 	}
@@ -201,6 +203,8 @@ add_action( 'wp_enqueue_scripts', 'aventurine_fonts' );
 
 /**
  * Enqueue Google fonts style to admin screens for TinyMCE typography dropdown.
+ *
+ * @param string $hook_suffix The current admin page.
  */
 function aventurine_admin_fonts( $hook_suffix ) {
 	if ( ! in_array( $hook_suffix, array( 'post-new.php', 'post.php' ) ) ) {
@@ -208,7 +212,6 @@ function aventurine_admin_fonts( $hook_suffix ) {
 	}
 
 	aventurine_fonts();
-
 }
 add_action( 'admin_enqueue_scripts', 'aventurine_admin_fonts' );
 

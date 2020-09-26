@@ -1,7 +1,10 @@
 <?php
 /**
+ * The template used for displaying single post content.
+ *
  * @package aventurine
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

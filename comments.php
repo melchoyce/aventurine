@@ -39,18 +39,25 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
+			$aventurine_comment_count = get_comments_number();
+			if ( '1' === $aventurine_comment_count ) {
+				/* Translators: %s: title. */
+				esc_html_e( 'One thought on %s', 'aventurine' );
+			} else {
 				printf(
-					_nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'aventurine' ),
-					number_format_i18n( get_comments_number() ),
-					'<span>' . get_the_title() . '</span>' 
+					/* Translators: 1: comment count number, 2: title. */
+					esc_html( _nx( '%1$s thought on %2$s', '%1$s thoughts on %2$s', $aventurine_comment_count, 'comments title', 'aventurine' ) ),
+					esc_html( number_format_i18n( $aventurine_comment_count ) ),
+					'<span>' . get_the_title() . '</span>'
 				);
+			}
 			?>
 		</h2>
 
 		<ol class="comment-list">
 			<?php
 				/*
-				 Loop through and list the comments. Tell wp_list_comments()
+				 * Loop through and list the comments. Tell wp_list_comments()
 				 * to use aventurine_comment() to format the comments.
 				 * If you want to override this in a child theme, then you can
 				 * define aventurine_comment() and that will be used instead.
@@ -65,15 +72,15 @@ if ( post_password_required() ) {
 			?>
 		</ol><!-- .comment-list -->
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php _e( 'Comment navigation', 'aventurine' ); ?></h2>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'aventurine' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'aventurine' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
-		<?php endif; // check for comment navigation ?>
+		<?php endif; ?>
 
-	<?php endif; // have_comments() ?>
+	<?php endif; ?>
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?

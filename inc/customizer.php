@@ -38,6 +38,9 @@ function aventurine_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'aventurine_customize_register' );
 
+/**
+ * Generate custom CSS
+ */
 function aventurine_customize_css() {
 	$header_color = get_theme_mod( 'header_color', 'ffffff' );
 	?>

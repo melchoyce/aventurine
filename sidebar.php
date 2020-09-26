@@ -4,6 +4,7 @@
  *
  * @package aventurine
  */
+
 ?>
 
 <?php if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) ) : ?>
@@ -13,13 +14,13 @@
 	<div class="column">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div>
-	<?php endif; // end sidebar widget area ?>
+	<?php endif; ?>
 
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 	<div class="column">
 		<?php dynamic_sidebar( 'sidebar-2' ); ?>
 	</div>
-	<?php endif; // end sidebar widget area ?>
+	<?php endif; ?>
 
 </div><!-- #secondary -->
 <?php endif; ?>

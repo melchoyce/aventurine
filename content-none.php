@@ -6,6 +6,7 @@
  *
  * @package aventurine
  */
+
 ?>
 
 <section class="no-results not-found">
@@ -16,7 +17,15 @@
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'aventurine' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+			<p>
+			<?php
+				printf(
+					/* Translators: 1: new post link. */
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'aventurine' ),
+					esc_url( admin_url( 'post-new.php' ) )
+				);
+			?>
+			</p>
 
 		<?php elseif ( is_search() ) : ?>
 

@@ -21,15 +21,16 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 </div><!-- #content -->
+
 			<?php
-			// If comments are open or we have at least one comment, load up the comment template
 			if ( comments_open() || '0' != get_comments_number() ) {
 				comments_template();
 			}
 			?>
-<div class="content-nav container">
+
+		<div class="content-nav container">
 			<?php aventurine_content_nav( 'nav-below' ); ?>
-</div>
+		</div>
 
 <?php endwhile; // end of the loop. ?>
 
