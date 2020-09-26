@@ -8,19 +8,22 @@
  */
 
 /**
- * Filter in a link to a content ID attribute for the next/previous image links on image attachment pages
+ * Filter image attachment links to include an anchor to the main content.
+ *
+ * @param string $link    The attachment's permalink.
+ * @param int    $post_id Attachment ID.
  */
-function aventurine_enhanced_image_navigation( $url, $id ) {
-	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) ) {
-		return $url;
+function aventurine_enhanced_image_navigation( $link, $post_id ) {
+	if ( ! is_attachment() && ! wp_attachment_is_image( $post_id ) ) {
+		return $link;
 	}
 
-	$image = get_post( $id );
-	if ( ! empty( $image->post_parent ) && $image->post_parent != $id ) {
-		$url .= '#main';
+	$image = get_post( $post_id );
+	if ( ! empty( $image->post_parent ) && $image->post_parent != $post_id ) {
+		$link .= '#main';
 	}
 
-	return $url;
+	return $link;
 }
 add_filter( 'attachment_link', 'aventurine_enhanced_image_navigation', 10, 2 );
 
@@ -54,6 +57,8 @@ add_filter( 'wp_title', 'aventurine_wp_title', 10, 2 );
 
 /**
  * Unset the website field, Remove the required *
+ *
+ * @param string[] $fields Array of the default comment fields.
  */
 function aventurine_comment_fields( $fields ) {
 	$commenter = wp_get_current_commenter();
