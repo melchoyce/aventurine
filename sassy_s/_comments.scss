@@ -27,6 +27,11 @@
 		@include screen-reader-text;
 	}
 
+	.comment-form-cookies-consent label {
+		color: $body-text;
+		@include font-size( $modular-scale-base );
+	}
+
 	input, textarea {
 		box-sizing: border-box;
 		border-color: transparent;
