@@ -140,9 +140,24 @@ endif;
 
 if ( ! function_exists( 'aventurine_posted_on' ) ) :
 	/**
-	 * Prints HTML with meta information for the current post-date/time and author.
+	 * Prints HTML with meta information for the current post-date/time, author.
+	 *
+	 * @deprecated 1.0.0 in favor of `aventurine_get_post_details`.
 	 */
 	function aventurine_posted_on() {
+		aventurine_get_post_details( false );
+	}
+endif;
+
+if ( ! function_exists( 'aventurine_get_post_details' ) ) :
+	/**
+	 * Prints HTML with meta information for the current post-date/time, author,
+	 * categories, and tags.
+	 *
+	 * @param {boolean} $show_taxonomy Whether the function should also print
+	 *                                 taxonomy data (used for legacy support).
+	 */
+	function aventurine_get_post_details( $show_taxonomy = true ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
@@ -157,6 +172,7 @@ if ( ! function_exists( 'aventurine_posted_on' ) ) :
 		);
 
 		printf(
+			/* Translators: 1: date, 2: author. */
 			__( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'aventurine' ),
 			sprintf(
 				'<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
@@ -167,46 +183,43 @@ if ( ! function_exists( 'aventurine_posted_on' ) ) :
 			sprintf(
 				'<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+				/* Translators: %s: author name. */
 				esc_attr( sprintf( __( 'View all posts by %s', 'aventurine' ), get_the_author() ) ),
 				esc_html( get_the_author() )
 			)
 		);
+
+		if ( ! $show_taxonomy ) {
+			return;
+		}
+
+		/* Translators: used between list items, there is a space after the comma */
+		$category_list = get_the_category_list( __( ', ', 'aventurine' ) );
+
+		/* Translators: used between list items, there is a space after the comma */
+		$tag_list = get_the_tag_list( '', __( ', ', 'aventurine' ) );
+
+		if ( ! $category_list ) {
+			if ( $tag_list ) {
+				/* Translators: 1: not used 2: tags. */
+				$meta_text = __( ' with tags %2$s.', 'aventurine' );
+			} else {
+				$meta_text = '';
+			}
+		} else {
+			if ( $tag_list ) {
+				/* Translators: 1: categories, 2: tags. */
+				$meta_text = __( ' in %1$s with tags %2$s.', 'aventurine' );
+			} else {
+				/* Translators: 1: categories. */
+				$meta_text = __( ' in %1$s.', 'aventurine' );
+			}
+		}
+
+		printf(
+			$meta_text,
+			$category_list,
+			$tag_list
+		);
 	}
 endif;
-
-/**
- * Returns true if a blog has more than 1 category
- */
-function aventurine_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
-		// Create an array of all the categories that are attached to posts
-		$all_the_cool_cats = get_categories(
-			array(
-				'hide_empty' => 1,
-			) 
-		);
-
-		// Count the number of categories that are attached to the posts
-		$all_the_cool_cats = count( $all_the_cool_cats );
-
-		set_transient( 'all_the_cool_cats', $all_the_cool_cats );
-	}
-
-	if ( '1' != $all_the_cool_cats ) {
-		// This blog has more than 1 category so aventurine_categorized_blog should return true
-		return true;
-	} else {
-		// This blog has only 1 category so aventurine_categorized_blog should return false
-		return false;
-	}
-}
-
-/**
- * Flush out the transients used in aventurine_categorized_blog
- */
-function aventurine_category_transient_flusher() {
-	// Like, beat it. Dig?
-	delete_transient( 'all_the_cool_cats' );
-}
-add_action( 'edit_category', 'aventurine_category_transient_flusher' );
-add_action( 'save_post', 'aventurine_category_transient_flusher' );
