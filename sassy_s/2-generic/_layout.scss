@@ -27,10 +27,26 @@ body {
 .hentry {
 	margin: 0 0 80px;
 }
+
 .hentry.sticky,
 .page-header {
 	margin: -60px -80px 60px;
 	padding: 60px 80px 40px;
+}
+
+.entry-content > *,
+[class*="inner-container"] > *,
+.wp-block-column > * {
+	margin-top: $vspacing-down2;
+	margin-bottom: $vspacing-down2;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 #secondary {
@@ -180,4 +196,11 @@ body {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+}
+
+/* Clearing */
+.clear,
+[class*="content"],
+[class*="site"] {
+	@include clearfix;
 }

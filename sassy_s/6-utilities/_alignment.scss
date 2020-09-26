@@ -1,0 +1,29 @@
+/* Alignment
+----------------------------------------------- */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: $vspacing;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: $vspacing;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+	.alignleft,
+	.alignright {
+		float: none;
+		display: block;
+		margin: $vspacing 0;
+	}
+}

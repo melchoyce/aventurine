@@ -1,35 +1,39 @@
 /* =Media
 ----------------------------------------------- */
 
-.page-content,
-.entry-content,
-.comment-content {
-	img.wp-smiley {
-		border: none;
-		margin-bottom: 0;
-		margin-top: 0;
-		padding: 0;
-	}
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
-// Image Captions
-.wp-caption {
-	margin-bottom: $vspacing;
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/* Media captions */
+figcaption,
+.wp-caption,
+.wp-caption-text {
+	margin: 0;
 	padding: 5px;
 	max-width: 100%;
 	@include font-size( 16 );
 	background-color: $secondary-bg;
-	border: none;
-	border-radius: 3px;
+}
 
-	img[class*="wp-image-"] {
-		display: block;
-		margin: 1.2% auto 0;
-		max-width: 98%;
-	}
-	.wp-caption-text {
-		text-align: center;
-		margin: 0.8075em 0;
-	}
+/* WP Smiley */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
 }
 
 // Galleries
@@ -116,11 +120,4 @@ $gallery-spacing: $vspacing / 2;
 
 @for $i from 2 through 9 {
 	@include gallery_column( $gallery-spacing, $i );
-}
-
-/* Make sure embeds and iframes fit their containers */
-embed,
-iframe,
-object {
-	max-width: 100%;
 }

@@ -1,0 +1,16 @@
+
+//-- General forms
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	@include box-sizing( border-box );
+
+	&:focus {
+		color: $body-text;
+		border-color: $body-text;
+		outline: none;
+	}
+}
