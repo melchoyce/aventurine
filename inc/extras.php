@@ -55,20 +55,6 @@ add_filter( 'comment_form_default_fields', 'aventurine_comment_fields' );
  * Print out credits.
  */
 function aventurine_show_credits() {
-	?>
-	<a href="http://wordpress.org/" rel="generator">
-	<?php
-		/* translators: %s: WordPress. */
-		printf( __( 'Proudly powered by %s', 'aventurine' ), 'WordPress' );
-	?>
-	</a>
-	<span class="sep"> | </span>
-	<?php
-	printf(
-		/* Translators: 1: theme name, 2: developer names. */
-		__( 'Theme: %1$s by %2$s.', 'aventurine' ),
-		'Aventurine',
-		'<a href="http://themes.redradar.net/" rel="designer">Kelly&nbsp;Dwan &amp; Mel&nbsp;Choyce</a>'
-	);
+	echo aventurine_get_credits();
 }
 add_filter( 'aventurine_credits', 'aventurine_show_credits' );

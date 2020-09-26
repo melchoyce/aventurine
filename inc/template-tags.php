@@ -223,3 +223,31 @@ if ( ! function_exists( 'aventurine_get_post_details' ) ) :
 		);
 	}
 endif;
+
+/**
+ * Get the theme credits.
+ *
+ * @param {boolean} $show_wp Whether the string should include a WordPress link.
+ */
+function aventurine_get_credits( $show_wp = true ) {
+	$credits = '';
+	// @todo Privacy policy URL.
+
+	if ( $show_wp ) {
+		$credits .= '<a href="http://wordpress.org/" rel="generator">';
+		/* translators: %s: WordPress. */
+		$credits .= sprintf( __( 'Proudly powered by %s', 'aventurine' ), 'WordPress' );
+		$credits .= '</a>';
+		$credits .= '<span class="sep"> | </span>';
+	}
+
+	$credits .= sprintf(
+		/* Translators: 1: theme name, 2: developer names. */
+		__( 'Theme: %1$s by %2$s.', 'aventurine' ),
+		'Aventurine',
+		'<a href="http://themes.redradar.net/" rel="designer">Kelly&nbsp;Dwan &amp; Mel&nbsp;Choyce</a>'
+	);
+	
+	return $credits;
+}
+add_filter( 'aventurine_credits', 'aventurine_show_credits' );
