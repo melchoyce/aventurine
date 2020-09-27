@@ -122,18 +122,10 @@ b, strong {
 dfn, cite, em, i {
 	font-style: italic;
 }
-blockquote {
-	margin: 0;
-	padding: 0 $vspacing-down1;
-	border-left: 10px solid $accent-color;
-}
 q {
 	quotes: '"' '"';
 	&:before { content: open-quote }
 	&:after { content: close-quote }
-}
-cite {
-	color: darken($body-text, 30%);
 }
 address {
 	margin: 0 0 $vspacing;

@@ -1,16 +1,11 @@
 /* Alignment
 ----------------------------------------------- */
 
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: $vspacing;
-}
-
+.alignleft,
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: $vspacing;
+	float: none;
+	display: block;
+	margin: $vspacing 0;
 }
 
 .aligncenter {
@@ -19,11 +14,39 @@
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 450px) {
-	.alignleft,
+.alignwide,
+.alignfull {
+	width: auto;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+@media (min-width: 451px) {
+
+	.alignleft {
+		display: inline;
+		float: left;
+		margin-right: $vspacing;
+	}
+
 	.alignright {
-		float: none;
-		display: block;
-		margin: $vspacing 0;
+		display: inline;
+		float: right;
+		margin-left: $vspacing;
+	}
+
+	.alignwide,
+	.alignfull {
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+}
+
+@media (min-width: 601px) {
+
+	.alignwide,
+	.alignfull {
+		margin-left: -80px;
+		margin-right: -80px;
 	}
 }

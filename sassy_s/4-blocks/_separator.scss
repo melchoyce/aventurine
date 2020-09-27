@@ -1,0 +1,11 @@
+hr,
+.wp-block-separator {
+	margin-top: $vspacing;
+	margin-bottom: $vspacing;
+	color: $secondary-text;
+	border-color: currentColor;
+
+	&.is-style-dots::before {
+		content: "\2022 \2022 \2022";
+	}
+}
