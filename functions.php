@@ -30,25 +30,6 @@ if ( ! function_exists( 'aventurine_setup' ) ) :
 		load_theme_textdomain( 'aventurine', get_template_directory() . '/languages' );
 
 		/**
-		 * Add default posts and comments RSS feed links to head
-		 */
-		add_theme_support( 'automatic-feed-links' );
-		set_post_thumbnail_size( 900, 9999 ); // 900 pixels wide by unlimited tall
-
-		/**
-		 * Enable support for Post Thumbnails on posts and pages
-		 *
-		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-		 */
-		add_theme_support( 'post-thumbnails' );
-
-		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
-
-		add_editor_style( array( 'editor-style.css', aventurine_fonts_url() ) );
-
-		add_filter( 'use_default_gallery_style', '__return_false' );
-
-		/**
 		 * This theme uses wp_nav_menu() in one location.
 		 */
 		register_nav_menus(
@@ -56,6 +37,19 @@ if ( ! function_exists( 'aventurine_setup' ) ) :
 				'primary' => __( 'Primary Menu', 'aventurine' ),
 			) 
 		);
+
+		/**
+		 * Add default posts and comments RSS feed links to head
+		 */
+		add_theme_support( 'automatic-feed-links' );
+
+		/**
+		 * Enable support for Post Thumbnails on posts and pages
+		 */
+		add_theme_support( 'post-thumbnails' );
+		set_post_thumbnail_size( 900, 9999 ); // 900 pixels wide by unlimited tall
+
+		add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
 		/**
 		 * Setup the WordPress core custom background feature.
@@ -72,6 +66,97 @@ if ( ! function_exists( 'aventurine_setup' ) ) :
 		);
 
 		add_theme_support( 'title-tag' );
+
+		// Add support for Block Styles.
+		add_theme_support( 'wp-block-styles' );
+
+		// Add support for full and wide align images.
+		add_theme_support( 'align-wide' );
+
+		// Add support for editor styles.
+		add_theme_support( 'editor-styles' );
+		add_editor_style( './editor-style.css' );
+		
+		// Add support for responsive embedded content.
+		add_theme_support( 'responsive-embeds' );
+
+		// Add custom editor font sizes.
+		add_theme_support(
+			'editor-font-sizes',
+			array(
+				array(
+					'slug' => 'small',
+					'name' => __( 'Small', 'aventurine' ),
+					'shortName' => __( 'S', 'aventurine' ),
+					'size' => 16,
+				),
+				array(
+					'slug' => 'medium',
+					'name' => __( 'Medium (default)', 'aventurine' ),
+					'shortName' => __( 'M', 'aventurine' ),
+					'size' => 22,
+				),
+				array(
+					'slug' => 'large',
+					'name' => __( 'Large', 'aventurine' ),
+					'shortName' => __( 'L', 'aventurine' ),
+					'size' => 26,
+				),
+				array(
+					'slug' => 'larger',
+					'name' => __( 'Larger', 'aventurine' ),
+					'shortName' => __( 'XL', 'aventurine' ),
+					'size' => 37,
+				),
+				array(
+					'slug' => 'huge',
+					'name' => __( 'Huge', 'aventurine' ),
+					'shortName' => __( 'XXL', 'aventurine' ),
+					'size' => 42,
+				),
+			)
+		);
+
+		add_theme_support(
+			'editor-color-palette',
+			array(
+				array(
+					'slug' => 'white',
+					'name' => __( 'White', 'aventurine' ),
+					'color' => '#fff',
+				),
+				array(
+					'slug' => 'light-grey',
+					'name' => __( 'Light Grey', 'aventurine' ),
+					'color' => '#d5dee8',
+				),
+				array(
+					'slug' => 'black',
+					'name' => __( 'Black', 'aventurine' ),
+					'color' => '#000',
+				),
+				array(
+					'slug' => 'red',
+					'name' => __( 'Red', 'aventurine' ),
+					'color' => '#e74c3c',
+				),
+				array(
+					'slug' => 'green',
+					'name' => __( 'Green', 'aventurine' ),
+					'color' => '#1abc9c',
+				),
+				array(
+					'slug' => 'navy',
+					'name' => __( 'Navy', 'aventurine' ),
+					'color' => '#2c3e50',
+				),
+				array(
+					'slug' => 'slate',
+					'name' => __( 'Slate', 'aventurine' ),
+					'color' => '#7290b2',
+				),
+			)
+		);
 	}
 endif;
 add_action( 'after_setup_theme', 'aventurine_setup' );
