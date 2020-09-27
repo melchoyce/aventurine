@@ -109,7 +109,7 @@ add_action( 'widgets_init', 'aventurine_widgets_init' );
  * Enqueue scripts and styles
  */
 function aventurine_scripts() {
-	wp_enqueue_style( 'aventurine-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'aventurine-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	wp_enqueue_script( 'aventurine-scripts', get_template_directory_uri() . '/js/aventurine.js', array( 'jquery' ), '20120206', true );
 
@@ -196,6 +196,7 @@ function aventurine_fonts_url() {
 function aventurine_fonts() {
 	$fonts_url = aventurine_fonts_url();
 	if ( ! empty( $fonts_url ) ) {
+		// phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion -- Google fonts URL.
 		wp_enqueue_style( 'aventurine-fonts', esc_url_raw( $fonts_url ), array(), null );
 	}
 }
