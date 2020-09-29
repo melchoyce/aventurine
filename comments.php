@@ -41,8 +41,11 @@ if ( post_password_required() ) {
 			<?php
 			$aventurine_comment_count = get_comments_number();
 			if ( '1' === $aventurine_comment_count ) {
-				/* Translators: %s: title. */
-				esc_html_e( 'One thought on %s', 'aventurine' );
+				printf(
+					/* Translators: %s: title. */
+					esc_html__( 'One thought on %s', 'aventurine' ),
+					'<span>' . get_the_title() . '</span>'
+				);
 			} else {
 				printf(
 					/* Translators: 1: comment count number, 2: title. */
