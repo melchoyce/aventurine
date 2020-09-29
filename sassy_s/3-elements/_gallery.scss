@@ -1,0 +1,86 @@
+
+// Galleries
+$gallery-spacing: $vspacing / 2;
+
+.gallery {
+	@include clearfix();
+	margin-bottom: $gallery-spacing;
+	text-align: center;
+}
+
+.gallery-item {
+	display: inline-block;
+	margin: 0 $gallery-spacing $gallery-spacing 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 6px 8px;
+	width: 100%;
+	max-height: 50%;
+	font-size: 12px;
+	line-height: 1.5;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-sizing: border-box;
+	color: #fff;
+	opacity: 0;
+	text-align: left;
+	transition: all 0.1s ease-in;
+
+	&:before {
+		content: "";
+		height: 100%;
+		min-height: 49px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.gallery-item:hover & {
+		opacity: 1;
+	}
+}
+
+.gallery-columns-1 {
+	.gallery-item { display: block; }
+
+	.gallery-caption {
+		position: relative;
+		color: $body-text;
+		background-color: transparent;
+		opacity: 1;
+		text-align: center;
+
+		&:before {
+			content: "";
+			min-height: 0;
+		}
+	}
+}
+
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+@mixin gallery_column ( $margin: 2, $num: 4 ){
+	.gallery-columns-#{$num} .gallery-item {
+		width: ( 100% / $num ) - 2;
+		width: -webkit-calc( #{100%/$num} - #{$margin} );
+		width:         calc( #{100%/$num} - #{$margin} );
+	}
+	.gallery-columns-#{$num} .gallery-item:nth-of-type(#{$num}n) {
+		margin-right: 0;
+	}
+}
+
+@for $i from 2 through 9 {
+	@include gallery_column( $gallery-spacing, $i );
+}
