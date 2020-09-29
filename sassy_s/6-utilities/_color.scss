@@ -42,4 +42,16 @@
 	.has-slate-color {
 		color: var( --color-slate );
 	}
+	
+	.has-white-color,
+	.has-light-grey-color,
+	.has-black-color,
+	.has-red-color,
+	.has-green-color,
+	.has-navy-color,
+	.has-slate-color {
+		h1,h2,h3,h4,h5,h6 {
+			color: currentColor;
+		}
+	}
 }
