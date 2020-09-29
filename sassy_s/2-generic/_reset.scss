@@ -6,14 +6,63 @@
 	box-sizing: border-box;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
 	border: 0;
 	font-family: inherit;
 	font-size: 100%;
@@ -24,15 +73,18 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0;
 	vertical-align: baseline;
 }
+
 html {
 	font-size: 100%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
 	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
 	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
+
 body {
 	background: #fff;
 }
+
 article,
 aside,
 details,
@@ -45,34 +97,49 @@ nav,
 section {
 	display: block;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
+
 img {
 	vertical-align: middle;
 }
+
 table { /* tables still need 'cellspacing="0"' in the markup */
 	border-collapse: separate;
 	border-spacing: 0;
 }
-caption, th, td {
+
+caption,
+th,
+td {
 	font-weight: normal;
 	text-align: left;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: "";
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: "" "";
 }
+
 a:focus {
 	outline: thin dotted;
 }
+
 a:hover,
 a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
 	outline: 0;
 }
+
 a img {
 	border: 0;
 }
@@ -86,10 +153,12 @@ textarea {
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
 }
+
 button,
 input {
 	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -104,20 +173,24 @@ input[type="radio"] {
 	box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
+
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
-	-moz-box-sizing: 	content-box;
-	box-sizing: 		content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 }
+
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 	-webkit-appearance: none;
 }
+
 button::-moz-focus-inner,
 input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
 	border: 0;
 	padding: 0;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -129,8 +202,8 @@ textarea {
 	color: $body-text;
 	border: 1px solid $border-color;
 	border-radius: 3px;
-	outline-text: $body-text;
 }
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -139,6 +212,7 @@ input[type="search"]:focus,
 textarea:focus {
 	color: #111;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -146,12 +220,14 @@ input[type="password"],
 input[type="search"] {
 	padding: 3px;
 }
+
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
 	padding-left: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
+
 label {
 	font-weight: bold;
 	color: $subheader-text;

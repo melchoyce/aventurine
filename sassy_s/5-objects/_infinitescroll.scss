@@ -29,16 +29,16 @@
 
 	.blog-credits,
 	.blog-info {
-		color: white;
+		color: var(--color-white);
 	}
 
 	a {
-		color: white;
+		color: var(--color-white);
 
 		&:hover,
 		&:active,
 		&:focus {
-			color: white;
+			color: var(--color-white);
 		}
 	}
 }

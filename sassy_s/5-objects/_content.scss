@@ -13,7 +13,9 @@
 	display: none;
 }
 
-.single, .group-blog {
+.single,
+.group-blog {
+
 	.byline {
 		display: inline;
 	}
@@ -36,16 +38,16 @@
 		height: auto;
 	}
 
-	&+ .entry-header .entry-title {
+	+ .entry-header .entry-title {
 		margin-top: 50px;
 	}
 
 	@media screen and (max-width: 600px) {
-		margin: 0 -40px 0
+		margin: 0 -40px 0;
 	}
 
 	@media screen and (max-width: 450px) {
-		margin: 0 -20px 0
+		margin: 0 -20px 0;
 	}
 }
 
@@ -72,7 +74,9 @@ footer.entry-meta {
 	.read-more {
 		color: darken($secondary-text, 10%);
 
-		&:hover, &:active, &:focus {
+		&:hover,
+		&:active,
+		&:focus {
 			color: darken($secondary-text, 30%);
 		}
 	}

@@ -14,7 +14,7 @@ blockquote,
 	margin: 0;
 	padding: 0 $vspacing-down1;
 	border-left: 10px solid $accent-color;
-	
+
 	&.is-large {
 		border-left: 10px solid $accent-color;
 
@@ -43,7 +43,7 @@ blockquote,
 		color: inherit;
 	}
 
-	&.is-style-solid-color blockquote 	{
+	&.is-style-solid-color blockquote {
 		border: none;
 	}
 }

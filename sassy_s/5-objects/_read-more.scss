@@ -5,16 +5,18 @@
 	text-align: center;
 	color: $secondary-text;
 
-	&:hover, &:active, &:focus {
+	&:hover,
+	&:active,
+	&:focus {
 		color: darken($secondary-text, 20%);
 	}
 
 	&:before {
-		content: '\2022\20\2022\20\2022\20';
+		content: "\2022\20\2022\20\2022\20";
 	}
 
 	&:after {
-		content: '\20\2022\20\2022\20\2022';
+		content: "\20\2022\20\2022\20\2022";
 	}
 
 	.screen-reader-text {

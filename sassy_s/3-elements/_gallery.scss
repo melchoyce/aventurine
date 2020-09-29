@@ -48,7 +48,10 @@ $gallery-spacing: $vspacing / 2;
 }
 
 .gallery-columns-1 {
-	.gallery-item { display: block; }
+
+	.gallery-item {
+		display: block;
+	}
 
 	.gallery-caption {
 		position: relative;
@@ -70,11 +73,9 @@ $gallery-spacing: $vspacing / 2;
 	display: none;
 }
 
-@mixin gallery_column ( $margin: 2, $num: 4 ){
+@mixin gallery_column ( $margin: 2, $num: 4 ) {
 	.gallery-columns-#{$num} .gallery-item {
-		width: ( 100% / $num ) - 2;
-		width: -webkit-calc( #{100%/$num} - #{$margin} );
-		width:         calc( #{100%/$num} - #{$margin} );
+		width: calc(#{100%/$num} - #{$margin});
 	}
 	.gallery-columns-#{$num} .gallery-item:nth-of-type(#{$num}n) {
 		margin-right: 0;

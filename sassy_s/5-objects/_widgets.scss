@@ -17,6 +17,7 @@
 
 /* Search widget */
 .widget_search {
+
 	.search-field {
 		padding: 3px 30px;
 		line-height: 40px;
@@ -35,7 +36,9 @@
 		max-width: 300px;
 	}
 
-	caption, th, td {
+	caption,
+	th,
+	td {
 		padding: 5px;
 		text-align: center;
 	}
@@ -48,8 +51,8 @@
 	}
 
 	th {
-		color: white;
-		background: desaturate( lighten( $calendar-color, 20% ), 10%);
+		color: var(--color-white);
+		background: desaturate(lighten($calendar-color, 20%), 10%);
 	}
 
 	td {
@@ -59,6 +62,6 @@
 	tfoot td {
 		text-transform: uppercase;
 		@include font-size( 14 );
-		background: desaturate( lighten( $calendar-color, 45% ), 15% );
+		background: desaturate(lighten($calendar-color, 45%), 15%);
 	}
 }

@@ -38,6 +38,22 @@
 	"browserslist": [
 		"extends @wordpress/browserslist-config"
 	],
+	"stylelint": {
+		"extends": [
+			"stylelint-config-wordpress/scss"
+		],
+		"rules": {
+			"selector-class-pattern": null,
+			"font-weight-notation": null,
+			"selector-type-no-unknown": null,
+			"max-line-length": null,
+			"at-rule-empty-line-before": null,
+			"selector-pseudo-element-colon-notation": null,
+			"number-leading-zero": null,
+			"no-descending-specificity": null
+		},
+		"ignoreFiles": [ "**/bourbon/**" ]
+	},
 	"scripts": {
 		"start": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
 		"build:style": "node-sass sassy_s/style.scss style.css --output-style expanded --indent-type tab --indent-width 1",
@@ -45,8 +61,7 @@
 		"build:rtl": "rtlcss style.css style-rtl.css",
 		"build": "run-s \"build:*\"",
 		"watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
-		"lint:scss": "stylelint sassy_s/*.scss",
-		"lint:css": "stylelint **/*.css",
+		"lint:scss": "stylelint sassy_s",
 		"wp-env": "wp-env"
 	}
 }

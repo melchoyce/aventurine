@@ -7,21 +7,24 @@
 	.search-field {
 		padding: 5px 5px 5px 10px;
 		@include font-size( 14 );
-		color: white;
+		color: var(--color-white);
 		background-color: darken($navigation-bg, 7%);
 		border-color: transparent;
 
 		&:focus {
-			color: white;
+			color: var(--color-white);
 			border-color: $body-text;
 		}
 	}
 
-	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
 		color: $placeholder-text;
 		text-transform: lowercase;
 	}
-	input:-moz-placeholder, textarea:-moz-placeholder {
+
+	input:-moz-placeholder,
+	textarea:-moz-placeholder {
 		color: $placeholder-text;
 		text-transform: lowercase;
 	}
@@ -33,6 +36,7 @@
 
 //-- Search form (no results page)
 .page-content .search-form {
+
 	.search-field {
 		width: 70%;
 		padding: 10px;
@@ -51,6 +55,7 @@
 
 //-- Post Password form
 .post-password-form {
+
 	label {
 		line-height: 40px;
 		color: $body-text;
@@ -63,7 +68,9 @@
 }
 
 @media screen and (max-width: 550px) {
+
 	.post-password-form {
+
 		label {
 			display: block;
 			margin-bottom: 10px;

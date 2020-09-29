@@ -4,15 +4,15 @@
 // coloring or the sizing, can be done in one place, not all over the stylesheet.
 
 // Spacing
-$vspacing:              2.0rem;
+$vspacing:              2rem;
 $vspacing-down1:        1.5rem;
-$vspacing-down2:        1.0rem;
+$vspacing-down2:        1rem;
 $vspacing-down3:        0.5rem;
 
 // Typography
-$base-font:             'Varela Round', sans-serif;
+$base-font:             "Varela Round", sans-serif;
 $header-font:           $base-font;  // Varela Round for everything but the site title
-$site-title:            'Josefin Sans', serif;
+$site-title:            "Josefin Sans", serif;
 // Modular Scale : 16 and 23 @ 1.618 - http://modularscale.com/ ================================== /
 $modular-scale-up5:     60;
 $modular-scale-up4:     42;
@@ -35,7 +35,7 @@ $placeholder-text:      #9aa7b5;    // Blue-grey
 // Container colors
 $body-bg:               #1abc9c;    // Green
 $navigation-bg:         #2c3e50;    // Dark blue
-$content-bg:            white;      // White
+$content-bg:            #fff;       // White
 $secondary-bg:          #f5f5f5;    // Light grey
 $sticky-bg:             #f4f6f9;    // Light slate-grey
 

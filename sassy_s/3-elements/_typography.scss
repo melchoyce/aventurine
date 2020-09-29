@@ -10,74 +10,98 @@ textarea {
 }
 
 /* Headings */
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: $header-font;
 	clear: both;
 }
-h1,h2,h3 {
+
+h1,
+h2,
+h3 {
 	color: $header-text;
 }
-h4,h5,h6 {
+
+h4,
+h5,
+h6 {
 	color: $subheader-text;
 }
+
 h1 {
 	@include font-size( $modular-scale-up2 );
 }
+
 h2 {
 	@include font-size( $modular-scale-up1 );
 	text-transform: none !important;
 }
+
 h3 {
 	margin-bottom: $vspacing-down3;
 	@include font-size( $modular-scale-base );
 }
+
 h4 {
 	@include font-size( $modular-scale-base );
 	text-transform: uppercase;
 }
+
 h5 {
 	@include font-size( $modular-scale-base );
 }
+
 h6 {
 	@include font-size( $modular-scale-base );
 	text-transform: lowercase;
 }
+
 .site-title {
 	font-family: $site-title;
 	@include font-size( 70 );
 	line-height: 120px;
 
 	a {
-		color: white;
+		color: var(--color-white);
 		text-decoration: none;
 		@include transition(opacity 0.15s ease-in-out);
 
-		&:hover, &:focus {
-			color: white;
+		&:hover,
+		&:focus {
+			color: var(--color-white);
 			opacity: .5;
 		}
 	}
 }
+
 .site-description {
 	margin: 1em 0 0;
-	color: white;
+	color: var(--color-white);
 	@include font-size( 20 );
 }
+
 .entry-title,
 .entry-title a,
 .widget-title {
 	color: $header-text;
 }
+
 .entry-title {
 	@include font-size( 36 );
 	line-height: 1.25;
 	text-align: center;
 	text-decoration: none;
 
-	a:hover, a:focus {
+	a:hover,
+	a:focus {
 		color: darken($header-text, 10%);
 	}
 }
+
 .page-title {
 	margin-bottom: $vspacing-down2;
 	color: $body-text;
@@ -95,44 +119,66 @@ hr {
 p {
 	margin-bottom: $vspacing-down1;
 }
-ul, ol {
+
+ul,
+ol {
 	margin: 0 0 $vspacing 3em;
 }
+
 ul {
 	list-style: disc;
 }
+
 ol {
 	list-style: decimal;
 }
+
 li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: $vspacing-down1;
 }
+
 dt {
 	font-weight: bold;
 }
+
 dd {
 	margin: 0 $vspacing-down1 $vspacing-down1;
 }
-b, strong {
+
+b,
+strong {
 	font-weight: bold;
 	color: darken($body-text, 30%);
 }
-dfn, cite, em, i {
+
+dfn,
+cite,
+em,
+i {
 	font-style: italic;
 }
+
 q {
 	quotes: '"' '"';
-	&:before { content: open-quote }
-	&:after { content: close-quote }
+
+	&:before {
+		content: open-quote;
+	}
+
+	&:after {
+		content: close-quote;
+	}
 }
+
 address {
 	margin: 0 0 $vspacing;
 }
+
 pre {
 	background: #eee;
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: "Ubuntu Mono", monospace;
 	@include font-size( 20 );
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -140,18 +186,27 @@ pre {
 	overflow: auto;
 	max-width: 100%;
 }
-code, kbd, tt, var {
-	font: 20px 'Ubuntu Mono', monospace;
+
+code,
+kbd,
+tt,
+var {
+	font: 20px "Ubuntu Mono", monospace;
 	@include font-size( 20 );
 }
-abbr, acronym {
+
+abbr,
+acronym {
 	border-bottom: 1px dotted $border-color;
 	cursor: help;
 }
-mark, ins {
+
+mark,
+ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
+
 sup,
 sub {
 	font-size: 75%;
@@ -160,47 +215,56 @@ sub {
 	position: relative;
 	vertical-align: baseline;
 }
+
 sup {
 	bottom: 1ex;
 }
+
 sub {
 	top: .5ex;
 }
+
 small {
 	font-size: 75%;
 }
+
 big {
 	font-size: 125%;
 }
+
 figure {
 	margin: 0;
 }
+
 table {
 	margin: 0 0 $vspacing;
 	width: 100%;
 }
+
 th {
 	font-weight: bold;
 }
+
 .site-content {
 	$table-color: $link-text;
 
-	th, td {
+	th,
+	td {
 		padding: 5px 10px;
 	}
 
 	th {
 		font-weight: normal;
-		color: white;
-		background: desaturate( lighten( $table-color, 20% ), 10%);
+		color: var(--color-white);
+		background: desaturate(lighten($table-color, 20%), 10%);
 	}
 
 	td {
-		background: lighten( $table-color, 50% );
+		background: lighten($table-color, 50%);
 	}
 
 	tr:nth-of-type(odd) td {
-		background: lighten( $table-color, 45% );
+		background: lighten($table-color, 45%);
 	}
 }
 
@@ -211,12 +275,14 @@ a {
 	@include hoverActiveFocus(color, darken($link-text, 10%));
 	@include transition(color 0.15s ease-in-out);
 }
+
 a:focus {
 	outline: none;
 	text-decoration: underline !important;
 }
 
 @media screen and (max-width: 450px) {
+
 	html {
 		font-size: 80%;
 	}

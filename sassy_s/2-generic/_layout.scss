@@ -120,7 +120,7 @@ body {
 	padding: 0 20px;
 	@include smaller-text;
 	text-align: center;
-	color: white;
+	color: var(--color-white);
 	opacity: .5;
 	@include transition( opacity 0.15s ease-in-out );
 
@@ -129,12 +129,13 @@ body {
 	}
 
 	a {
-		color: white;
+		color: var(--color-white);
 		border-bottom: 2px solid;
 	}
 }
 
 @media screen and (max-width: 950px) {
+
 	.main-navigation .container,
 	#masthead,
 	.site-content,
@@ -147,6 +148,7 @@ body {
 }
 
 @media screen and (max-width: 760px) {
+
 	#secondary .column {
 		float: none;
 		width: 100%;
@@ -155,7 +157,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
 	#site-navigation {
+
 		.search-form {
 			float: none;
 			display: block;
@@ -167,7 +171,9 @@ body {
 		}
 	}
 
-	#content, #secondary, #comments {
+	#content,
+	#secondary,
+	#comments {
 		padding: 30px 40px;
 	}
 
@@ -194,11 +200,14 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+
 	#masthead {
 		margin: 10px 10px 30px;
 	}
 
-	#content, #secondary, #comments {
+	#content,
+	#secondary,
+	#comments {
 		padding: 30px 20px;
 	}
 
