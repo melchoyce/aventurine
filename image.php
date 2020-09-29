@@ -45,29 +45,34 @@ get_header(); ?>
 
 				<footer class="entry-meta">
 					<?php
-						$metadata = wp_get_attachment_metadata();
-						printf(
-							/* Translators: 1: publish date, 2: image size, 3: parent post */
-							__( 'Published on %1$s at %2$s in %3$s.', 'aventurine' ),
-							sprintf(
-								'<span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span>',
-								esc_attr( get_the_date( 'c' ) ),
-								esc_html( get_the_date() )
-							),
-							sprintf(
-								'<a href="%1$s">%2$s &times; %3$s</a>',
-								esc_url( wp_get_attachment_url() ),
-								$metadata['width'],
-								$metadata['height']
-							),
-							sprintf(
-								'<a href="%1$s" rel="gallery">%2$s</a>',
-								esc_url( get_permalink( $post->post_parent ) ),
-								get_the_title( $post->post_parent )
-							)
-						);
+					$metadata = wp_get_attachment_metadata();
+					/* Translators: 1: publish date, 2: image size */
+					$meta_string = __( 'Published on %1$s at %2$s.', 'aventurine' );
+					if ( $post->post_parent ) {
+						/* Translators: 1: publish date, 2: image size, 3: parent post */
+						$meta_string = __( 'Published on %1$s at %2$s in %3$s.', 'aventurine' );
+					}
+					printf(
+						$meta_string,
+						sprintf(
+							'<span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span>',
+							esc_attr( get_the_date( 'c' ) ),
+							esc_html( get_the_date() )
+						),
+						sprintf(
+							'<a href="%1$s">%2$s &times; %3$s</a>',
+							esc_url( wp_get_attachment_url() ),
+							$metadata['width'],
+							$metadata['height']
+						),
+						sprintf(
+							'<a href="%1$s" rel="gallery">%2$s</a>',
+							esc_url( get_permalink( $post->post_parent ) ),
+							get_the_title( $post->post_parent )
+						)
+					);
 
-						edit_post_link( __( 'Edit', 'aventurine' ), ' <span class="edit-link">', '</span>' );
+					edit_post_link( __( 'Edit', 'aventurine' ), ' <span class="edit-link">', '</span>' );
 					?>
 				</footer><!-- .entry-meta -->
 			</article><!-- #post-## -->
