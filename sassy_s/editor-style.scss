@@ -6,10 +6,11 @@
 @import "1-abstracts/abstracts";
 
 /* Elements */
-@import "3-elements/elements";
+@import "3-elements/typography";
+@import "3-elements/media";
 
 /* Blocks */
-// @import "4-blocks/*";
+@import "4-blocks/blocks";
 
 /* Utilities */
 @import "6-utilities/utilities";
