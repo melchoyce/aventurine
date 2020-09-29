@@ -17,17 +17,9 @@
 }
 
 #infinite-handle span {
-	text-align: center;
-	border: none;
+	@include button( $navigation-bg );
 	margin-top: 30px;
-	padding: 15px 30px;
-	background-color: $navigation-bg;
-	border-radius: 3px;
-	color: white;
-
-	&:hover {
-		color: #7d98b3;
-	}
+	border: none;
 }
 
 #infinite-footer .container {

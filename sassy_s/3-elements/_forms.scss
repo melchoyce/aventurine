@@ -14,3 +14,13 @@ textarea {
 		outline: none;
 	}
 }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include button;
+	@include font-size( 14 );
+	line-height: 1;
+	text-transform: lowercase;
+}

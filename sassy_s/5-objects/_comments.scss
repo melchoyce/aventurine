@@ -155,16 +155,16 @@ li.comment {
 		top: 85px;
 		left: 0;
 		width: 75px;
-		@include smaller-text;
-		text-transform: lowercase;
-		text-align: center;
-		border-radius: 3px;
-		background-color: $navigation-bg;
+	}
 
-		a {
-			color: white;
-			@include hoverActiveFocus(color, white);
-		}
+	.comment-reply-link {
+		@include button( $navigation-bg );
+		display: block;
+		width: 100%;
+		padding: $vspacing-down3;
+		@include font-size( 14 );
+		line-height: 1;
+		text-transform: lowercase;
 	}
 }
 

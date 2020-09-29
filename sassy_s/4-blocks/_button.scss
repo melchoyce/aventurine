@@ -1,0 +1,16 @@
+.wp-block-button__link {
+	color: var(--color-white);
+	background-color: var(--color-red);
+	border-radius: 3px;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: underline;
+	}
+
+	.is-style-outline & {
+		color: var(--color-red);
+		background: transparent;
+	}
+}

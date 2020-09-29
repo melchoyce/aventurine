@@ -93,3 +93,17 @@
 	clip: auto;
 	width: auto;
 }
+
+@mixin button( $background-color: $accent-color, $text-color: white ) {
+	padding: $vspacing-down2 $vspacing-down1;
+	border-radius: 3px;
+	background: $background-color;
+	color: $text-color;
+	text-align: center;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: underline;
+	}
+}
