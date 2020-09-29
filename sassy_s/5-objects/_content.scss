@@ -19,19 +19,13 @@
 	}
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $vspacing 0 0;
-}
-
 .page-links {
 	clear: both;
 	margin: 0 0 $vspacing;
 }
 
 .entry-image {
-	margin: -60px -80px 0;
+	margin: 0 -80px 0;
 	text-align: center;
 	background-color: $secondary-bg;
 
@@ -45,11 +39,11 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		margin: -30px -40px 0
+		margin: 0 -40px 0
 	}
 
 	@media screen and (max-width: 450px) {
-		margin: -30px -20px 0
+		margin: 0 -20px 0
 	}
 }
 

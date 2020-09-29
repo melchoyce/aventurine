@@ -58,3 +58,16 @@ function aventurine_show_credits() {
 	echo aventurine_get_credits();
 }
 add_filter( 'aventurine_credits', 'aventurine_show_credits' );
+
+/**
+ * Filter body classes to add featured image indicator.
+ *
+ * @param string[] $classes An array of body class names.
+ */
+function aventurine_body_class( $classes ) {
+	if ( has_post_thumbnail() ) {
+		$classes[] = 'has-post-thumbnail';
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'aventurine_body_class' );

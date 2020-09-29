@@ -24,6 +24,12 @@ body {
 	padding: 60px 80px;
 }
 
+.page-template-template-no-title #content,
+.post-template-template-no-title #content,
+.has-post-thumbnail #content {
+	padding-top: 0;
+}
+
 .hentry {
 	margin: 0 0 80px;
 }
@@ -32,6 +38,17 @@ body {
 .page-header {
 	margin: -60px -80px 60px;
 	padding: 60px 80px 40px;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $vspacing 0 0;
+}
+
+.page-template-template-no-title .entry-content,
+.post-template-template-no-title .entry-content {
+	margin-top: 0;
 }
 
 .entry-content > *,
