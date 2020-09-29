@@ -18,6 +18,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <div id="page" class="hfeed site">
 
 	<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'aventurine' ); ?></a>
