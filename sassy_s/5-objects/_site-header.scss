@@ -98,6 +98,7 @@
 				@include hidden-dropdown;
 				background-color: darken($navigation-bg, 5%);
 				@include divet( top, darken($navigation-bg, 5%) );
+				text-align: left;
 
 				// Nested menus
 				ul {
