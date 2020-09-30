@@ -68,12 +68,13 @@ h6 {
 	a {
 		color: var(--color-white);
 		text-decoration: none;
-		@include transition(opacity 0.15s ease-in-out);
+		transition: opacity 0.15s ease-in-out;
 
 		&:hover,
 		&:focus {
 			color: var(--color-white);
 			opacity: .5;
+			text-decoration: none;
 		}
 	}
 }
@@ -272,13 +273,16 @@ th {
 a {
 	color: $link-text;
 	text-decoration: none;
-	@include hoverActiveFocus(color, darken($link-text, 10%));
-	@include transition(color 0.15s ease-in-out);
-}
 
-a:focus {
-	outline: none;
-	text-decoration: underline !important;
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: underline;
+	}
+
+	&:focus {
+		outline: none;
+	}
 }
 
 @media screen and (max-width: 450px) {

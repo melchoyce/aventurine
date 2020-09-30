@@ -120,7 +120,7 @@ body {
 	text-align: center;
 	color: var(--color-white);
 	opacity: .5;
-	@include transition( opacity 0.15s ease-in-out );
+	transition: opacity 0.15s ease-in-out;
 
 	&:hover {
 		opacity: 1;
