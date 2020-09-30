@@ -71,21 +71,45 @@
 	}
 }
 
+// Text meant only for screen readers without visible focus.
+@mixin screen-reader-text-nofocus {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
+}
+
 // Text meant only for screen readers
 @mixin screen-reader-text {
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
 	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
 
 	&:hover,
 	&:active,
 	&:focus {
 		clip: auto !important;
+		clip-path: none;
 		display: block;
-		top: 5px;
-		left: 5px;
-		padding: 15px 23px 14px;
 		height: auto;
+		right: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
 		width: auto;
 		z-index: 100000; /* Above WP toolbar */
 	}

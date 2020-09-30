@@ -1,8 +1,12 @@
 //-- Search form (header)
+.search-form {
+
+	.search-field {
+		box-sizing: border-box;
+	}
+}
+
 .main-navigation .search-form {
-	float: right;
-	display: inline-block;
-	margin: 30px 0;
 
 	.search-field {
 		padding: 5px 5px 5px 10px;
@@ -14,6 +18,10 @@
 		&:focus {
 			color: var(--color-white);
 			border-color: $body-text;
+		}
+
+		@media screen and (max-width: 450px) {
+			@include font-size($modular-scale-base);
 		}
 	}
 
@@ -30,7 +38,7 @@
 	}
 
 	.search-submit {
-		display: none;
+		@include screen-reader-text-nofocus;
 	}
 }
 

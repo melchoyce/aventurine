@@ -22,20 +22,32 @@
 <div id="page" class="hfeed site">
 
 	<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'aventurine' ); ?></a>
-	<nav id="site-navigation" class="main-navigation clear" role="navigation">
-		<div class="container">
-			<button class="menu-toggle"><?php _e( 'Menu', 'aventurine' ); ?></button>
+	<nav id="site-navigation" class="main-navigation primary-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary', 'aventurine' ); ?>">
+		<div class="menu-wrapper">
+			<div class="menu-button-container">
+				<button id="primary-open-menu" class="button open" aria-haspopup="true" aria-controls="primary-navigation">
+					<?php esc_html_e( 'Menu', 'aventurine' ); ?>
+					<span class="screen-reader-text"><?php esc_html_e( 'expanded', 'aventurine' ); ?></span>
+				</button><!-- #primary-open-menu -->
+				<button id="primary-close-menu" class="button close" aria-haspopup="true" aria-controls="primary-navigation" aria-expanded="true">
+					<?php esc_html_e( 'Close', 'aventurine' ); ?>
+					<span class="screen-reader-text"><?php esc_html_e( 'collapsed', 'aventurine' ); ?></span>
+				</button><!-- #primary-close-menu -->
+			</div><!-- .menu-button-container -->
 
 			<?php
-				get_search_form();
-				wp_nav_menu(
-					array(
-						'theme_location' => 'primary',
-						'show_home' => true,
-					)
-				);
-				?>
+			wp_nav_menu(
+				array(
+					'theme_location' => 'primary',
+					'show_home' => true,
+					'menu_class' => 'primary-menu-container',
+					'container' => 'ul',
+				)
+			);
+			?>
 		</div>
+
+		<?php get_search_form(); ?>
 	</nav><!-- #site-navigation -->
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding container">

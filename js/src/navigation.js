@@ -1,34 +1,77 @@
 /**
- * navigation.js
+ * navigation.js.
  *
- * Handles toggling the navigation menu for small screens.
+ * Required to open and close the mobile navigation.
  */
 ( function() {
-	var container, button, menu;
 
-	container = document.getElementById( 'site-navigation' );
-	if ( ! container )
-		return;
+	/**
+	 * Menu Toggle Behaviors
+	 *
+	 * @param {Element} element
+	 */
+	var navMenu = function ( id ){
+		var wrapper = document.body; // this is the element to which a CSS class is added when a mobile nav menu is open
+		var openButton = document.getElementById( `${ id }-open-menu` );
+		var closeButton = document.getElementById( `${ id }-close-menu` );
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button )
-		return;
+		if ( openButton && closeButton ){
+			openButton.onclick = function() {
+				wrapper.classList.add( `${ id }-navigation-open` );
+				closeButton.focus();
+			}
 
-	menu = container.getElementsByTagName( 'ul' )[0];
+			closeButton.onclick = function() {
+				wrapper.classList.remove( `${ id }-navigation-open` );
+				openButton.focus();
+			}
+		}
 
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
+		/**
+		 * Trap keyboard navigation in the menu modal.
+		 * Adapted from TwentyTwenty
+		 */
+		document.addEventListener( 'keydown', function( event ) {
+			if ( ! wrapper.classList.contains( `${ id }-navigation-open` ) ){
+				return;
+			}
+			var modal, elements, selectors, lastEl, firstEl, activeEl, tabKey, shiftKey, escKey;
+
+			modal = document.querySelector( `.${ id }-navigation` );
+			selectors = "input, a, button";
+			elements = modal.querySelectorAll( selectors );
+			elements = Array.prototype.slice.call( elements );
+			tabKey = event.keyCode === 9;
+			shiftKey = event.shiftKey;
+			escKey = event.keyCode === 27;
+			activeEl = document.activeElement;
+			lastEl = elements[ elements.length - 1 ];
+			firstEl = elements[1]; // the close button.
+
+			if ( escKey ) {
+				event.preventDefault();
+				wrapper.classList.remove( `${ id }-navigation-open` );
+				openButton.focus();
+			}
+
+			if ( ! shiftKey && tabKey && lastEl === activeEl ) {
+				event.preventDefault();
+				firstEl.focus();
+			}
+
+			if ( shiftKey && tabKey && firstEl === activeEl ) {
+				event.preventDefault();
+				lastEl.focus();
+			}
+
+			// If there are no elements in the menu, don't move the focus
+			if ( tabKey && firstEl === lastEl ) {
+				event.preventDefault();
+			}
+		});
 	}
 
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) )
-		menu.className += ' nav-menu';
-
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) )
-			container.className = container.className.replace( ' toggled', '' );
-		else
-			container.className += ' toggled';
-	};
+	window.addEventListener( 'load', function() {
+		new navMenu( 'primary' );
+	});
 } )();

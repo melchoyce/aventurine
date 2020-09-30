@@ -1,0 +1,127 @@
+/* =Menu
+----------------------------------------------- */
+
+.primary-navigation {
+	margin: 0;
+	overflow: visible;
+	width: 100%;
+	text-align: center;
+	@include font-size($modular-scale-up1);
+
+	.menu-button-container {
+		padding-top: $vspacing-down2;
+	}
+
+	.button {
+		@include font-size($modular-scale-base);
+	}
+
+	.primary-menu-container,
+	.button.close {
+		display: none;
+	}
+
+	.primary-navigation-open & {
+
+		.primary-menu-container,
+		.button.close {
+			display: initial;
+		}
+
+		.button.open {
+			display: none;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+
+	.primary-menu-container {
+		padding-top: $vspacing-down2;
+
+		a {
+			display: block;
+			padding: $vspacing-down2/2 $vspacing-down2;
+			color: var(--color-white);
+			text-decoration: none;
+		}
+
+		// link hover
+		li:hover > a,
+		a:focus {
+			color: lighten($navigation-bg, 50%);
+		}
+	}
+
+	.search-form {
+		padding: $vspacing;
+	}
+}
+
+@media screen and (min-width: 599px) {
+
+	.primary-navigation {
+		display: grid;
+		grid-template-columns: calc(50vw - 450px) 1fr auto calc(50vw - 450px);
+		align-items: center;
+
+		.menu-wrapper {
+			grid-column: 2;
+		}
+
+		.search-form {
+			grid-column: 3;
+			padding-right: 0;
+		}
+
+		.menu-button-container {
+			display: none;
+		}
+
+		.primary-menu-container {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 0;
+		}
+
+		.menu-item-has-children {
+			position: relative;
+
+			> ul {
+				position: absolute;
+				left: 0;
+				z-index: 10;
+				min-width: 10em;
+				@include hidden-dropdown;
+				background-color: darken($navigation-bg, 5%);
+				@include divet( top, darken($navigation-bg, 5%) );
+
+				// Nested menus
+				ul {
+					left: 100%;
+					top: 0;
+					background-color: darken($navigation-bg, 10%);
+					@include divet( left, darken($navigation-bg, 10%) );
+
+					ul {
+						position: relative;
+						left: 0;
+						top: 0;
+						@include show-dropdown;
+					}
+				}
+			}
+
+			&:hover,
+			&:focus-within {
+
+				> ul {
+					@include show-dropdown;
+				}
+			}
+		}
+	}
+}
