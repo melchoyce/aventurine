@@ -1,32 +1,32 @@
-Aventurine
-===
+# Aventurine
+
 by [Kelly Dwan](http://redradar.net) and [Mel Choyce](http://choycedesign.com)
 
 Aventurine puts the focus back on your content, with large type and bright colors. Responsive and built with accessibility in mind, your content can be easily available to your entire audience.
 
-###Back to Basics
+### Back to Basics
 
 With large type and bright colors, Aventurine really puts the focus back on your content.
 
-###Accessibility
+### Accessibility
 
 The code for this theme was written with keyboard and screen reader accessibility in mind, so your content can be easily available to your entire audience.
 
-###Fully responsive
+### Fully responsive
 
 Aventurine is crafted to look great at any screen size.
 
-###Jetpack enabled
+### Jetpack enabled
 
 Supercharge Aventurine with Jetpack galleries, carousels, infinite scroll, and Photon.
 
-###Licenses
+### Licenses
 
 License: GNU General Public License v2.0
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-####External resources:
+#### External resources
 
 Fonts Josefin Sans by Santiago Orozco and Varela Round by Joe Prince from Google Fonts, SIL Open Font License, 1.1
 
